@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE | Salud Ocupacional Empresarial</title>
+  <!-- ************* CORE CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+</head>
+
+<body>
+	<!-- /////// Botón para ir al principio -->
+	<a class="hide-for-small-only" href="#inicio">
+	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+	</a>
+	<!-- */Botón para ir al principio -->
+  <!-- ********** CONTENIDO -->
+  <section id="cont-admon01" class="bg-ppal">    
+    <div class="contenedor">
+      <center>
+        <img class="logo" src="./assets/img/logo.png" alt="Logo">
+        <span class="logotipo"><i>SIRE<span class="logotipo2">APP</span></i></span>    
+      </center>
+      <!-- El contenido de la página va aquí -->
+      <p class="text-center white"><!-- Fecha y hora -->
+            <script languaje="JavaScript"> 
+              var mydate=new Date() 
+              var year=mydate.getYear() 
+              if (year < 1000) 
+                    year+=1900 
+              var day=mydate.getDay() 
+              var month=mydate.getMonth() 
+              var daym=mydate.getDate() 
+              if (daym<10) 
+                    daym="0"+daym 
+              var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+              var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+              var hora=mydate.getHours()
+              var minutos=mydate.getMinutes()
+              document.write(dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+" - "+hora+":"+minutos)
+            </script>
+            <!-- /.Fecha y hora --></p>
+      <p class="text-center title1-admon">1ª Cia. "Bomba Coquimbo"</p>
+
+      <div class="" id="cont-perfil-admon">  <!-- ********** PERFIL ADMON -->
+  <section id="perfil-admon" class="">
+	  <div class="contenedor">
+	  	<div class="row">
+	  		<div class="shrink columns">
+	  			<div class="foto-cont">
+	  				<a href="bombero01.html" target="_top"><img class="foto" src="assets/img/perfil-admon.jpg" alt="Perfil Admon"></a>
+	  			</div>
+	  		</div>
+	  		<div class="columns align-self-middle">
+	  			<div class="cont-datos-admon">
+	  				<span class="nombre-admon">Ángel González</span>
+	  				<span class="cargo-admon">Capitán</span>	  				
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	</section>
+  <!-- /. PERFIL ADMON --></div>
+
+      <center>
+        <p class="title2-admon" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Haga click sobre el nombre para ir a la emergencia que se desee">Emergencias Asignadas</p>            
+      </center>
+          
+      <div class="row mt-2">
+
+        <div class="small-12 medium-6 columns">
+          <a href="cia02.html">
+            <div class="callout menu-card">
+              <p class="text-center">
+                Aqui iba el parcial de emergencia1<br>
+                <small>2ª emergencia de este tipo atendida en 2018</small>
+              </p>
+              
+            </div>                
+          </a>
+        </div>
+
+        <div class="small-12 medium-6 columns">
+          <a href="#">
+            <div class="callout menu-card">
+              <p class="text-center">
+                Aqui iba el parcial de emergencia2<br>
+                <small>10ª emergencia de este tipo atendida en 2018</small>
+              </p>
+              
+            </div>                
+          </a>
+        </div>
+      </div><!-- /.row -->
+      <br>
+      <p class="text-center texto-blanco"><strong>25 emergencias</strong> antendidas durante el 2018</p>
+      <br>
+      <center class="">
+        <p class="title2-admon" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Esté menú permite ingresar en el área administrativa de la APP">Herramientas Administrativas</p>            
+      </center>
+
+      <div class="menu align-center">
+        <li class="menu-item texto-blanco"><a href="cliente03.html"><img src="assets/img/icono-bomberos.svg" alt="Icono bombero"> &nbsp;&nbsp;Personal</a></li>
+        <li class="menu-item texto-blanco"><a href="admon04.html"><img src="assets/img/icono-carro.svg" alt="Icono carro"> &nbsp;&nbsp;Carros</a></li>        
+      </div>
+      <br><br>
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
+	<!-- ************* CORE JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/what-input.min.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script src="assets/js/coordenadas.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+		async defer></script>
+	<script src="assets/js/emergencias.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+</body>
+</html>

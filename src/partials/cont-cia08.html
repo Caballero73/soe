@@ -1,0 +1,81 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cia08" class="">    
+    <div class="contenedor">
+      @include('./partials/boton-emergencias1.html')
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cia.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+
+          <div class="row">
+            <div class="shrink align-self-middle columns">
+              <img src="assets/img/icono-bomberos-lesionados-azul.svg" alt="Bomberos Lesionados">
+            </div>
+            <div class="columns">
+              <h4>Bomberos Lesionados</h4>
+              <p class="emergencia2">Aqui iba el parcial de emergencia1</p>              
+            </div>
+          </div>
+
+
+          <div class="row mt-2">
+            <div class="small-12 medium-6 columns">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Título del panel del Acordeón -->
+                  <a href="#" class="accordion-title"><h6 class="agregar-lesionados">Agregar bombero lesionado &nbsp; <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></h6></a>
+            
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <form id="formulario-lesionados" class="mt-2">
+
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="nombre-lesionado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="nombre-lesionado">Nombre y Apellido</label>
+                      </div>
+
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="cargo-lesionado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="cargo-lesionado">Cargo</label>
+                      </div>
+
+                      <div class="group">      
+                        <input class="m" type="text" required value='1º Compañía "Bomba Coquimbo"' id="cia-del-afectado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="cia-del-afectado">Compañía</label>
+                      </div>
+                      
+                      <input id="guardar-lesionado" class="button expanded success" type="submit" value="Guardar">
+                    </form>
+                  </div><!-- /.Contenido del panel del acordeón. -->                  
+              </ul>              
+            </div>
+            <div class="small-12 medium-6 columns">
+              <h6>Lista de lesionados</h6>
+              <ol id="lista-lesionados"></ol>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          <center class='mt-2'>
+            <a class="button hollow" href="cia07.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow success" href="cliente01.html">Guardar <i class="fa fa-save" aria-hidden="true"></i></a>
+            <a class="button hollow" id="cerrar-emergencia-cia">Archivar <i class="fa fa-archive" aria-hidden="true"></i></a>
+            <a class="button hollow alert" id="asignar-emergencia">Asignar Investigador <i class="fa fa-search" aria-hidden="true"></i></a>            
+          </center>
+
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

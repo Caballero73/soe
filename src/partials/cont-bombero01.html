@@ -1,0 +1,32 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-bombero01" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-bombero.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <p class="text-center">@include('./partials/fecha-hora.html')</p>
+          <p class="text-center title1-cliente">1ª Cia. "Bomba Coquimbo"</p>
+
+          <div class="" id="cont-perfil-bombero">@include('./partials/perfil-bombero.html')</div>
+
+          <center>        
+            <ul class="menu vertical">
+              <li class="mb-3"><a href="bombero02.html"><i class="fa fa-edit fa-lg" aria-hidden="true"></i> Actualizar Perfil</a></li>
+              <li class="mb-3"><a href="bombero03.html"><i class="fa fa-file-text fa-lg" aria-hidden="true"></i> Ver Historial</a></li>
+              <li class="mb-3"><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+            </ul>
+          </center>
+
+          
+          <br>
+          <p class="text-center"><strong>5 emergencias</strong> antendidas durante el 2018</p>
+          <br>
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

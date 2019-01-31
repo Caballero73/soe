@@ -1,0 +1,77 @@
+
+/******************************
+ESTILOS CONTENIDO CLIENTE 02: cont-cliente02.css;
+*******************************/
+#cont-cliente02 {
+	padding-top: 7.5rem;
+
+	& #cont-sexo {
+		margin-top: -1rem;
+
+		@media (--mobile) {
+			margin-top: -2rem;
+		}
+	}	
+	& #cont-perfil-cliente {
+		position: absolute;
+		top: 7px;
+		right: 7px;
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& input[type="checkbox"] + label:before {
+	content: "\f096"; /* check-empty */
+	color: var(--colorGris);
+	font-size: x-large;
+	margin-top:  1rem;
+	}
+	& input[type="checkbox"]:checked + label:before {
+	content: "\f046"; /* check */
+	color: var(--colorPpal);
+	font-size: x-large;
+	margin-top:  1rem;
+	}
+	& .off-canvas {
+		background: var(--colorPrimarioOscuro);
+	}
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .title1-cliente {
+		color: var(--colorGris);
+		font-size: responsive 1.8rem 2.4rem;
+		font-family: var(--fontTitulo);
+	}
+	& table thead, table tbody, table tfoot {
+	  border: 1px solid var(--colorGrisClaro);
+	  background-color: var(--colorBlanco);
+	}
+	& th {
+		background-color: var(--colorGrisClaro);
+		font-size: responsive 1.2rem 1.8rem;
+	}
+	& tr {
+		background-color: color(var(--colorPpal) lightness(88%));
+		font-size: responsive 1.2rem 1.8rem;		
+	}
+	& tr:nth-child(2n) {
+		background-color: var(--colorBlanco) !important;
+	}
+	& tr:last-child {
+		background-color: var(--colorBlanco) !important;
+	}
+	& [type="checkbox"] + label, [type="radio"] + label {
+		font-size: responsive 1.2rem 1.6rem;
+		color: var(--colorFuente);
+	}
+	& select {
+		height: 3rem;
+		color: var(--colorFuente);
+		margin: .4rem 0 0 0;
+		font-size: responsive 1rem 1.4rem;
+	}
+}
+/**/

@@ -1,0 +1,27 @@
+/******************************
+ESTILOS CONTENIDO PERFIL ADMON: perfil-admon.css;
+*******************************/
+#perfil-admon {
+	& .cargo-admon {
+		color: var(--colorGris);
+		display: block;
+		font-size: responsive 1.5rem 1.7rem;
+
+	}
+	& .foto-cont {
+		border: .3rem solid rgba(255,255,255,.5);
+		box-shadow: var(--sombraSuaveDerecha);
+		border-radius: 50%;
+		max-width: 8rem;
+	}
+	& .foto {
+		border-radius: 50%;
+	}
+	& .nombre-admon {
+		color: var(--colorGrisOscuro);
+		display: block;
+		font-size: responsive 1.7rem 1.9rem;
+		font-weight: bold;
+	}
+}
+/**/

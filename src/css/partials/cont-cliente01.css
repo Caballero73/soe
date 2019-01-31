@@ -1,0 +1,124 @@
+/******************************
+ESTILOS CONTENIDO CLIENTE 01: cont-cliente01.css;
+*******************************/
+#cont-cliente01 {
+	height: 88vh;
+		
+	@media (--mobile-s){
+		height: auto;
+	}
+	@media (--mobile-x){
+		height: auto;
+	}
+	@media (--tablet-h) {
+		height: 85vh;
+
+	}
+	& #btn-salir {
+		position: absolute;
+		font-size: 2rem;
+		top: 1rem;
+		right: 2rem;
+	}
+	& .cont-cuerpo-formulario {
+		padding: 3rem 0.7rem 0.7rem 1rem;
+	}
+	& #cont-perfil-cliente {
+		max-width: 40rem;
+		margin-left: auto;
+		margin-right: auto;
+		@media (--mobile) {
+			margin-bottom: 1.5rem;		
+		}
+	}
+
+	& .menu-card {
+		background-color: color(var(--colorPpal) lightness(65%));
+		border-radius: 8px;
+		border: 1px solid rgba(10, 10, 10, 0.25);
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		color: var(--colorPrimarioOscuro);
+		line-height: 1.2;
+		font-weight: bold;
+		margin: 0 0 1rem 0;
+		padding: 1rem;
+		position: relative;
+		transition: var(--tra35);
+
+		@media (--mobile){
+			height: auto;
+			padding: 0.8rem;
+		}
+		&:hover {
+			background-color: color(var(--colorPpal) lightness(75%));
+			box-shadow: var(--sombraSuaveDerecha);
+			border: none;
+			transition: var(--tra35);
+		}
+		& img {
+			filter:grayscale(75%);
+			opacity: .7;
+			max-width: 20rem;
+			transition: all .35s ease;
+			width: 100%;
+
+		}
+		&:hover img {
+			opacity: 1;
+		 	filter:grayscale(10%);
+		}
+	}
+	& .has-tip {
+		border-bottom: none;
+	}
+	& .logo {
+		height: 7rem;
+		width: auto;
+
+		@media (--mobile){
+			height: 5rem;
+			width: auto;
+
+		}
+	}
+	& .logotipo {
+		font-size: responsive 3rem 5rem;
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+	& #perfil-cliente {
+	padding-top: 0;
+
+		& .nombre-operador {
+			color: white;
+		}
+
+		& .cargo-operador {
+			color: #f1f1f1;
+			display: block;
+			font-size: calc(1.20233rem + 0.23256vw);
+		}
+	}
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& .title1-cliente {
+		color: color(var(--colorBlanco) a(60%));
+		font-size: responsive 1.8rem 2.6rem;
+		font-family: var(--fontTitulo);
+	}	
+	& .title2-cliente {
+		color: color(var(--colorBlanco) a(60%));
+		font-size: responsive 2rem 2.6rem;
+		font-family: var(--fontTitulo);
+	}	
+}
+/**/

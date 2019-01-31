@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE | Salud Ocupacional Empresarial</title>
+  <!-- ************* CORE CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+</head>
+
+<body>
+	<!-- /////// Botón para ir al principio -->
+	<a class="hide-for-small-only" href="#inicio">
+	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+	</a>
+	<!-- */Botón para ir al principio -->
+  <!-- ********** NAVBAR ADMON -->
+  <section id="navbar-cliente" class="bg-sec">
+    <div class="contenedor" style="position: relative;">      
+      <div class="top-bar row">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">
+              <img class="logo" src="./assets/img/logo.svg" alt="Logo" vspace="3">
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right show-for-large">
+          <ul class="menu">
+            <li><a href="cliente01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="cliente03.html"><i class="fa fa-users fa-lg" aria-hidden="true"></i> Funcionarios</a></li>            
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+          </ul>
+        </div>
+        <div class="btn-menu hide-for-large">
+          <i class="fa fa-bars fa-lg" data-toggle="offCanvas"></i>
+        </div>
+      </div> <!-- /.top-bar -->   
+    </div> <!-- /.contenedor -->
+  </section>
+  <!-- /. NAVBAR ADMON -->
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cliente03" class="">    
+    <div class="contenedor">
+
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+                 <!-- ********** MENU OFF-CANVAS CLIENTE -->
+        <div id="menu-off-canvas-cliente">
+          <ul class="menu vertical">
+          	<li><a href="cliente01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+          	<li><a href="cliente03.html"><i class="fa fa-users fa-lg" aria-hidden="true"></i> Funcionarios</a></li>          	
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> &nbsp;Salir</a></li>
+          </ul>        
+        </div>
+        <!-- /. MENU OFF-CANVAS CLIENTE -->
+        </div><!-- /.off-canvas -->
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <div class="row">
+            <div class="small-12 medium-7 columns">
+              <p class="text-center title1-cliente">Seguros Nuevo Mundo</p>
+            </div>
+            <div class="small-12 medium-5 columns" id="cont-fecha-hora">
+              <p class="text-center">
+                <!-- Fecha y hora -->
+            <script languaje="JavaScript"> 
+              var mydate=new Date() 
+              var year=mydate.getYear() 
+              if (year < 1000) 
+                    year+=1900 
+              var day=mydate.getDay() 
+              var month=mydate.getMonth() 
+              var daym=mydate.getDate() 
+              if (daym<10) 
+                    daym="0"+daym 
+              var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+              var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+              var hora=mydate.getHours()
+              var minutos=mydate.getMinutes()
+              document.write(dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+" - "+hora+":"+minutos)
+            </script>
+            <!-- /.Fecha y hora -->
+              </p>
+            </div>        
+          </div>
+
+          <br class="show-for-small">
+
+          <div class="row">
+            <div class="small-12 medium-3 columns">
+              <h2>Funcionarios</h2>              
+            </div>
+            <div class="small-12 medium-9 columns">
+              <ul class="menu align-center">
+                <li><a href="cliente02.html"><button class="success hollow button" id="btn-agregar-funcionario"> Agregar funcionario <i class="fa fa-user-plus fa-lg" aria-hidden="true"></i></button></a></li>
+                <li><a href=""><button class="hollow button" id="btn-descargar-funcionario">Descargar Lista <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i></button></a></li>
+                <li><a href=""><button class="hollow button" id="btn-imprimir-funcionario">Imprimir Lista <i class="fa fa-print fa-lg" aria-hidden="true"></i></button></a></li>
+              </ul>             
+            </div>
+          </div>       
+          <div class="mt-1" id="cont-funcionarios">
+            <form id="bomberos" class="">
+              <!-- Tablas funcionarios -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Nombre y Apellido</th>
+                    <th>Cargo</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="item-funcionario">
+                    <td>SOE102454-8</td>
+                    <td>Cesar Romero</td>
+                    <td>Director</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Ángel González</td>
+                    <td>Capitán</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Andrés Miquilena</td>
+                    <td>Inspector General</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Sebastian De Vita</td>
+                    <td>Ayudante General</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Enmanuel Hernández</td>
+                    <td>Ayudante</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Julian Ramos</td>
+                    <td>Ayudante</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Josefa Camejo</td>
+                    <td>Ayudante</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td></span>Joaquín Correa</td>
+                    <td>Tesorero</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Victoriana Riera</td>
+                    <td>Secretario</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Josefina Villalobos</td>
+                    <td>Teniente</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>                      
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Juan Osteicoechea</td>
+                    <td>Teniente</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Alejandro Villalobos</td>
+                    <td>Teniente</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /. Tabla columna 1 -->                      
+            </form>
+            <!-- Modal para borrar funcionario -->
+			<div class="reveal tiny" id="modal-borrar-funcionario" data-reveal>
+				<br>
+				<h4>Borrar Funcionario</h4>
+				<p>Por favor ingrese los datos del funcionario</p>
+				<br>
+				<form>
+					<div class="group">      
+						<input class="m" type="text" required value="" id="nombre-apellido-borrar">
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label class="m" for="nombre-apellido-borrar">Nombre y Apellido</label>
+					</div>
+					<div class="group">      
+						<input class="m" type="text" required value="" id="codigo-para-borrar">
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label class="m" for="codigo-para-borrar">Código Funcionario</label>
+					</div>
+					<a class="button expanded" id="confirmar-borrar-funcionario">Aceptar</a>
+				</form>
+				<center><a href="cliente03.html" title="Ir al listado">Ir al listado de funcionarios</a></center>
+				<button class="close-button" data-close aria-label="Cerrar modal" type="button">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<!-- /.Modal para borrar funcionario -->
+          </div><!-- /.cont-funcionarios -->
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
+	<!-- ************* FOOTER -->
+	<section id="footer">
+		<div class="contenedor">
+			<center>
+				<b>Control de Constancias Médicas</b><br>
+				SOE Salud Empresarial Ocupacional © 2019
+				<p>Desarrolado por <a href="" title="Desarroladores">scorpion</a></p>				
+			</center>
+		</div>		
+	</section>
+	
+	<!-- ************* CORE JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/what-input.min.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script src="assets/js/coordenadas.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+		async defer></script>
+	<script src="assets/js/emergencias.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+</body>
+</html>

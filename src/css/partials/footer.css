@@ -1,0 +1,28 @@
+/******************************
+ESTILOS FOOTER: footer.css;
+*******************************/
+#footer {
+	color: var(--colorBlanco);
+	display: grid;
+	align-items: end;
+	background-color: var(--colorPrimarioOscuro);
+	height: 12vh;
+	padding: 0.7rem;
+
+	@media (--tablet-h) {
+		font-size: 1.3rem;
+		height: 15vh;
+
+	}
+
+	& a {
+		color: var(--colorBlanco);
+		font-weight: bold;
+
+		&:hover {
+			color:var(--colorPpalClaro);
+		}
+
+	}
+}
+/**/

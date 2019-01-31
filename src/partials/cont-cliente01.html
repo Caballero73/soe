@@ -1,0 +1,52 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cliente01" class="bg-ppal">    
+    @include('./partials/cabecera-clara.html')    
+    <div class="contenedor">
+      <!-- El contenido de la página va aquí -->
+      <div class="row mt-3">
+        <div class="small-12 medium-7 columns">
+          <p class="text-center title1-cliente">Seguros Nuevo Mundo</p>
+          <p class="text-center white">
+            @include('./partials/fecha-hora.html')
+          </p>
+        </div>
+        <div class="small-12 medium-5 columns" id="cont-perfil-cliente">
+          @include('./partials/perfil-cliente.html')
+        </div>        
+      </div>
+      
+      <div class="row align-center mt-3">
+
+        <div class="small-6 medium-4 columns">
+          <a href="cliente02.html">
+            <div class="callout menu-card">
+              <img src="assets/img/icono-agregar-usuario.svg" title="Agregar Funcionario" alt="Icono agregar usuario">
+              <p class="text-center">Agregar Funcionario</p>              
+            </div>                
+          </a>
+        </div>
+
+        <div class="small-6 medium-4 columns">
+          <a data-open="modal-borrar-funcionario">
+            <div class="callout menu-card">
+              <img src="assets/img/icono-quitar-usuario.svg" title="Quitar Funcionario" alt="Icono quitar usuario">
+              <p class="text-center">Eliminar Funcionario</p>
+            </div>                
+          </a>
+        </div>
+
+        <div class="small-6 medium-4 columns">
+          <a href="cliente03.html">
+            <div class="callout menu-card">
+              <img src="assets/img/icono-listado-usuario.svg" title="Lista Funcionarios" alt="Icono quitar usuario">
+              <p class="text-center">Lista de Funcionarios</p>
+            </div>                
+          </a>
+        </div>
+
+      </div><!-- /.row -->
+      <br>
+      @include('./partials/modal-borrar-funcionario.html')
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

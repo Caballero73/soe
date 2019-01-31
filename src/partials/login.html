@@ -1,0 +1,62 @@
+  <!-- ********** LOGIN -->
+  <section id="login">
+    <div id="contenedor-general">    
+      <div class="contenedor">        
+        <img class="logo center-block" src="./assets/img/logo.svg" alt="Logo">
+        <!-- <center class="logotipo">SOE<i><span class="logotipo2">APP</span></i></center> -->
+        <center class="texto-primario mt-2"><b>Bienvenido</b>, por favor incia sesión en tu cuenta</center>
+      </div><!-- /.contenedor -->
+      <div id="cont-form">
+        <div class="contenedor">
+          <!-- <h1 class="text-center texto-blanco">Hola Mundo</h1> -->
+          <br>
+          <form data-abide novalidate>        
+            <div class="group">      
+              <input class="m" type="text" required value="" id="username">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="username">Nombre de Usuario</label>
+              <p class="form-error">Dato requerido</p>
+            </div>
+
+            <div class="group">      
+              <input class="password m" type="password" required value="" id="password">
+              <button class="unmask" type="button" title="Mostrar y ocultar contraseña"></button>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="password">Contraseña</label>
+              <p class="form-error">Dato requerido</p>
+            </div>
+
+            <a class="button large expanded" id="submit-login" type="submit">Ingresar</a>
+            <br>   
+            <p class="text-center recuperar"><a data-open="modal-recuperar">¿Olvidó su contraseña?</a></p>
+            <!-- <input class="button success expanded" type="submit" value="Enviar"></a> -->
+          </form>
+          <br>
+        </div><!-- /.contenedor -->
+      </div><!-- /.cont-form -->
+    </div><!-- /.contenedor-general -->
+    
+    <!-- Modal para recuperar contraseña -->
+    <div class="reveal tiny" id="modal-recuperar" data-reveal>
+      <br>
+      <h4>Recuperar Clave</h4>
+      <p>Por favor ingrese su correo electrónico </p>
+      <br>
+      <form>
+        <div class="group">      
+          <input class="m" type="text" required value="" id="recuperar">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label class="m" for="recuperar">Correo electrónico</label>
+        </div>
+        <input class="button expanded" type="submit" value="Enviar"></a>
+      </form>
+      <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <!-- /.Modal para recuperara contraseña -->
+  </section>
+  <!-- /. LOGIN -->

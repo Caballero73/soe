@@ -1,0 +1,115 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-operador03" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-operador.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <p class="text-right fecha-hora">@include('./partials/fecha-hora.html')</p>
+
+          <div>
+            <h2 class="titulo2 text-center text-uppercase mb-2"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i> Claves Radiales</h2>
+          </div>
+
+          <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" data-tabs-target="panel1">10-0-3 Llamado Estructural Lugar público</a></li>
+            <li class="tabs-title"><a href="#panel2" data-tabs-target="panel2">10-8-1 Abrir casa habitación 1 piso</a></li>
+          </ul>
+
+          <div class="tabs-content" data-tabs-content="example-tabs">
+              
+            <div class="tabs-panel is-active" id="panel1">
+              <center>
+                <p class="mt-2 mb-1"><b>Servicio tipo 10-0-3</b> Llamado Estructural Lugar público</p>
+              </center>
+              <form class="row mt-2">
+                <table >
+                  <tbody>
+                    <tr>                      
+                      <th>Vehículo</th>
+                      <th>6-3</th>
+                      <th>6-8</th>
+                      <th>6-9</th>
+                      <th>6-10</th>
+                    </tr>
+                    <tr>
+                      <td><center>B1</center></td>
+                      <td><center><input id="g1" type="checkbox"><label class="label-lead" for="g1"></label></center></td>
+                      <td><center><input id="g2" type="checkbox"><label class="label-lead" for="g2"></label></center></td>
+                      <td><center><input id="g3" type="checkbox"><label class="label-lead" for="g3"></label></center></td>
+                      <td><center><input id="g4" type="checkbox"><label class="label-lead" for="g4"></label></center></td>
+                    </tr>
+                    <tr>
+                      <td><center>F4</center></td>
+                      <td><center><input id="h1" type="checkbox"><label class="label-lead" for="h1"></label></center></td>
+                      <td><center><input id="h2" type="checkbox"><label class="label-lead" for="h2"></label></center></td>
+                      <td><center><input id="h3" type="checkbox"><label class="label-lead" for="h3"></label></center></td>
+                      <td><center><input id="h4" type="checkbox"><label class="label-lead" for="h4"></label></center></td>
+                    </tr>
+                    <tr>
+                      <td><center>R1</center></td>
+                      <td><center><input id="i1" type="checkbox"><label class="label-lead" for="i1"></label></center></td>
+                      <td><center><input id="i2" type="checkbox"><label class="label-lead" for="i2"></label></center></td>
+                      <td><center><input id="i3" type="checkbox"><label class="label-lead" for="i3"></label></center></td>
+                      <td><center><input id="i4" type="checkbox"><label class="label-lead" for="i4"></label></center></td>
+                    </tr>
+                    <tr>
+                      <td><center>Z6</center></td>
+                      <td><center><input id="j1" type="checkbox"><label class="label-lead" for="j1"></label></center></td>
+                      <td><center><input id="j2" type="checkbox"><label class="label-lead" for="j2"></label></center></td>
+                      <td><center><input id="j3" type="checkbox"><label class="label-lead" for="j3"></label></center></td>
+                      <td><center><input id="j4" type="checkbox"><label class="label-lead" for="j4"></label></center></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </form>
+            </div><!-- /.panel1 -->
+
+            <div class="tabs-panel" id="panel2">
+              <center>
+                <p class="mt-2 mb-1"><b>Servicio tipo 10-8-1</b> Abrir casa habitación 1 piso</p>
+              </center>
+              <form class="row mt-2">
+                <table >
+                  <tbody>
+                    <tr>                      
+                      <th>Vehículo</th>
+                      <th>6-3</th>
+                      <th>6-8</th>
+                      <th>6-9</th>
+                      <th>6-10</th>
+                    </tr>
+                    <tr>
+                      <td><center>R6</center></td>
+                      <td><center><input id="l1" type="checkbox"><label class="label-lead" for="l1"></label></center></td>
+                      <td><center><input id="l2" type="checkbox"><label class="label-lead" for="l2"></label></center></td>
+                      <td><center><input id="l3" type="checkbox"><label class="label-lead" for="l3"></label></center></td>
+                      <td><center><input id="l4" type="checkbox"><label class="label-lead" for="l4"></label></center></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </form>
+            </div><!-- /.panel2 -->
+
+          </div><!-- /.tabs-content -->
+          <br>
+          <center>
+            <button id="cerrar-emergencia" class="button hollow primary btn-expansivo">Archivar y Cerrar <i class="fa fa-save" aria-hidden="true"></i></button>
+          </center>
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

@@ -1,0 +1,132 @@
+/******************************
+ESTILOS CONTENIDO ADMON 01: cont-admon01.css;
+*******************************/
+#cont-admon01 {
+	height: 100vh;
+	padding-top: 1.5rem;
+		
+	@media (--mobile-s){
+		height: auto;
+		padding-top: .8rem;
+	}
+	@media (--mobile-x){
+		height: auto;
+		padding-top: 1rem;
+	}
+	
+
+	& #cont-perfil-admon {
+		max-width: 40rem;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 4rem;		
+		margin-top: 4rem;		
+
+		@media (--mobile) {
+			margin-bottom: 1.5rem;		
+		}
+	}
+
+	& .menu-card {
+		background-color: color(var(--colorPpal) lightness(65%));
+		border-radius: 8px;
+		border: 1px solid rgba(10, 10, 10, 0.25);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--colorPrimarioOscuro);
+		height: 10rem;
+		font-weight: bold;
+		margin: 0 0 1rem 0;
+		padding: 1rem;
+		position: relative;
+		transition: var(--tra35);
+
+		@media (--mobile){
+			height: auto;
+		}
+		&:hover {
+			background-color: color(var(--colorPpal) lightness(75%));
+			box-shadow: var(--sombraSuaveDerecha);
+			border: none;
+			transform: scale(1.01);
+			transition: var(--tra35);
+		}
+		& small {
+			color: var(--colorFuente);
+		}
+	}
+	& .has-tip {
+		border-bottom: none;
+	}
+	& .logo {
+		height: 7rem;
+		width: auto;
+		margin-top: -2.5rem;
+
+		@media (--mobile){
+			height: 5rem;
+			width: auto;
+			margin-top: -1.2rem;
+
+		}
+	}
+	& .logotipo {
+		font-size: responsive 3rem 5rem;
+	}
+	& .menu-item {
+		border-radius: .5rem;
+		transition: .35s;
+		margin: 0 1rem;
+
+		&:hover {
+			background-color: var(--colorPrimario);
+			transition: .35s;
+		}
+
+		& a {
+			font-size: responsive 2rem 2.5rem;
+			margin: 1rem;
+			color: var(--colorGrisClaro);
+
+			&:hover {
+				color: var(--colorBlanco);
+			}
+		}
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+	& #perfil-admon {
+	padding-top: 0;
+
+		& .nombre-admon {
+			color: white;
+		}
+
+		& .cargo-admon {
+			color: #f1f1f1;
+			display: block;
+			font-size: calc(1.20233rem + 0.23256vw);
+		}
+	}
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& .title1-admon {
+		color: color(var(--colorBlanco) a(60%));
+		font-size: responsive 1.8rem 2.4rem;
+		font-family: var(--fontTitulo);
+	}	
+	& .title2-admon {
+		color: color(var(--colorBlanco) a(60%));
+		font-size: responsive 2rem 2.6rem;
+		font-family: var(--fontTitulo);
+	}	
+}
+/**/

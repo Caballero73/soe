@@ -1,0 +1,55 @@
+/*Hoja de Estilo
+* Desarrollada para el proyecto: SOEAPP
+* Por: Scorpion (Enrique Valerio)
+* Enero 2019
+*/
+/* CSS Externos */
+@import './font-awesome.min.css';
+@import './foundation-icons.css';
+@import './foundation.min.css';
+@import './select2.min.css';
+/*CSS del Tema*/
+@import './partials/variables.css';
+@import './partials/mediaquery.css';
+@import './partials/tipografia.css';
+@import './partials/boton-emergencias.css';
+@import './partials/menu-off-canvas-cliente.css';
+@import './partials/menu-off-canvas-bombero.css';
+@import './partials/menu-off-canvas-cia.css';
+@import './partials/menu-off-canvas-operador.css';
+@import './partials/cont-admon01.css';
+@import './partials/cont-cliente03.css';
+@import './partials/cont-cliente02.css';
+@import './partials/cont-admon04.css';
+@import './partials/cont-bombero01.css';
+@import './partials/cont-bombero02.css';
+@import './partials/cont-bombero03.css';
+@import './partials/cont-cliente01.css';
+@import './partials/cont-cia02.css';
+@import './partials/cont-cia03.css';
+@import './partials/cont-cia04.css';
+@import './partials/cont-cia05.css';
+@import './partials/cont-cia06.css';
+@import './partials/cont-cia07.css';
+@import './partials/cont-cia08.css';
+@import './partials/cont-operador01.css';
+@import './partials/cont-operador02.css';
+@import './partials/cont-operador03.css';
+@import './partials/perfil-admon.css';
+@import './partials/perfil-bombero.css';
+@import './partials/perfil-cliente.css';
+@import './partials/perfil-operador.css';
+@import './partials/login.css';
+@import './partials/navbar-cliente.css';
+@import './partials/navbar-bombero.css';
+@import './partials/navbar-cia.css';
+@import './partials/navbar-operador.css';
+@import './partials/colores.css';
+@import './partials/form.css';
+@import './partials/footer.css';
+@import './partials/custom.css';
+
+/******************************
+MEDIA-QUERIES
+*******************************/
+

@@ -1,0 +1,74 @@
+/******************************
+ESTILOS NAVBAR OPERADOR: navbar-operador.css;
+*******************************/
+#navbar-operador {
+	box-shadow: var(--sombra1c);
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+
+	& .btn-menu {		
+		color: var(--colorBlanco);
+		cursor: pointer;
+		font-size: 2rem;
+		height: 5rem;
+		padding: .7rem;
+		position: absolute;
+		right: 0;
+		top: 0;
+		text-shadow: .1rem .1rem .2rem #666;
+		transition: .35s all ease;
+
+		&:hover{
+			background-color: color(var(--colorSec) blackness(25%));
+			transition: .35s all ease;
+			text-shadow: 0 0 0 #666;
+		}
+	}
+	& .logo {
+		height: 5rem;
+		width: auto;
+
+		@media (--mobile) {
+			height: 4rem;
+		}
+	}
+
+	& .logotipo {
+	  font-size: responsive 2.5rem 3.5rem;
+	}
+
+	& li.menu-text:hover {background-color: transparent !important;}
+
+	& .top-bar, .top-bar ul {
+		background-color: var(--colorSec);
+		padding: 0;
+
+		& li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 5rem;
+			transition: var(--tra35);
+
+			& a {
+				color: var(--colorBlanco2);
+				font-size: responsive 1.4rem 1.6rem;
+				transition: var(--tra35);
+			}
+		}
+		& li:hover {
+			background-color: color(var(--colorSec) blackness(25%));
+			transition: var(--tra35);
+
+			& a {
+				color: white;
+				transition: var(--tra35);
+			}
+		}
+	}
+}
+
+
+/* /.ESTILOS NAVBAR OPERADOR */

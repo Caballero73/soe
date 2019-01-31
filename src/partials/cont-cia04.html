@@ -1,0 +1,88 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cia04" class="">    
+    <div class="contenedor">
+      @include('./partials/boton-emergencias1.html')
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cia.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+
+          <div class="row">
+            <div class="shrink align-self-middle columns">
+              <img src="assets/img/icono-apoyo.svg" alt="Apoyo">
+            </div>
+            <div class="columns">
+              <h4>Apoyo</h4>
+              <p class="emergencia2">Aqui iba el parcial de emergencia1</p>              
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Título del panel del Acordeón -->
+                  <a href="#" class="accordion-title"><h6 class="agregar-apoyo">Agregar apoyo &nbsp; <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></h6></a>
+            
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <form id="formulario-afectados" class="mt-2">
+
+                      <select id="tipo-apoyo" required class="js-example-responsive" style="width: 100%">
+                         <option value="Ambulancia">Ambulancia</option>
+                         <option value="Carabineros">Carabineros</option>
+                         <option value="PDI">PDI</option>
+                         <option value="Oficina de Emergencias">Oficina de Emergencias</option>
+                         <option value="Gas">Gas</option>
+                         <option value="Empresa Eléctrica">Empresa Eléctrica</option>
+                         <option value="Empresa Sanitaria">Empresa Sanitaria</option>
+                         <option value="Otro">Otro</option>
+                      </select>
+
+                      <div class="group mt-3">      
+                        <input class="m" type="text" required value="" id="nombre-encargado-apoyo">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="nombre-encargado-apoyo">Nombre persona a cargo</label>
+                      </div>
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="movil-apoyo">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="movil-apoyo">Nº de móvil</label>
+                      </div>
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="patente-apoyo">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="patente-apoyo">Nº de patente</label>
+                      </div>                      
+                      
+                      <!-- Botón para guardar/ -->
+                      <input id="guardar-apoyo" class="button expanded success" type="submit" value="Guardar">
+
+                    </form>
+                  </div><!-- /.Contenido del panel del acordeón. -->                  
+              </ul>              
+            </div>
+            <div class="small-12 medium-6 columns">
+              <h6>Apoyo recibido</h6>
+              <ul id="lista-apoyo"></ul>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          <center class='mt-2'>
+            <a class="button hollow primary" href="cia03.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow primary" href="cia05.html">Siguiente <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </center>
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

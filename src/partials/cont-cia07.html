@@ -1,0 +1,96 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cia07" class="">    
+    <div class="contenedor">
+      @include('./partials/boton-emergencias1.html')
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cia.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+
+          <h4 class="text-center">1ª Cia. "Bomba Coquimbo"</h4>
+          <p class="text-center emergencia2">Aqui iba el parcial de emergencia1</p>              
+          <br>
+          <!-- ********************************
+          Bomberos -->
+          <center class="small-12 columns">
+            <h5><img src="assets/img/icono-bombero-azul.svg" alt="Bomberos"> Bomberos</h5>
+          </center>
+
+          <div id="cont-bomberos" class="mt-1">
+            <form id="bomberos" class="">
+              <div class="row">
+                <div class="small-12 medium-6 columns">
+                  <input id="element_1_1" name="element_1_1" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_1">Cesar Romero - Director</label><br>
+                  <input id="element_1_2" name="element_1_2" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_2">Ángel González - Capitán</label><br>
+                  <input id="element_1_3" name="element_1_3" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_3">Anamaría Villanueva - Teniente</label><br>
+                  <input id="element_1_4" name="element_1_4" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_4">Juan Osteicoechea - Teniente</label><br>
+                  <input id="element_1_5" name="element_1_5" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_5">Alejandro Villalobos - Teniente</label><br>
+                  <input id="element_1_6" name="element_1_6" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_6">Victoriana Riera - Secretario</label><br>
+                  <input id="element_1_7" name="element_1_7" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_7">Joaquín Correa - Tesorero</label><br>
+                  <input id="element_1_8" name="element_1_8" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_8">Josefa Camejo - Ayudante</label><br>
+                  <input id="element_1_9" name="element_1_9" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_9">Julian Ramos - Ayudante</label><br>
+                  <input id="element_1_10" name="element_1_10" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_10">Enmanuel Hernández - Ayudante</label><br>
+                  <input id="element_1_11" name="element_1_11" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_11">Sebastian De Vita - Ayudante General</label><br>
+                  <input id="element_1_12" name="element_1_12" type="checkbox">
+                  <label class="bomberos-asignados" for="element_1_12">Andrés Miquilena - Inspector General</label>
+                </div>
+                <div class="small-12 medium-6 columns">
+                  <input id="element_2_1" name="element_2_1" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_1">Pablo Echeverria - Bombero</label><br>
+                  <input id="element_2_2" name="element_2_2" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_2">Elizabeth Del Pino - Bombero</label><br>
+                  <input id="element_2_3" name="element_2_3" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_3">Luis Pérez - Bombero</label><br>
+                  <input id="element_2_4" name="element_2_4" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_4">Bernardo Ojeda - Bombero</label><br>
+                  <input id="element_2_5" name="element_2_5" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_5">Julian Valera - Bombero</label><br>
+                  <input id="element_2_6" name="element_2_6" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_6">Gregorio Pettit - Bombero</label><br>
+                  <input id="element_2_7" name="element_2_7" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_7">Anamaría Sifonte - Bombero</label><br>
+                  <input id="element_2_8" name="element_2_8" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_8">Marcos Vargas - Bombero</label><br>
+                  <input id="element_2_9" name="element_2_9" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_9">Oscar Pérez - Bombero</label><br>
+                  <input id="element_2_10" name="element_2_10" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_10">Miguel Romero - Bombero</label><br>
+                  <input id="element_2_11" name="element_2_11" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_11">Jessica Mujica - Bombero</label><br>
+                  <input id="element_2_12" name="element_2_12" type="checkbox">
+                  <label class="bomberos-asignados" for="element_2_12">Pedro Guerra - Bombero</label>
+                </div>
+              </div>                       
+            </form>            
+          </div><!-- /.cont-bomberos -->
+
+          <center class="mt-3">
+            <input id="guardar-bomberos" class="button success btn-expansivo" type="submit" value="Guardar Bomberos"> 
+            <a href="cia08.html"><button class="button alert btn-expansivo"><!-- <img src="assets/img/icono-bomberos-lesionados.svg" alt="Bombero Lesionado">  -->Bomberos Lesionados</button></a>
+          </center>
+
+          <br class="show-for-medium">
+          <hr>
+          <center class='mt-2'>
+            <a class="button hollow primary" href="cia06.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow primary" href="cia08.html">Siguiente <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </center>
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

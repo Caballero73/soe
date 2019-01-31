@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE | Salud Ocupacional Empresarial</title>
+  <!-- ************* CORE CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+</head>
+
+<body>
+	<!-- /////// Botón para ir al principio -->
+	<a class="hide-for-small-only" href="#inicio">
+	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+	</a>
+	<!-- */Botón para ir al principio -->
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cliente01" class="bg-ppal">    
+    <!-- Cabecera clara -->
+		<div class="cabecera-clara">
+		  <img class="logo" src="./assets/img/logo.svg" alt="Logo">
+		  <div class="" id="btn-salir">
+		    <a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a>
+		  </div>
+		</div>
+		<!-- /.Cabecera clara -->    
+    <div class="contenedor">
+      <!-- El contenido de la página va aquí -->
+      <div class="row mt-3">
+        <div class="small-12 medium-7 columns">
+          <p class="text-center title1-cliente">Seguros Nuevo Mundo</p>
+          <p class="text-center white">
+            <!-- Fecha y hora -->
+            <script languaje="JavaScript"> 
+              var mydate=new Date() 
+              var year=mydate.getYear() 
+              if (year < 1000) 
+                    year+=1900 
+              var day=mydate.getDay() 
+              var month=mydate.getMonth() 
+              var daym=mydate.getDate() 
+              if (daym<10) 
+                    daym="0"+daym 
+              var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+              var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+              var hora=mydate.getHours()
+              var minutos=mydate.getMinutes()
+              document.write(dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+" - "+hora+":"+minutos)
+            </script>
+            <!-- /.Fecha y hora -->
+          </p>
+        </div>
+        <div class="small-12 medium-5 columns" id="cont-perfil-cliente">
+          <!-- ********** PERFIL CLIENTE -->
+					<section id="perfil-cliente" class="">
+					  <div class="contenedor">
+					  	<div class="row">
+					  		<div class="shrink columns">
+					  			<div class="foto-cont">
+					  				<a href="#" target="_top"><img class="foto" src="assets/img/perfil-cliente.jpg" alt="Perfil Cia"></a>
+					  			</div>
+					  		</div>
+					  		<div class="columns align-self-middle">
+					  			<div class="cont-datos-operador">
+					  				<span class="nombre-operador">Micaela Hernández</span>
+					  				<span class="cargo-operador">Gerente de RRHH</span>	  				
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div>
+					</section>
+					<!-- /. PERFIL CLIENTE -->
+        </div>        
+      </div>
+      
+      <div class="row align-center mt-3">
+
+        <div class="small-6 medium-4 columns">
+          <a href="cliente02.html">
+            <div class="callout menu-card">
+              <img src="assets/img/icono-agregar-usuario.svg" title="Agregar Funcionario" alt="Icono agregar usuario">
+              <p class="text-center">Agregar Funcionario</p>              
+            </div>                
+          </a>
+        </div>
+
+        <div class="small-6 medium-4 columns">
+          <a data-open="modal-borrar-funcionario">
+            <div class="callout menu-card">
+              <img src="assets/img/icono-quitar-usuario.svg" title="Quitar Funcionario" alt="Icono quitar usuario">
+              <p class="text-center">Eliminar Funcionario</p>
+            </div>                
+          </a>
+        </div>
+
+        <div class="small-6 medium-4 columns">
+          <a href="cliente03.html">
+            <div class="callout menu-card">
+              <img src="assets/img/icono-listado-usuario.svg" title="Lista Funcionarios" alt="Icono quitar usuario">
+              <p class="text-center">Lista de Funcionarios</p>
+            </div>                
+          </a>
+        </div>
+
+      </div><!-- /.row -->
+      <br>
+      <!-- Modal para borrar funcionario -->
+			<div class="reveal tiny" id="modal-borrar-funcionario" data-reveal>
+				<br>
+				<h4>Borrar Funcionario</h4>
+				<p>Por favor ingrese los datos del funcionario</p>
+				<br>
+				<form>
+					<div class="group">      
+						<input class="m" type="text" required value="" id="nombre-apellido-borrar">
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label class="m" for="nombre-apellido-borrar">Nombre y Apellido</label>
+					</div>
+					<div class="group">      
+						<input class="m" type="text" required value="" id="codigo-para-borrar">
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label class="m" for="codigo-para-borrar">Código Funcionario</label>
+					</div>
+					<a class="button expanded" id="confirmar-borrar-funcionario">Aceptar</a>
+				</form>
+				<center><a href="cliente03.html" title="Ir al listado">Ir al listado de funcionarios</a></center>
+				<button class="close-button" data-close aria-label="Cerrar modal" type="button">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<!-- /.Modal para borrar funcionario -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
+	<!-- ************* FOOTER -->
+	<section id="footer">
+		<div class="contenedor">
+			<center>
+				<b>Control de Constancias Médicas</b><br>
+				SOE Salud Empresarial Ocupacional © 2019
+				<p>Desarrolado por <a href="" title="Desarroladores">scorpion</a></p>				
+			</center>
+		</div>		
+	</section>
+	
+	<!-- ************* CORE JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/what-input.min.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script src="assets/js/coordenadas.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+		async defer></script>
+	<script src="assets/js/emergencias.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+</body>
+</html>

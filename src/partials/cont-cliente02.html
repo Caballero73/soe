@@ -1,0 +1,143 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cliente02" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <!-- Tu menú o contenido fuera del lienzo va aquí -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         @include('./partials/menu-off-canvas-cliente.html')
+        </div>
+        
+        <!-- El contenido de la página va aquí -->            
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <!-- Información funcionario -->
+          <h2>Información funcionario</h2>
+          <form class="mt-2">
+            <div class="card cont-cuerpo-formulario">            
+              <div class="row">
+                <!-- Foto funcionario -->
+                <div class="small-12 medium-3 medium-order-2 columns">
+                  <img class="float-center" id="foto-funcionario-nuevo" src="assets/img/foto-funcionario-nuevo.jpg" alt="Imágen funcionario por cargar">
+                  <div class="mt-2">
+                    <label for="cargar-foto-funcionario" class="button hollow center-block"> Cargar Foto <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></label>
+                    <input type="file" id="cargar-foto-funcionario" class="show-for-sr">
+                  </div>
+                  <br class="show-for-small-only">
+                  <br class="show-for-small-only">
+                </div><!-- /.Foto funcionario -->
+                
+                <!-- Info funcionario -->
+                <div class="small-12 medium-9 medium-order-1 columns">
+                  
+                  <!-- Cuerpo del formulario -->
+                  <div class="row">
+                    
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-nombre">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-nombre">Nombre</label>
+                    </div>
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-apellido1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-apellido1">Apellido</label>
+                    </div>
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-cedula">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-cedula">Cédula</label>
+                    </div>
+
+                    <div class="group small-12 medium-3 columns">      
+                      <input class="d" type="date" required value="" id="funcionario-fecha-nacimiento">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="d" for="funcionario-fecha-nacimiento">Fecha de Nacimiento</label>
+                    </div>
+
+                    <div class="group small-12 medium-3 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-estado-civil">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-estado-civil">Estado Civil</label>
+                    </div>
+                    
+                    <div class="small-12 medium-6 columns" id="cont-sexo">      
+                      <legend class="label-select">Sexo</legend>
+                      <input class="" name="sexo" value="Masculino" id="masculino" type="radio">
+                      <label for="masculino">Masculino</label>
+                      <input class="" name="sexo" value="Femenino" id="femenino" type="radio">
+                      <label for="femenino">Femenino</label>
+                    </div>
+                  </div><!-- /.row -->
+
+                  <div class="row mt-2">
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="email" required value="" id="funcionario-telf">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-telf">Teléfono</label>
+                    </div>
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="email" required value="" id="funcionario-email">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-email">Correo electrónico</label>
+                    </div>
+
+                    <div class="group small-12 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-direccion">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-direccion">Dirección funcionario</label>
+                    </div>
+                    <div class="group small-6 columns" style="margin-top: -2rem">
+                      <legend class="label-select">Departamento</legend>
+                      <select id="departamentos" required class="js-example-responsive" style="width: 100%">
+                        @include('./partials/opciones-departamentos.html')
+                      </select>
+                    </div>      
+                    
+                    <div class="group small-6 columns" style="margin-top: -2rem">
+                      <legend class="label-select">Barrio</legend>
+                      <select id="barrios" required class="js-example-responsive" style="width: 100%">
+                        @include('./partials/opciones-barrios.html')
+                      </select>
+                    </div>                
+                  </div><!-- /.sub-row -->
+                </div><!-- /.Info funcionario -->
+              </div><!-- /.Cuerpo del formulario -->
+            </div><!-- /.card -->
+
+            <!-- Pié del formulario -->
+            <div class="row">
+              <center class="small-12 columns">
+                <div class="row">
+                  <div class="small-6 columns">
+                    <p><strong>Código Funcionario:</strong> @include('./partials/codigo-funcionario.html')<br><small class="texto-primario">Este código es único e irrepetible, y se asigna de forma automática al <b>Guardar</b>.</small></p>
+                  </div>
+                  <div class="small-6 columns">
+                    <a href="javascript:window.history.back();" class="success button btn-expansivo" id="btn-agregar-funcionario">GUARDAR <i class="fa fa-check fa-lg" aria-hidden="true"></i></a>                 
+
+                    <a href="javascript:window.history.back();" class="alert button btn-expansivo">CANCELAR <i class="fa fa-times fa-lg" aria-hidden="true"></i></a>                 
+                  </div>              
+                </div>
+              </center>
+              <br><br>
+            </div><!-- Pié del formulario -->
+                    
+          </form><!-- /.Formulario -->
+          <!-- /.Información funcionario -->
+          <br>          
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

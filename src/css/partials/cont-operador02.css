@@ -1,0 +1,129 @@
+/******************************
+ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
+*******************************/
+#cont-operador02 {
+	padding-top: 1.7rem;
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+
+	& .cont-cias {
+		& .cont-cia-item {
+			border:  1px solid var(--colorGrisClaro);
+			border-radius: 4px;
+			font-weight: bold;
+			font-size: responsive 1.2rem 1.4rem;
+			margin-bottom: 1rem;
+			padding: 1rem;
+
+			& .nombre-cia {
+				height: 3em;
+			}
+			& .cont-botones{
+				display: grid;
+				grid-template-columns: repeat(2,1fr);
+				grid-template-rows: auto;
+				grid-gap: .5rem;
+				margin-top: .75rem;
+
+				& .button {
+					font-size: 1.8rem;
+				}
+			}
+			& .item-botones {
+
+			}
+
+		}
+
+	}
+
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .titulo-peq-color-ppal {
+		color: var(--colorPpal);
+		margin-bottom: .5rem;
+	}
+}
+
+.modal-carros {
+	background-color: var(--colorPpal);
+	border-radius: 3px;
+	border: 1px solid #cacaca;
+	color: var(--colorBlanco);
+	max-width: 32rem;
+	padding: 3rem 2rem;
+	top: 20rem;
+	
+	& .cont-label {
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: auto;
+
+		@media (--mobile) {
+			grid-template-columns: repeat(3,1fr);
+		}
+	}
+
+	& .label-lead {
+	  color:var(--colorBlanco);
+	}
+	& h1,h2,h3,h4,h5,h6 {
+	  color:white;
+	}
+
+	@media (--mobile-x) {
+		max-width: 80vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	@media (--mobile-s) {
+		max-width: 80vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	@media (--tablet-v) {
+		max-width: 70vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	& .close-button {
+		color: white;
+
+		&:hover, .close-button:focus {
+			color: #0a0a0a;
+		}
+		&:focus {
+			color: #0a0a0a;
+		}
+	}
+}
+/**/

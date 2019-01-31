@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE | Salud Ocupacional Empresarial</title>
+  <!-- ************* CORE CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+</head>
+
+<body>
+	<!-- /////// Botón para ir al principio -->
+	<a class="hide-for-small-only" href="#inicio">
+	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+	</a>
+	<!-- */Botón para ir al principio -->
+  <!-- ********** NAVBAR BOMBERO -->
+  <section id="navbar-bombero" class="bg-sec">
+    <div class="contenedor" style="position: relative;">      
+      <div class="top-bar row">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">
+              <img class="logo" src="./assets/img/logo.png" alt="Logo" vspace="3">
+              <span class="logotipo"><i>SIRE<span class="logotipo2">APP</span></i></span>
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right show-for-large">
+          <ul class="menu">
+            <li><a href="bombero01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="bombero02.html"><i class="fa fa-edit fa-lg" aria-hidden="true"></i> Actualizar Perfil</a></li>
+            <li><a href="bombero03.html"><i class="fa fa-file-text fa-lg" aria-hidden="true"></i> Ver Historial</a></li>
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+          </ul>
+        </div>
+        <div class="btn-menu hide-for-large">
+          <i class="fa fa-bars fa-lg" data-toggle="offCanvas"></i>
+        </div>
+      </div> <!-- /.top-bar -->   
+    </div> <!-- /.contenedor -->
+  </section>
+  <!-- /. NAVBAR BOMBERO -->
+  <!-- ********** CONTENIDO -->
+  <section id="cont-bombero01" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+                 <!-- ********** MENU OFF-CANVAS BOMBERO -->
+        <div id="menu-off-canvas-bombero">
+          <ul class="menu">
+          	<li><a href="bombero01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="bombero02.html"><i class="fa fa-edit fa-lg" aria-hidden="true"></i> Actualizar Perfil</a></li>
+            <li><a href="bombero03.html"><i class="fa fa-file-text fa-lg" aria-hidden="true"></i> Ver Historial</a></li>
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+          </ul>        
+        </div>
+        <!-- /. MENU OFF-CANVAS BOMBERO -->
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <p class="text-center"><!-- Fecha y hora -->
+            <script languaje="JavaScript"> 
+              var mydate=new Date() 
+              var year=mydate.getYear() 
+              if (year < 1000) 
+                    year+=1900 
+              var day=mydate.getDay() 
+              var month=mydate.getMonth() 
+              var daym=mydate.getDate() 
+              if (daym<10) 
+                    daym="0"+daym 
+              var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+              var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+              var hora=mydate.getHours()
+              var minutos=mydate.getMinutes()
+              document.write(dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+" - "+hora+":"+minutos)
+            </script>
+            <!-- /.Fecha y hora --></p>
+          <p class="text-center title1-cliente">1ª Cia. "Bomba Coquimbo"</p>
+
+          <div class="" id="cont-perfil-bombero">  <!-- ********** PERFIL BOMBERO -->
+  <section id="perfil-bombero" class="">
+	  <div class="contenedor">
+	  	<div class="row">
+	  		<div class="shrink columns">
+	  			<div class="foto-cont">
+	  				<a href="bombero01.html" target="_top"><img class="foto" src="assets/img/perfil-bombero.jpg" alt="Perfil Bombero"></a>
+	  			</div>
+	  		</div>
+	  		<div class="columns align-self-middle">
+	  			<div class="cont-datos-bombero">
+	  				<span class="nombre-bombero">Josefina Villalobos</span>
+	  				<span class="cargo-bombero">Teniente</span>	  				
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	</section>
+  <!-- /. PERFIL BOMBERO --></div>
+
+          <center>        
+            <ul class="menu vertical">
+              <li class="mb-3"><a href="bombero02.html"><i class="fa fa-edit fa-lg" aria-hidden="true"></i> Actualizar Perfil</a></li>
+              <li class="mb-3"><a href="bombero03.html"><i class="fa fa-file-text fa-lg" aria-hidden="true"></i> Ver Historial</a></li>
+              <li class="mb-3"><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+            </ul>
+          </center>
+
+          
+          <br>
+          <p class="text-center"><strong>5 emergencias</strong> antendidas durante el 2018</p>
+          <br>
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
+	<!-- ************* CORE JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/what-input.min.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script src="assets/js/coordenadas.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+		async defer></script>
+	<script src="assets/js/emergencias.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+</body>
+</html>

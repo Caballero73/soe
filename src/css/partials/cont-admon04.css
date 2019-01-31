@@ -1,0 +1,26 @@
+
+/******************************
+ESTILOS CONTENIDO ADMON 04: cont-admon04.css;
+*******************************/
+#cont-admon04 {
+	padding-top: 7.5rem;
+
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& .title1-cliente {
+		color: var(--colorGris);
+		font-size: responsive 1.8rem 2.4rem;
+		font-family: var(--fontTitulo);
+	}
+}
+/**/

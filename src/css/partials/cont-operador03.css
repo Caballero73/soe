@@ -1,0 +1,54 @@
+/******************************
+ESTILOS CONTENIDO OPERADOR 03: cont-operador03.css;
+*******************************/
+#cont-operador03 {
+	padding-top: 1.7rem;
+
+	& input[type="checkbox"] + label:before {
+	content: "\f096"; /* check-empty */
+	color: var(--colorGris);
+	font-size: x-large;
+	margin-top:  1rem;
+	}
+	& input[type="checkbox"]:checked + label:before {
+	content: "\f046"; /* check */
+	color: var(--colorPpal);
+	font-size: x-large;
+	margin-top:  1rem;
+	}
+
+	& th {
+		background-color: var(--colorGrisClaro);
+		font-size: responsive 1.2rem 1.8rem;		
+	}
+	& tr {
+		background-color: color(var(--colorPpal) lightness(88%));
+		font-size: responsive 1.2rem 1.8rem;		
+	}
+	& tr:nth-child(2n) {
+		background-color: var(--colorBlanco) !important;
+	}
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+}
+/**/

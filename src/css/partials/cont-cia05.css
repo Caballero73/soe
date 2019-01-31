@@ -1,0 +1,51 @@
+/******************************
+ESTILOS CONTENIDO COMPAÑIA 05: cont-cia05.css;
+*******************************/
+#cont-cia05 {
+	padding-top: 7rem;
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+	& .accordion-title::before {display: none;}
+
+	& .accordion-title {
+		background-color: color(var(--colorPpal) lightness(90%));
+		transition: .35s;
+
+		&:hover {
+			background-color: var(--colorPpal);
+			transition: .35s;
+		}
+	}
+	& .accordion-title:hover .caracteristicas-acordeon {
+		color: var(--colorBlanco);
+	}
+	& .caracteristicas-acordeon {
+		color: var(--colorPrimario);
+	}
+	& .cont-input label {
+		color: var(--colorFuente);
+		font-size: 1.6rem;
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .titulo-peq-color-ppal {
+		color: var(--colorPpal);
+		margin-bottom: .5rem;
+	}
+}
+/**/

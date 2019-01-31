@@ -1,0 +1,76 @@
+/******************************
+ESTILOS CONTENIDO BOMBEROS 03: cont-bombero03.css;
+*******************************/
+#cont-bombero03 {
+	height: 100vh;
+	padding-top: 7rem;
+		
+	@media (--mobile-s){
+		padding-top: 5rem;
+		height: auto;
+	}
+	@media (--mobile-x){
+		padding-top: 6rem;
+	}
+	& #cont-perfil-bombero {
+		max-width: 40rem;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 4rem;		
+		margin-top: 4rem;		
+
+		@media (--mobile) {
+			margin-bottom: 1.5rem;		
+		}
+	}
+
+	& .has-tip {
+		border-bottom: none;
+	}
+	& .logo {
+		height: 7rem;
+		width: auto;
+		margin-top: -2.5rem;
+
+		@media (--mobile){
+			height: 5rem;
+			width: auto;
+			margin-top: -1.2rem;
+
+		}
+	}
+	& .logotipo {
+		font-size: responsive 3rem 5rem;
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& .title1-cliente {
+		color: var(--colorGris);
+		font-size: responsive 1.8rem 2.4rem;
+		font-family: var(--fontTitulo);
+	}
+	& textarea::placeholder {
+		color: #000;
+	}
+	& th {
+		background-color: var(--colorGrisClaro);
+		font-size: responsive 1.2rem 1.7rem;		
+	}
+	& tr {
+		background-color: color(var(--colorPpal) lightness(88%));
+		font-size: responsive 1.2rem 1.6rem;		
+	}
+	& tr:nth-child(2n) {
+		background-color: var(--colorBlanco) !important;
+	}	
+}
+/**/

@@ -1,0 +1,33 @@
+/******************************
+ESTILOS MENU OFF-CANVAS COMPAÑIA: menu-off-canvas-cia.css;
+*******************************/
+#menu-off-canvas-cia {
+	padding-top: 7rem;
+
+	& a {
+		color: var(--colorBlanco);
+		font-size: responsive 1.5rem 1.8rem;
+		margin: 0.5rem 1rem;
+		outline: none;
+		transition: all .35s ease;
+
+		&:hover {
+		color: var(--colorSec);
+		transition: all .35s ease;
+		}
+	}
+	& .cont-icono {
+		transform: translateY(.6rem);
+	}	
+	& .icono {
+		fill: var(--colorBlanco);
+		fill-opacity: 1;
+		transition: all .35s ease;
+	}
+	& .menu li:hover .icono {
+		fill: var(--colorSec);
+		fill-opacity: 1;
+		transition: all .35s ease;
+	} 		
+}
+/**/

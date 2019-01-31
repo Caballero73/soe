@@ -1,0 +1,483 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE | Salud Ocupacional Empresarial</title>
+  <!-- ************* CORE CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+</head>
+
+<body>
+	<!-- /////// Botón para ir al principio -->
+	<a class="hide-for-small-only" href="#inicio">
+	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+	</a>
+	<!-- */Botón para ir al principio -->
+  <!-- ********** NAVBAR ADMON -->
+  <section id="navbar-cliente" class="bg-sec">
+    <div class="contenedor" style="position: relative;">      
+      <div class="top-bar row">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">
+              <img class="logo" src="./assets/img/logo.svg" alt="Logo" vspace="3">
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right show-for-large">
+          <ul class="menu">
+            <li><a href="cliente01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="cliente03.html"><i class="fa fa-users fa-lg" aria-hidden="true"></i> Funcionarios</a></li>            
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+          </ul>
+        </div>
+        <div class="btn-menu hide-for-large">
+          <i class="fa fa-bars fa-lg" data-toggle="offCanvas"></i>
+        </div>
+      </div> <!-- /.top-bar -->   
+    </div> <!-- /.contenedor -->
+  </section>
+  <!-- /. NAVBAR ADMON -->
+  <!-- ********** CONTENIDO -->
+  <section id="cont-admon04" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+                 <!-- ********** MENU OFF-CANVAS CLIENTE -->
+        <div id="menu-off-canvas-cliente">
+          <ul class="menu vertical">
+          	<li><a href="cliente01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+          	<li><a href="cliente03.html"><i class="fa fa-users fa-lg" aria-hidden="true"></i> Funcionarios</a></li>          	
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> &nbsp;Salir</a></li>
+          </ul>        
+        </div>
+        <!-- /. MENU OFF-CANVAS CLIENTE -->
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <div class="row">
+            <div class="small-12 medium-7 columns">
+              <p class="text-center"><!-- Fecha y hora -->
+            <script languaje="JavaScript"> 
+              var mydate=new Date() 
+              var year=mydate.getYear() 
+              if (year < 1000) 
+                    year+=1900 
+              var day=mydate.getDay() 
+              var month=mydate.getMonth() 
+              var daym=mydate.getDate() 
+              if (daym<10) 
+                    daym="0"+daym 
+              var dayarray=new Array("Domingo,","Lunes,","Martes,","Miércoles,","Jueves,","Viernes,","Sábado,")
+              var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+              var hora=mydate.getHours()
+              var minutos=mydate.getMinutes()
+              document.write(dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year+" - "+hora+":"+minutos)
+            </script>
+            <!-- /.Fecha y hora --></p>
+              <p class="text-center title1-cliente">1ª Cia. "Bomba Coquimbo"</p>
+            </div>
+            <div class="small-12 medium-5 columns">
+              <div class="" id="cont-perfil-admon">  <!-- ********** PERFIL ADMON -->
+  <section id="perfil-admon" class="">
+	  <div class="contenedor">
+	  	<div class="row">
+	  		<div class="shrink columns">
+	  			<div class="foto-cont">
+	  				<a href="bombero01.html" target="_top"><img class="foto" src="assets/img/perfil-admon.jpg" alt="Perfil Admon"></a>
+	  			</div>
+	  		</div>
+	  		<div class="columns align-self-middle">
+	  			<div class="cont-datos-admon">
+	  				<span class="nombre-admon">Ángel González</span>
+	  				<span class="cargo-admon">Capitán</span>	  				
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	</section>
+  <!-- /. PERFIL ADMON --></div>
+            </div>
+          </div>
+          <br class="show-for-small">         
+
+          <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">B1 Carro Bomba</a></li>
+            <li class="tabs-title"><a href="#panel2" data-tabs-target="panel2">R1 Carro de Rescate</a></li>
+            <li class="tabs-title"><a href="#panel3" data-tabs-target="panel3">S1 Ambulancia</a></li>
+            <li class="tabs-title"><a href="#panel4" data-tabs-target="panel4">Agregar Carro <i class="fa fa-plus fa-lg" aria-hidden="true"></i></a></li>
+          </ul>
+
+          <div class="tabs-content" data-tabs-content="example-tabs">
+               
+            <div class="tabs-panel is-active" id="panel1">
+              <form class="row mt-2">
+
+                <div class="small-12 medium-7 columns">
+                  <div class="row">
+                    <div class="group small-12 medium-8 columns">      
+                      <input class="m" type="text" required value="B1 Carro Bomba" id="carro-nomeclatura1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-nomeclatura1">Nomeclatura vehículo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="XH 66 40" id="carro-patente1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-patente1">Patente</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="Iveco" id="carro-marca1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-marca1">Marca</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="Magirus" id="carro-modelo1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-modelo1">Modelo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="number" required value="2016" id="carro-ano1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-ano1">Año</label>
+                    </div>
+
+                    <div class="group small-12 columns">      
+                      <p>Región del Coquimbo <br>
+                      Cuerpo La Serena <br>
+                      1º Compañía "Bomba Coquimbo"</p>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="25/05/2017" id="carro-fecha-ingreso1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-fecha-ingreso1">Fecha de Ingreso</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="B-0038" id="carro-reg-general1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-general1">Nº Reg. General</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="B1-0010" id="carro-reg-cia1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-cia1">Nº Reg. Compañía</label>
+                    </div>                   
+                    
+                  </div><!-- /.row -->
+                  
+                </div><!-- /.columns -->
+                
+                <div class="small-12 medium-5 columns">
+                  <img id="foto-carro1" src="assets/img/foto-carro-bomba1.jpg" alt="Foto carro bomberos">
+                  <div class="mt-2">
+                    <label for="cargar-foto-carro1" class="button hollow float-right"> Cargar Foto <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></label>
+                    <input type="file" id="cargar-foto-carro1" class="show-for-sr">
+                  </div>
+                </div><!-- /.columns -->
+              </form>
+              <!-- Botonera -->
+              <center class="small-12 columns">
+                  <button class="success hollow button" id="btn-editar-carro1">Guardar cambios <i class="fa fa-check fa-lg" aria-hidden="true"></i></button>
+                  <button class="hollow button" id="btn-descargar-carro1">Descargar <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i></button>
+                  <button class="hollow button" id="btn-imprimir-carro1">Imprimir <i class="fa fa-print fa-lg" aria-hidden="true"></i></button>
+                  <button class="alert hollow button btn-eliminar-carro">Eliminar carro <i class="fa fa-times fa-lg" aria-hidden="true"></i></button>               
+              </center>                               
+            </div><!-- /.panel1 -->
+               
+            <div class="tabs-panel" id="panel2">
+              <form class="row mt-2">
+
+                <div class="small-12 medium-7 columns">
+                  <div class="row">
+                    <div class="group small-12 medium-8 columns">      
+                      <input class="m" type="text" required value="R1 Carro Rescate" id="carro-nomeclatura2">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-nomeclatura2">Nomeclatura vehículo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="KL 02 28" id="carro-patente2">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-patente2">Patente</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="Peugeot" id="carro-marca2">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-marca2">Marca</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="Boxer L3 Chasis/doble cab" id="carro-modelo2">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-modelo2">Modelo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="number" required value="2017" id="carro-ano2">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-ano2">Año</label>
+                    </div>
+
+                    <div class="group small-12 columns">      
+                      <p>Región del Coquimbo <br>
+                      Cuerpo La Serena <br>
+                      1º Compañía "Bomba Coquimbo"</p>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="02/02/2018" id="carro-fecha-ingreso2">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-fecha-ingreso2">Fecha de Ingreso</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="R-0025" id="carro-reg-general1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-general1">Nº Reg. General</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="R1-0008" id="carro-reg-cia1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-cia1">Nº Reg. Compañía</label>
+                    </div>                   
+                    
+                  </div><!-- /.row -->
+                  
+                </div><!-- /.columns -->
+                
+                <div class="small-12 medium-5 columns">
+                  <img id="foto-carro2" src="assets/img/foto-carro-rescate1.jpg" alt="Foto carro bomberos">
+                  <div class="mt-2">
+                    <label for="cargar-foto-carro2" class="button hollow float-right"> Cargar Foto <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></label>
+                    <input type="file" id="cargar-foto-carro2" class="show-for-sr">
+                  </div>
+                </div><!-- /.columns -->                
+              </form>
+              <!-- Botonera -->
+              <center class="small-12 columns">
+                  <button class="success hollow button" id="btn-editar-carro2">Guardar cambios <i class="fa fa-check fa-lg" aria-hidden="true"></i></button>
+                  <button class="hollow button" id="btn-descargar-carro2">Descargar <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i></button>
+                  <button class="hollow button" id="btn-imprimir-carro2">Imprimir <i class="fa fa-print fa-lg" aria-hidden="true"></i></button>
+                  <button class="alert hollow button btn-eliminar-carro">Eliminar carro <i class="fa fa-times fa-lg" aria-hidden="true"></i></button>               
+              </center>
+            </div><!-- /.panel2 -->
+
+            <div class="tabs-panel" id="panel3">
+              <form class="row mt-2">
+
+                <div class="small-12 medium-7 columns">
+                  <div class="row">
+                    <div class="group small-12 medium-8 columns">      
+                      <input class="m" type="text" required value="S1 Ambulancia" id="carro-nomeclatura3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-nomeclatura3">Nomeclatura vehículo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="DF FP 25" id="carro-patente3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-patente3">Patente</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="Dodge" id="carro-marca3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-marca3">Marca</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="AEA 4x4" id="carro-modelo3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-modelo3">Modelo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="number" required value="2016" id="carro-ano3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-ano3">Año</label>
+                    </div>
+
+                    <div class="group small-12 columns">      
+                      <p>Región del Coquimbo <br>
+                      Cuerpo La Serena <br>
+                      1º Compañía "Bomba Coquimbo"</p>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="13/06/2016" id="carro-fecha-ingreso3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-fecha-ingreso3">Fecha de Ingreso</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="S-0036" id="carro-reg-general3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-general3">Nº Reg. General</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="S1-0014" id="carro-reg-cia3">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-cia3">Nº Reg. Compañía</label>
+                    </div>                   
+                    
+                  </div><!-- /.row -->
+                  
+                </div><!-- /.columns -->
+                
+                <div class="small-12 medium-5 columns">
+                  <img id="foto-carro3" src="assets/img/foto-carro-ambulancia1.jpg" alt="Foto carro bomberos">
+                  <div class="mt-2">
+                    <label for="cargar-foto-carro3" class="button hollow float-right"> Cargar Foto <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></label>
+                    <input type="file" id="cargar-foto-carro3" class="show-for-sr">
+                  </div>
+                </div><!-- /.columns -->                
+              </form>
+              <!-- Botonera -->
+              <center class="small-12 columns">
+                  <button class="success hollow button" id="btn-editar-carro3">Guardar cambios <i class="fa fa-check fa-lg" aria-hidden="true"></i></button>
+                  <button class="hollow button" id="btn-descargar-carro3">Descargar <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i></button>
+                  <button class="hollow button" id="btn-imprimir-carro3">Imprimir <i class="fa fa-print fa-lg" aria-hidden="true"></i></button>
+                  <button class="alert hollow button btn-eliminar-carro">Eliminar carro <i class="fa fa-times fa-lg" aria-hidden="true"></i></button>               
+              </center>
+            </div><!-- /.panel3 -->
+
+            <!-- Agregar carro -->
+            <div class="tabs-panel" id="panel4">
+              <form class="row mt-2">
+
+                <div class="small-12 medium-7 columns">
+                  <div class="row">
+                    <div class="group small-12 medium-8 columns">      
+                      <input class="m" type="text" required value="" id="carro-nomeclatura">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-nomeclatura">Nomeclatura vehículo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="" id="carro-patente">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-patente">Patente</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="" id="carro-marca">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-marca">Marca</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="text" required value="" id="carro-modelo">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-modelo">Modelo</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="number" required value="" id="carro-ano">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-ano">Año</label>
+                    </div>
+
+                    <div class="group small-12 columns">      
+                      <p>Región del Coquimbo <br>
+                      Cuerpo La Serena <br>
+                      1º Compañía "Bomba Coquimbo"</p>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="d" type="date" required value="" id="carro-fecha-ingreso">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="d" for="carro-fecha-ingreso">Fecha de Ingreso</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="number" required value="" id="carro-reg-general">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-general">Nº Reg. General</label>
+                    </div>
+
+                    <div class="group small-12 medium-4 columns">      
+                      <input class="m" type="number" required value="" id="carro-reg-cia">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="carro-reg-cia">Nº Reg. Compañía</label>
+                    </div>                   
+                    
+                  </div><!-- /.row -->
+                  
+                </div><!-- /.columns -->
+                
+                <div class="small-12 medium-5 columns">
+                  <img id="foto-carro-nuevo" src="assets/img/foto-carro-nuevo.jpg" alt="Imágen carro por cargar">
+                  <div class="mt-2">
+                    <label for="cargar-foto-carro" class="button hollow float-right"> Cargar Foto <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></label>
+                    <input type="file" id="cargar-foto-carro" class="show-for-sr">
+                  </div>
+                </div><!-- /.columns -->
+              </form>
+              <center class="small-12 columns">
+                <button class="success button btn-expansivo" id="btn-agregar-carro">Añadir Carro <i class="fa fa-check fa-lg" aria-hidden="true"></i></button>
+              </center>                               
+            </div><!-- /.panel4 -->
+          </div><!-- /.tabs-content -->
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
+
+	<!-- ************* CORE JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/what-input.min.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script src="assets/js/coordenadas.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+		async defer></script>
+	<script src="assets/js/emergencias.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/******************************
+ESTILOS CONTENIDO CLIENTE 03: cont-cliente03.css;
+*******************************/
+#cont-cliente03 {
+	padding-top: 7rem;
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+	.funcionarios-registrados {
+		color: var(--colorFuente);
+		font-size: responsive 1.6rem 1.8rem;
+	}
+	& #cont-funcionarios {
+		height: 47.5vh;
+		overflow-x: hidden;
+		overflow-y: scroll;		
+		margin-bottom: 2rem;
+
+		@media (--mobile-s) {
+			height: 30vh;
+		}
+		@media (--mobile-x) {
+			height: 45vh;
+		}
+	}
+	& .has-tip {
+		border-bottom: none;
+	}
+	& .item-funcionario {
+
+		&:hover i {
+			opacity: 1;
+			transition: .35s;
+		}
+
+		& i {
+			margin-left: 1rem;
+			opacity: 0;
+			transition: .35s;
+		}
+		& .fa {
+			color: var(--colorGris);
+			cursor: pointer;
+
+			&:hover {
+				color: var(--colorGrisOscuro);
+			}
+		}
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+	& .title1-cliente {
+		color: var(--colorGris);
+		font-size: responsive 1.8rem 2.4rem;
+		font-family: var(--fontTitulo);
+	}
+	& tr {
+		background-color: color(var(--colorPpal) lightness(88%));
+		font-size: responsive 1.2rem 1.6rem;		
+	}
+	& tr:nth-child(2n) {
+		background-color: var(--colorBlanco) !important;
+	}	
+}
+/**/

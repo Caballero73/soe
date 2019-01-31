@@ -1,0 +1,21 @@
+/******************************
+ESTILOS MENU OFF-CANVAS BOMBERO: menu-off-canvas-bombero.css;
+*******************************/
+#menu-off-canvas-bombero {
+	padding-top: 7rem;
+
+	& a {
+		color: var(--colorBlanco);
+		font-size: responsive 1.8rem 1.9rem;
+		margin: 1rem;
+		outline: none;
+		transition: all .35s ease;
+
+		&:hover {
+		color: var(--colorSec);
+		transition: all .35s ease;
+			
+		}
+	}	
+}
+/**/

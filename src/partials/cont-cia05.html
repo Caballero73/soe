@@ -1,0 +1,185 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cia05" class="">    
+    <div class="contenedor">
+      @include('./partials/boton-emergencias1.html')
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cia.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+
+          <div class="row">
+            <div class="shrink align-self-middle columns">
+              <img src="assets/img/icono-caracteristicas.svg" alt="Características">
+            </div>
+            <div class="columns">
+              <h4>Características</h4>
+              <p class="emergencia2">Aqui iba el parcial de emergencia1</p>              
+            </div>
+          </div>
+          <br>
+          <!-- ********************************
+               Características Generales -->
+          <form id="caracteristicas" class="mt-2">
+            <div class="row">
+              <!-- ///// Características lugar-->
+              <div class="small-12 medium-4 columns">              
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item" data-accordion-item>
+                    <!-- Título del panel del Acordeón -->
+                    <a href="#" class="accordion-title"><h6 class="caracteristicas-acordeon">Características del Lugar</h6></a>
+                    <!-- Contenido del panel del acordeón. -->
+                    <div class="accordion-content" data-tab-content>                    
+                      
+                      <fieldset class="cont-input">
+                        <input class="" type="radio"  name="caracteristicas" value="Casa" id="casa"><label for="casa">Casa</label>
+                        <input class="" type="radio"  name="caracteristicas" value="Negocio" id="negocio"><label for="negocio">Negocio</label>
+                        <input class="" type="radio"  name="caracteristicas" value="Industria" id="industria"><label for="industria">Industria</label>
+                        <input class="" type="radio"  name="caracteristicas" value="Vehículo" id="vehiculo"><label for="vehiculo">Vehículo</label>
+                        <input class="" type="radio"  name="caracteristicas" value="Recinto Privado" id="recprivado"><label for="recprivado">Recinto Privado</label>
+                        <input class="" type="radio"  name="caracteristicas" value="Sitio Eriazo" id="eriazo"><label for="eriazo">Sitio Eriazo</label>
+                        <input class="" type="radio"  name="caracteristicas" value="Vía Pública" id="viapublica"><label for="viapublica">Vía Pública</label>
+                        <input class="" type="radio"  name="caracteristicas" value="Establecimiento de educación" id="educacion"><label for="educacion">Establecimiento de educación</label>
+                        
+                        <div class="group mt-2">      
+                          <input class="m" type="text" required value="" id="otro-lugar">
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label class="m" for="otro-lugar">Otro</label>
+                        </div>
+
+                      </fieldset>                      
+     
+                    </div><!-- /.Contenido del panel del acordeón. -->                  
+                </ul>              
+              </div>
+
+              <!-- ///// Tipo de construcción -->
+              <div class="small-12 medium-4 columns">              
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item" data-accordion-item>
+                    <!-- Título del panel del Acordeón -->
+                    <a href="#" class="accordion-title"><h6 class="caracteristicas-acordeon">Tipo de construcción</h6></a>
+                    <!-- Contenido del panel del acordeón. -->
+                    <div class="accordion-content" data-tab-content>                    
+                      <fieldset class="cont-input">
+                        <input class="" type="radio"  name="tipo_const" value="Hormigón" id="hormigon"><label for="hormigon">Hormigón</label>
+                        <input class="" type="radio"  name="tipo_const" value="Ladrillo" id="ladrillo"><label for="ladrillo">Ladrillo</label>
+                        <input class="" type="radio"  name="tipo_const" value="Madera" id="madera"><label for="madera">Madera</label>
+                        <input class="" type="radio"  name="tipo_const" value="Prefabricada" id="prefabricada"><label for="prefabricada">Prefabricada</label>
+                        <input class="" type="radio"  name="tipo_const" value="Adobe" id="adobe"><label for="adobe">Adobe</label>
+                        <input class="" type="radio"  name="tipo_const" value="Mixta" id="mixta"><label for="mixta">Mixta</label>
+                        
+                        <div class="group mt-2">      
+                          <input class="m" type="text" required value="" id="otro-tipo-construccion">
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label class="m" for="otro-tipo-construccion">Otro</label>
+                        </div>
+                      </fieldset>                      
+                    </div><!-- /.Contenido del panel del acordeón. -->                  
+                </ul>              
+              </div>
+
+              <!-- ///// Lugar de inicio del fuego -->
+              <div class="small-12 medium-4 columns" data-equalizer-watch>              
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item" data-accordion-item>
+                    <!-- Título del panel del Acordeón -->
+                    <a href="#" class="accordion-title"><h6 class="caracteristicas-acordeon">Lugar de inicio del fuego</h6></a>
+                    <!-- Contenido del panel del acordeón. -->
+                    <div class="accordion-content" data-tab-content>                    
+                      <fieldset class="cont-input">
+                        <input class="" type="radio"  name="inicio_fuego" value="Dormitorio" id="dormitorio"><label for="dormitorio">Dormitorio</label>
+                        <input class="" type="radio"  name="inicio_fuego" value="Living" id="living"><label for="living">Living</label>
+                        <input class="" type="radio"  name="inicio_fuego" value="Comedor" id="comedor"><label for="comedor">Comedor</label>
+                        <input class="" type="radio"  name="inicio_fuego" value="Cocina" id="cocina"><label for="cocina">Cocina</label>
+                        <input class="" type="radio"  name="inicio_fuego" value="Baño" id="bano"><label for="bano">Baño</label>
+                        <input class="" type="radio"  name="inicio_fuego" value="Bodega" id="bodega"><label for="bodega">Bodega</label>
+                        
+                        <div class="group mt-2">      
+                          <input class="m" type="text" required value="" id="otro-lugar-inicio">
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label class="m" for="otro-lugar-inicio">Otro</label>
+                        </div>
+                      </fieldset>                      
+                    </div><!-- /.Contenido del panel del acordeón. -->                  
+                </ul>              
+              </div>
+
+              <!-- ///// Materiales Peligrosos -->
+              <div class="small-12 medium-6 columns">              
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item" data-accordion-item>
+                    <!-- Título del panel del Acordeón -->
+                    <a href="#" class="accordion-title"><h6 class="caracteristicas-acordeon">Materiales Peligrosos</h6></a>
+                    <!-- Contenido del panel del acordeón. -->
+                    <div class="accordion-content" data-tab-content>                    
+                      <fieldset class="cont-input">
+                        <input class="" type="radio"  name="mat_peligrosos" value="Explosivos" id="explosivos"><label for="explosivos">Explosivos</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="Líquidos" id="liquidos"><label for="liquidos">Líquidos</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="Veneno" id="veneno"><label for="veneno">Veneno</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="Corrosivo" id="corrosivo"><label for="corrosivo">Corrosivo</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="Gases" id="gases"><label for="gases">Gases</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="Solidos" id="solidos"><label for="solidos">Solidos</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="Radioactivos" id="radioactivos"><label for="radioactivos">Radioactivos</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="Oxidantes" id="oxidantes"><label for="oxidantes">Oxidantes</label>
+                        <input class="" type="radio"  name="mat_peligrosos" value="No clasificados" id="no_clasificados"><label for="no_clasificados">No clasificados</label>
+                        
+                        <input class="" type="radio"  name="mat_peligrosos" value="Varios" id="varios"><label for="varios">Varios</label>
+                      </fieldset>
+                      <label class="label-select mt-2">
+                        Nombre de los productos
+                        <textarea rows="3" placeholder="Escriba aquí el nombre de los productos"></textarea>
+                      </label>
+                      <div class="group mt-3">      
+                        <input class="m" type="text" required value="" id="cant-mat-peligroso">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="cant-mat-peligroso">Cantidad</label>
+                      </div>
+                      <label class="label-select mt-2">
+                        Observaciones
+                        <textarea rows="3" placeholder="Escriba aquí las observaciones si las hay"></textarea>
+                      </label>                     
+                    </div><!-- /.Contenido del panel del acordeón. -->                  
+                </ul>              
+              </div>
+
+              <!-- ///// Resumen del acto -->
+              <div class="small-12 medium-6 columns">              
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item" data-accordion-item>
+                    <!-- Título del panel del Acordeón -->
+                    <a href="#" class="accordion-title"><h6 class="caracteristicas-acordeon">Resumen del acto</h6></a>
+                    <!-- Contenido del panel del acordeón. -->
+                    <div class="accordion-content" data-tab-content>                    
+                      <label class="label-select mt-2">
+                        <textarea rows="7" placeholder="Escriba aquí el resumen del servicio efectuado"></textarea>
+                      </label>
+                
+                    </div><!-- /.Contenido del panel del acordeón. -->                  
+                </ul>              
+              </div>
+
+            </div><!-- /.row -->
+            <!-- Botón para guardar/ -->
+            <center class="mt-2">
+              <input id="guardar-caracteristicas" class="button success btn-expansivo" type="submit" value="Guardar Características">
+            </center>
+          </form>
+
+          <br>
+          <hr>
+          <center class='mt-2'>
+            <a class="button hollow primary" href="cia04.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow primary" href="cia06.html">Siguiente <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </center>
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

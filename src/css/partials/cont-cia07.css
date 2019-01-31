@@ -1,0 +1,52 @@
+/******************************
+ESTILOS CONTENIDO COMPAÑIA 06: cont-cia06.css;
+*******************************/
+#cont-cia07 {
+	padding-top: 7rem;
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+	.bomberos-asignados {
+		color: var(--colorFuente);
+		font-size: responsive 1.6rem 1.8rem;
+	}
+	
+	& .cont-input label {
+		color: var(--colorFuente);
+		font-size: 1.6rem;
+	}
+	& #cont-bomberos {
+		height: 55vh;
+		overflow-x: hidden;
+		overflow-y: scroll;
+
+		@media (--mobile-s) {
+			height: 30vh;
+		}
+		@media (--mobile-x) {
+			height: 45vh;
+		}
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .titulo-peq-color-ppal {
+		color: var(--colorPpal);
+		margin-bottom: .5rem;
+	}
+}
+
+/**/

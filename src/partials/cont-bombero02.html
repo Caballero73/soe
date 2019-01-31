@@ -1,0 +1,57 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-bombero02" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-bombero.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <p class="text-center">@include('./partials/fecha-hora.html')</p>
+          <p class="text-center title1-cliente">1ª Cia. "Bomba Coquimbo"</p>
+
+          <div class="" id="cont-perfil-bombero">@include('./partials/perfil-bombero.html')</div>
+          <br class="show-for-small">
+
+          <form class="row">
+            <div class="group small-12 medium-6 columns">      
+              <input class="m" type="text" required value="(51)2546428" id="fono_fijo">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="fono_fijo">Fono Fijo</label>
+            </div>            
+            <div class="group small-12 medium-6 columns">      
+              <input class="m" type="text" required value="(99)9685112" id="fono_movil">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="fono_movil">Fono Móvil</label>
+            </div>
+            <div class="group small-12 medium-6 columns">      
+              <input class="m" type="text" required value="(51)2546656" id="fono_contacto">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="fono_contacto">Fono contacto familiar</label>
+            </div>            
+            <div class="group small-12 medium-6 columns">      
+              <input class="m" type="email" required value="josefina_villalobos73@gmail.com" id="email">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="email">Correo electrónico</label>
+            </div>
+            <div class="group small-12 columns">      
+              <label class="label-select">
+                Dirección personal
+                <textarea rows="4" placeholder="Franklin Delano Rooselvelt Nº 781, La Serena."></textarea>
+              </label>
+            </div>
+            <br>
+            <a href="bombero01.html" id="guardar-perfil" class="button success btn-expansivo center-block">Guardar Cambios</a>          
+          </form>
+
+
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

@@ -1,0 +1,132 @@
+/******************************
+ESTILOS LOGIN: login.css;
+*******************************/
+#login {
+	background-color: var(--colorBg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 88vh;
+
+	@media (--tablet-h) {
+		height: 85vh;
+
+	}
+
+	& .contenedor {
+		@media (--tablet-h) {
+			max-width: 50vw !important;			
+		}
+	}
+	
+	& #contenedor-general {
+		width: 100%;
+
+		@media (--pc) {
+			max-width: 30vw;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	& #cont-form {
+		background-color: var(--colorBg);
+		width: 100%;
+	}
+
+	& .is-invalid-input:not(:focus) {
+		border-color: #c60f13;
+		background-color: #FF7878;
+	}
+
+	& .logo {
+		max-width: 20rem;
+
+		@media (--mobile-s) {
+			max-width: 13rem;
+		}
+		@media (--tablet-h) {
+			max-width: 20rem;
+		}
+	}
+
+	& .logotipo {
+	  font-size: responsive 4.5rem 5.5rem;
+
+	  	@media (--tablet-h) {
+			font-size: responsive 3.5rem 4rem;
+		}
+	}	
+	
+	& .password + .unmask {
+		border: none;
+		cursor: pointer;
+		height: 25px;
+		outline: none;
+		position: absolute;
+		right: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 44px;
+	}
+
+	& .password + .unmask:before {
+		color: var(--colorFuente);
+		content: '\f06e';
+		height: 25px;
+		font-family:'FontAwesome';
+		left: 4px;
+		position: absolute;
+		top: 1px;
+		width: 44px;
+		z-index: 1;
+	}
+
+	& .password[type="text"] + .unmask:after {
+		background: var(--colorBg);
+		color: var(--colorFuente);
+		content: '\f070';
+		font-family:'FontAwesome';
+		height: 25px;
+		left: 4px;
+		position: absolute;
+		top: 1px;
+		width: 44px;
+		z-index: 2;
+	}
+}
+
+#modal-recuperar {
+	padding: 2rem;
+	border: 1px solid #cacaca;
+	border-radius: 3px;
+	background-color: rgba(255,255,255,.85);
+	top: 20rem;
+
+	@media (--mobile-x) {
+		max-width: 80vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	@media (--mobile-s) {
+		max-width: 80vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	@media (--tablet-v) {
+		max-width: 70vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+}
+/**/

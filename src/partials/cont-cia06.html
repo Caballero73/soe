@@ -1,0 +1,172 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cia06" class="">    
+    <div class="contenedor">
+      @include('./partials/boton-emergencias1.html')
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cia.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+
+          <h4 class="text-center">1ª Cia. "Bomba Coquimbo"</h4>
+          <p class="text-center emergencia2">Aqui iba el parcial de emergencia1</p>              
+          <br>
+          <!-- ********************************
+          Carros Asignados -->
+          <form id="oficial-a-cargo" class="">
+            <div class="row">
+              <div class="small-12 columns">
+                <h5><img src="assets/img/icono-oficial-azul.svg" alt="Oficial"> Oficial a cargo de la emergencia</h5>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <div class="group mt-2">      
+                  <input class="m" type="text" required value="" id="oficial-a-cargo-nombre">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="m" for="oficial-a-cargo-nombre">Nombre y Apellido</label>
+                </div>                
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <div class="group mt-2">      
+                  <input class="m" type="text" required value="" id="oficial-a-cargo-cargo">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="m" for="oficial-a-cargo-cargo">Cargo</label>
+                </div>                
+              </div>              
+            </div>            
+          
+            <!-- ////// Carros asignados -->
+            <div class="row collapse">
+              <div class="small-12 columns">
+                <h5><img src="assets/img/icono-carro-azul.svg" alt="Oficial"> Carros asignados</h5>
+              </div>
+              <div class="small-2 medium-3 mt-2 columns">
+                <ul class="vertical tabs" data-tabs id="carros-asignados">
+                  <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">B1 <span class="show-for-medium">Carro Bomba</span></a></li>
+                  <li class="tabs-title"><a href="#panel2v">Q1 <span class="show-for-medium">Carro porta escala</span></a></li>
+                  <li class="tabs-title"><a href="#panel3v">S1 <span class="show-for-medium">Ambulancia de bomberos</span></a></li>
+                </ul>
+              </div>
+              <div class="small-10 medium-9 columns">
+                <div class="tabs-content" data-tabs-content="carros-asignados">
+
+                  <div class="tabs-panel is-active" id="panel1v">
+                    <div class="row">                    
+                      <h6 class="small-12 columns">Oficial a cargo B1</h6>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="oficial-a-cargo-carro1-nombre">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="oficial-a-cargo-carro1-nombre">Nombre y Apellido</label>
+                      </div>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="oficial-a-cargo-carro1-cargo">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="oficial-a-cargo-carro1-cargo">Cargo</label>
+                      </div>
+                      <br>
+                      <h6 class="small-12 columns">Maquinista B1</h6>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="maquinista-carro1-nombre">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="maquinista-carro1-nombre">Nombre y Apellido</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-6 medium-3 columns"><b>6-3:</b> Horas #1</div>
+                      <div class="small-6 medium-3 columns"><b>6-8:</b> Horas #2</div>
+                      <div class="small-6 medium-3 columns"><b>6-9:</b> Horas #3</div>
+                      <div class="small-6 medium-3 columns"><b>6-10:</b> Horas #4</div>                
+                    </div>
+                  </div>
+
+                  <div class="tabs-panel" id="panel2v">
+                    <div class="row">                    
+                      <h6 class="small-12 columns">Oficial a cargo Q1</h6>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="oficial-a-cargo-carro2-nombre">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="oficial-a-cargo-carro2-nombre">Nombre y Apellido</label>
+                      </div>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="oficial-a-cargo-carro2-cargo">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="oficial-a-cargo-carro2-cargo">Cargo</label>
+                      </div>
+                      <br>
+                      <h6 class="small-12 columns">Maquinista Q1</h6>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="maquinista-carro2-nombre">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="maquinista-carro2-nombre">Nombre y Apellido</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-6 medium-3 columns"><b>6-3:</b> Horas #1</div>
+                      <div class="small-6 medium-3 columns"><b>6-8:</b> Horas #2</div>
+                      <div class="small-6 medium-3 columns"><b>6-9:</b> Horas #3</div>
+                      <div class="small-6 medium-3 columns"><b>6-10:</b> Horas #4</div>                
+                    </div>
+                  </div>
+                  
+                  <div class="tabs-panel" id="panel3v">
+                    <div class="row">                    
+                      <h6 class="small-12 columns">Oficial a cargo S1</h6>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="oficial-a-cargo-carro3-nombre">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="oficial-a-cargo-carro3-nombre">Nombre y Apellido</label>
+                      </div>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="oficial-a-cargo-carro3-cargo">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="oficial-a-cargo-carro3-cargo">Cargo</label>
+                      </div>
+                      <br>
+                      <h6 class="small-12 columns">Maquinista S1</h6>
+                      <div class="group mt-2 small-12 medium-6 columns">      
+                        <input class="m" type="text" required value="" id="maquinista-carro3-nombre">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="maquinista-carro3-nombre">Nombre y Apellido</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-6 medium-3 columns"><b>6-3:</b> Horas #1</div>
+                      <div class="small-6 medium-3 columns"><b>6-8:</b> Horas #2</div>
+                      <div class="small-6 medium-3 columns"><b>6-9:</b> Horas #3</div>
+                      <div class="small-6 medium-3 columns"><b>6-10:</b> Horas #4</div>                
+                    </div>
+                  </div>
+                </div><!-- /.tabs-content -->
+              </div>
+            </div>
+          </form>
+
+          <center class="mt-3">
+            <input id="guardar-carros" class="button success btn-expansivo" type="submit" value="Guardar Datos Carros">
+          </center>
+
+          <br>
+          <hr>
+          <center class='mt-2'>
+            <a class="button hollow primary" href="cia05.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow primary" href="cia07.html">Siguiente <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </center>
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE | Salud Ocupacional Empresarial</title>
+  <!-- ************* CORE CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+</head>
+
+<body>
+	<!-- /////// Botón para ir al principio -->
+	<a class="hide-for-small-only" href="#inicio">
+	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+	</a>
+	<!-- */Botón para ir al principio -->
+  <!-- ********** NAVBAR OPERADOR -->
+  <section id="navbar-operador" class="bg-sec">
+    <div class="contenedor" style="position: relative;">      
+      <div class="top-bar row">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">
+              <img class="logo" src="./assets/img/logo.png" alt="Logo" vspace="3">
+              <span class="logotipo"><i>SIRE<span class="logotipo2">APP</span></i></span>
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right show-for-large">
+          <ul class="menu">
+            <li><a href="operador01.html"><i class="fa fa-crosshairs fa-lg" aria-hidden="true"></i> Datos y Ubicación</a></li>
+            <li><a href="operador02.html"><i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i> Asignar Compañía</a></li>
+            <li><a href="operador03.html"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i> Claves Radiales</a></li>
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+          </ul>
+        </div>
+        <div class="btn-menu hide-for-large">
+          <i class="fa fa-bars fa-lg" data-toggle="offCanvas"></i>
+        </div>
+      </div> <!-- /.top-bar -->   
+    </div> <!-- /.contenedor -->
+  </section>
+  <!-- /. NAVBAR OPERADOR -->
+  <!-- ********** PERFIL OPERADOR -->
+  <section id="perfil-operador" class="">
+	  <div class="contenedor">
+	  	<div class="row">
+	  		<div class="shrink columns">
+	  			<div class="foto-cont">
+	  				<a href="bombero01.html" target="_top"><img class="foto" src="assets/img/perfil-operador.jpg" alt="Perfil Operador"></a>
+	  			</div>
+	  		</div>
+	  		<div class="columns align-self-middle">
+	  			<div class="cont-datos-operador">
+	  				<span class="nombre-operador">Alexander Osteicoechea</span>
+	  				<span class="cargo-operador">Operador</span>	  				
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	</section>
+  <!-- /. PERFIL OPERADOR -->
+  <!-- ********** CONTENIDO -->
+  <section id="cont-operador02" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+                 <!-- ********** MENU OFF-CANVAS OPERADOR -->
+        <div id="menu-off-canvas-operador">
+          <ul class="vertical menu">
+            <li><a href="operador01.html"><i class="fa fa-crosshairs fa-lg" aria-hidden="true"></i> Datos y Ubicación</a></li>
+            <li><a href="operador02.html"><i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i> Asignar Compañía</a></li>
+            <li><a href="operador03.html"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i> Claves Radiales</a></li>
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+          </ul>          
+        </div>
+        <!-- /. MENU OFF-CANVAS OPERADOR -->
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Nueva</a></li>
+            <li class="tabs-title"><a href="#panel2" data-tabs-target="panel2">10-0-3 Llamado Estructural Lugar público</a></li>
+            <li class="tabs-title"><a href="#panel3" data-tabs-target="panel3">10-8-1 Abrir casa habitación 1 piso</a></li>
+          </ul>
+
+          <div class="tabs-content" data-tabs-content="example-tabs">
+               
+            <!-- ********* Panel1 -->
+            <div class="tabs-panel is-active" id="panel1">
+              <div>                
+                <button type="button" class="button success btn-expansivo float-right" data-open="disponibilidad-carros"><img src="assets/img/icono-carro.svg" style="height:25px;width:auto" alt="Carro"> Disponibilidad carros</button>
+                <h4>Compañías Asignadas</h4>
+              </div>
+              <hr>
+              <div class="text-center">
+                <img src="assets/img/carro-disponible.png" alt="..."><small>&nbsp; Disponible &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-asignado.png" alt="..."><small>&nbsp; Asignado a esta emergencia &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-asignado-otra.png" alt="..."><small>&nbsp; Asignado a otra emergencia &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-averiado.png" alt="..."><small>&nbsp; Averiado &nbsp;&nbsp;</small>
+              </div>
+              <!-- Contenedor Compañías -->
+              <div class="row cont-cias mt-2">
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">1ª Cia. "Bomba Coquimbo"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button hollow btn-asignar-carro">B1</button>                 
+                      <button type="button" class="button btn-asignar-carro" disabled>J1</button>
+                      <button type="button" class="button hollow btn-asignar-carro">R1</button>
+                      <button type="button" class="button btn-asignar-carro">RX1</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">2ª Cia. "Francisco de Aguirre"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B2</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">3ª Cia. "Zapadores O'Higgins"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B3</button>                 
+                      <button type="button" class="button btn-asignar-carro" disabled>M3</button>
+                      <button type="button" class="button btn-asignar-carro">Q3</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">4ª Cia. "Bomba Ignacio Alfonso"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B4</button>                 
+                      <button type="button" class="button hollow btn-asignar-carro">F4</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">5ª Cia. "Mair Cazés Sady"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B5</button>                 
+                      <button type="button" class="button btn-asignar-carro">BR5</button>
+                    </div>                     
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">6ª Cia. "Juan Soldado"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B6</button>                 
+                      <button type="button" class="button btn-asignar-carro">M6</button>
+                      <button type="button" class="button hollow btn-asignar-carro">R6</button>
+                      <button type="button" class="button hollow btn-asignar-carro">Z6</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">7ª Cia. "Mártir Eduardo Varela Ramos"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B7</button>                 
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">Comandancia</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">K1</button>                 
+                      <button type="button" class="button btn-asignar-carro">K2</button>
+                      <button type="button" class="button btn-asignar-carro" disabled>K3</button>
+                      <button type="button" class="button btn-asignar-carro">X1</button>
+                    </div>                    
+                  </div>
+                </div>                
+              </div><!-- /.Contenedor Compañías -->
+            </div><!-- /.panel1 -->
+
+            <!-- ********* Panel2 -->
+            <div class="tabs-panel" id="panel2">
+              <div>                
+                <button type="button" class="button success btn-expansivo float-right" data-open="disponibilidad-carros"><img src="assets/img/icono-carro.svg" style="height:25px;width:auto" alt="Carro"> Disponibilidad carros</button>
+                <h4>Compañías Asignadas</h4>
+              </div>
+              <hr>
+              <div class="text-center">
+                <img src="assets/img/carro-disponible.png" alt="..."><small>&nbsp; Disponible &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-asignado.png" alt="..."><small>&nbsp; Asignado a esta emergencia &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-asignado-otra.png" alt="..."><small>&nbsp; Asignado a otra emergencia &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-averiado.png" alt="..."><small>&nbsp; Averiado &nbsp;&nbsp;</small>
+              </div>
+              <!-- Contenedor Compañías -->
+              <div class="row cont-cias mt-2">
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">1ª Cia. "Bomba Coquimbo"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button warning btn-asignar-carro">B1</button>                 
+                      <button type="button" class="button btn-asignar-carro" disabled>J1</button>
+                      <button type="button" class="button warning btn-asignar-carro">R1</button>
+                      <button type="button" class="button btn-asignar-carro">RX1</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">2ª Cia. "Francisco de Aguirre"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B2</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">3ª Cia. "Zapadores O'Higgins"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B3</button>                 
+                      <button type="button" class="button btn-asignar-carro" disabled>M3</button>
+                      <button type="button" class="button btn-asignar-carro">Q3</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">4ª Cia. "Bomba Ignacio Alfonso"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B4</button>                 
+                      <button type="button" class="button warning btn-asignar-carro">F4</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">5ª Cia. "Mair Cazés Sady"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B5</button>                 
+                      <button type="button" class="button btn-asignar-carro">BR5</button>
+                    </div>                     
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">6ª Cia. "Juan Soldado"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B6</button>                 
+                      <button type="button" class="button btn-asignar-carro">M6</button>
+                      <button type="button" class="button hollow btn-asignar-carro">R6</button>
+                      <button type="button" class="button warning btn-asignar-carro">Z6</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">7ª Cia. "Mártir Eduardo Varela Ramos"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B7</button>                 
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">Comandancia</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">K1</button>                 
+                      <button type="button" class="button btn-asignar-carro">K2</button>
+                      <button type="button" class="button btn-asignar-carro" disabled>K3</button>
+                      <button type="button" class="button btn-asignar-carro">X1</button>
+                    </div>                    
+                  </div>
+                </div>                
+              </div><!-- /.Contenedor Compañías -->
+            </div><!-- /.panel2 -->
+
+            <!-- ********* Panel3 -->
+            <div class="tabs-panel" id="panel3">
+              <div>                
+                <button type="button" class="button success btn-expansivo float-right" data-open="disponibilidad-carros"><img src="assets/img/icono-carro.svg" style="height:25px;width:auto" alt="Carro"> Disponibilidad carros</button>
+                <h4>Compañías Asignadas</h4>
+              </div>
+              <hr>
+              <div class="text-center">
+                <img src="assets/img/carro-disponible.png" alt="..."><small>&nbsp; Disponible &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-asignado.png" alt="..."><small>&nbsp; Asignado a esta emergencia &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-asignado-otra.png" alt="..."><small>&nbsp; Asignado a otra emergencia &nbsp;&nbsp;</small>
+                <img src="assets/img/carro-averiado.png" alt="..."><small>&nbsp; Averiado &nbsp;&nbsp;</small>
+              </div>
+              <!-- Contenedor Compañías -->
+              <div class="row cont-cias mt-2">
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">1ª Cia. "Bomba Coquimbo"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button hollow btn-asignar-carro">B1</button>                 
+                      <button type="button" class="button btn-asignar-carro" disabled>J1</button>
+                      <button type="button" class="button hollow btn-asignar-carro">R1</button>
+                      <button type="button" class="button btn-asignar-carro">RX1</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">2ª Cia. "Francisco de Aguirre"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B2</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">3ª Cia. "Zapadores O'Higgins"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B3</button>                 
+                      <button type="button" class="button btn-asignar-carro" disabled>M3</button>
+                      <button type="button" class="button btn-asignar-carro">Q3</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">4ª Cia. "Bomba Ignacio Alfonso"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B4</button>                 
+                      <button type="button" class="button hollow btn-asignar-carro">F4</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">5ª Cia. "Mair Cazés Sady"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B5</button>                 
+                      <button type="button" class="button btn-asignar-carro">BR5</button>
+                    </div>                     
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">6ª Cia. "Juan Soldado"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B6</button>                 
+                      <button type="button" class="button btn-asignar-carro">M6</button>
+                      <button type="button" class="button warning btn-asignar-carro">R6</button>
+                      <button type="button" class="button hollow btn-asignar-carro">Z6</button>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">7ª Cia. "Mártir Eduardo Varela Ramos"</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">B7</button>                 
+                    </div>                    
+                  </div>
+                </div>
+                <div class="small-12 medium-4 large-3 columns">
+                  <div class="cont-cia-item">
+                    <div class="nombre-cia">Comandancia</div>
+                    <div class="cont-botones">
+                      <button type="button" class="button btn-asignar-carro">K1</button>                 
+                      <button type="button" class="button btn-asignar-carro">K2</button>
+                      <button type="button" class="button btn-asignar-carro" disabled>K3</button>
+                      <button type="button" class="button btn-asignar-carro">X1</button>
+                    </div>                    
+                  </div>
+                </div>                
+              </div><!-- /.Contenedor Compañías -->
+            </div><!-- /.panel3 -->
+
+          </div><!-- /.tabs-content -->
+          <center>
+            <a class="button hollow primary" href="operador01.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow success" href="operador03.html">Asignar <i class="fa fa-check" aria-hidden="true"></i></a>
+          </center>
+
+          <!-- MODALS **************** -->
+          <div class="reveal modal-carros" id="disponibilidad-carros" data-reveal>
+            <h5><img src="assets/img/icono-carro.svg" alt="Carro"> Disponibilidad carros</h5>
+            <p class="text-center">Marque los carros averiados.</p>
+            <div class="cont-label">
+              <div><input id="b1" type="checkbox"><label class="label-lead" for="b1">B1</label></div>
+              <div><input id="b2" type="checkbox"><label class="label-lead" for="b2">B2</label></div>
+              <div><input id="b3" type="checkbox"><label class="label-lead" for="b3">B3</label></div>
+              <div><input id="b4" type="checkbox"><label class="label-lead" for="b4">B4</label></div>
+              <div><input id="b5" type="checkbox"><label class="label-lead" for="b5">B5</label></div>
+              <div><input id="b6" type="checkbox"><label class="label-lead" for="b6">B6</label></div>
+              <div><input id="b7" type="checkbox"><label class="label-lead" for="b7">B7</label></div>
+              <div><input id="br5" type="checkbox"><label class="label-lead" for="br5">BR5</label></div>
+              <div><input id="f4" type="checkbox"><label class="label-lead" for="f4">F4</label></div>
+              <div><input id="j1" type="checkbox" checked><label class="label-lead" for="j1">J1</label></div>
+              <div><input id="m3" type="checkbox" checked><label class="label-lead" for="m3">M3</label></div>
+              <div><input id="m6" type="checkbox"><label class="label-lead" for="m6">M6</label></div>
+              <div><input id="q3" type="checkbox"><label class="label-lead" for="q3">Q3</label></div>
+              <div><input id="r1" type="checkbox"><label class="label-lead" for="r1">R1</label></div>
+              <div><input id="r6" type="checkbox"><label class="label-lead" for="r6">R6</label></div>
+              <div><input id="rx1" type="checkbox"><label class="label-lead" for="rx1">RX1</label></div>
+              <div><input id="z6" type="checkbox"><label class="label-lead" for="z6">Z6</label></div>  
+              <div><input id="k1" type="checkbox"><label class="label-lead" for="k1">K1</label></div>
+              <div><input id="k2" type="checkbox"><label class="label-lead" for="k2">K2</label></div>
+              <div><input id="k3" type="checkbox" checked><label class="label-lead" for="k3">K3</label></div>
+              <div><input id="x1" type="checkbox"><label class="label-lead" for="x1">X1</label></div>
+                          
+            </div>
+            <button class="close-button" data-close aria-label="Cerrar modal" type="button">
+              <span aria-hidden="true">×</span>
+            </button>
+            <br><br>
+            <button class="button expanded" data-close>Guardar <i class="fa fa-check" aria-hidden="true"></i></button>
+          </div><!-- /.modal-cia --> 
+
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
+	<!-- ************* CORE JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/what-input.min.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script src="assets/js/coordenadas.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+		async defer></script>
+	<script src="assets/js/emergencias.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+</body>
+</html>

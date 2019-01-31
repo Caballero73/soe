@@ -1,0 +1,26 @@
+/******************************
+ESTILOS BOTON EMERGENCIAS: boton-emergencias.css;
+*******************************/
+#boton-emergencias {
+	width: 100%;
+	& .boton-emergencias {
+		align-items: center;
+		border-radius: 50%;
+		box-shadow: var(--sombraSuaveDerecha);
+		display: flex;		
+		justify-content: center;
+		padding: .5rem;
+		position: fixed;
+		right: 1rem;
+		bottom: 7rem;
+		height: 5rem;
+		width: 5rem;
+		z-index: 999;
+
+		@media (--mobile) {
+			bottom: .5rem;			
+		}
+
+	}
+}
+/**/

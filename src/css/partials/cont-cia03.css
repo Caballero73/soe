@@ -1,0 +1,89 @@
+/******************************
+ESTILOS CONTENIDO COMPAÑIA 03: cont-cia03.css;
+*******************************/
+#cont-cia03 {
+	padding-top: 7rem;
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .titulo-peq-color-ppal {
+		color: var(--colorPpal);
+		margin-bottom: .5rem;
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+
+	& #adultos, #menores {
+		background-color: color(var(--colorPpalClaro) lightness(90%));
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: responsive 1.6rem 1.8rem;
+		font-weight: bold;
+		height: 2.2rem;
+		text-align: center;
+		transform: translateY(5px);
+		width: 4rem;
+	}
+
+	& .agregar-afectados {
+		color: var(--colorAlert);
+	}
+
+	& .accordion-title::before {display: none;}
+
+	& .accordion-title {
+		background-color: color(var(--colorSec) lightness(90%));
+		transition: .35s;
+
+		&:hover {
+			background-color: var(--colorSec);
+			transition: .35s;
+		}
+	}
+	& .accordion-title:hover .agregar-afectados {
+		color: var(--colorBlanco);
+	}
+
+	& .cont-input label {
+		color: var(--colorFuente);
+		font-size: 1.6rem;
+	}
+	#lista-afectados {
+		list-style: none;
+
+		& li {
+			border-bottom: 1px solid var(--colorGrisClaro);
+			margin-bottom: 1rem;
+			position: relative;
+
+			&:after {
+				content: '\f14b';
+				color: var(--colorGris);
+				cursor: pointer;
+				font-family: 'FontAwesome';
+				font-size: responsive 1.8rem 2rem;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+}
+/**/

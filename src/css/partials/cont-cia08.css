@@ -1,0 +1,82 @@
+/******************************
+ESTILOS CONTENIDO COMPAÑIA 08: cont-cia08.css;
+*******************************/
+#cont-cia08 {
+	padding-top: 7rem;
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .titulo-peq-color-ppal {
+		color: var(--colorPpal);
+		margin-bottom: .5rem;
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+
+	& .agregar-lesionados {
+		color: var(--colorAlert);
+	}
+
+	& .accordion-title::before {display: none;}
+
+	& .accordion-title {
+		background-color: color(var(--colorSec) lightness(90%));
+		transition: .35s;
+
+		&:hover {
+			background-color: var(--colorSec);
+			transition: .35s;
+		}
+	}
+	& .accordion-title:hover .agregar-lesionados {
+		color: var(--colorBlanco);
+	}
+
+	& .cont-input label {
+		color: var(--colorFuente);
+		font-size: 1.6rem;
+	}
+	#lista-lesionados {
+		list-style: none;
+  		counter-reset: bomberos;
+
+		& li {
+			border-bottom: 1px solid var(--colorGrisClaro);
+			margin-bottom: 1rem;
+			position: relative;
+
+			&:before {
+				counter-increment: bomberos;
+  				content: counter(bomberos) '. ';
+			}
+			&:after {
+				content: '\f14b';
+				color: var(--colorGris);
+				cursor: pointer;
+				font-family: 'FontAwesome';
+				font-size: responsive 1.8rem 2rem;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
+/**/

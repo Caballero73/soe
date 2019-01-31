@@ -1,0 +1,118 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cia03" class="">    
+    <div class="contenedor">
+      @include('./partials/boton-emergencias1.html')
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cia.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+
+          <div class="row">
+            <div class="shrink align-self-middle columns">
+              <img src="assets/img/icono-afectados.svg" alt="Afectados">
+            </div>
+            <div class="columns">
+              <h4>Afectados</h4>
+              <p class="emergencia2">Aqui iba el parcial de emergencia1</p>              
+            </div>
+          </div>
+
+          <div class="row mt-2 mb-2">
+            <div class="shrink columns">Adultos</div>
+            <div class="shrink columns"><span id="adultos">00</span></div>
+            <div class="shrink columns">&nbsp;&nbsp;&nbsp;</div>
+            <div class="shrink columns">Menores</div>
+            <div class="shrink columns"><span id="menores">00</span></div>       
+          </div>
+
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Título del panel del Acordeón -->
+                  <a href="#" class="accordion-title"><h6 class="agregar-afectados">Agregar afectado &nbsp; <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></h6></a>
+            
+
+                  <!-- Contenido del panel del acordeón. -->
+                  <div class="accordion-content" data-tab-content>
+                    <form id="formulario-afectados" class="mt-2">
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="rut-afectado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="rut-afectado">RUT</label>
+                      </div>
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="nombre-afectado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="nombre-afectado">Nombre</label>
+                      </div>
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="apellido1-afectado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="apellido1-afectado">Apellido Paterno</label>
+                      </div>
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="apellido2-afectado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="apellido2-afectado">Apellido Materno</label>
+                      </div>
+                      <div class="group">      
+                        <input class="m" type="text" required value="" id="fono-afectado">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="m" for="fono-afectado">Fono</label>
+                      </div>
+                      <fieldset class="cont-input">
+                        <legend class="label-select">Estado</legend>
+                        <input class="" type="radio"  name="estado" value="Leve" id="leve"><label for="leve">Leve</label>
+                        <input class="" type="radio"  name="estado" value="Medio" id="medio"><label for="medio">Medio</label>
+                        <input class="" type="radio"  name="estado" value="Grave" id="grave"><label for="grave">Grave</label>
+                        <input class="" type="radio"  name="estado" value="Fatal" id="fatal"><label for="fatal">Fatal</label>
+                      </fieldset>
+                      <fieldset class="cont-input">
+                        <legend class="label-select">Tipo de ocupante</legend>
+                        <input class="" type="radio"  name="ocupante" value="Chofer" id="chofer"><label for="chofer">Chofer</label>
+                        <input class="" type="radio"  name="ocupante" value="Acompañente" id="acomp"><label for="acomp">Acompañente</label>
+                        <input class="" type="radio"  name="ocupante" value="Transeúnte" id="transeunte"><label for="transeunte">Transeúnte</label>
+                        <div class="group mt-3">      
+                          <input class="m" type="text" required value="" id="otro-ocupante">
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label class="m" for="otro-ocupante">Otro</label>
+                        </div>
+                      </fieldset>
+                      <fieldset class="cont-input">
+                        <legend class="label-select">Edad</legend>
+                        <input class="" type="radio"  name="edad" value="Adulto" id="adulto"><label for="adulto">Adulto</label>
+                        <input class="" type="radio"  name="edad" value="Menor" id="menor"><label for="menor">Menor</label>
+                      </fieldset>
+                      <input id="guardar-afectado" class="button expanded success" type="submit" value="Guardar">
+                    </form>
+                  </div><!-- /.Contenido del panel del acordeón. -->                  
+              </ul>              
+            </div>
+            <div class="small-12 medium-6 columns">
+              <h6>Lista de afectados</h6>
+              <ul id="lista-afectados"></ul>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          <center class='mt-2'>
+            <a class="button hollow primary" href="cia02.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow primary" href="cia04.html">Siguiente <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </center>
+
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->

@@ -1,0 +1,25 @@
+
+/******************************
+ESTILOS CONTENIDO OPERADOR 01: cont-operador01.css;
+*******************************/
+#cont-operador01 {
+	padding-top: 7.5rem;
+
+	& .titulo-peq-color-ppal {
+		color: var(--colorPpal);
+		margin-bottom: .5rem;
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+}
+/**/

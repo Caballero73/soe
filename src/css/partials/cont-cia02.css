@@ -1,0 +1,124 @@
+/******************************
+ESTILOS CONTENIDO COMPAÑIA 02: cont-cia02.css;
+*******************************/
+#cont-cia02 {
+	padding-top: 7rem;
+
+	& [type="file"], [type="checkbox"], [type="radio"] {
+		margin: 0 1rem 1.7rem;
+	}
+
+	& [type="checkbox"] + label, [type="radio"] + label {
+		margin-bottom: .8rem;
+	}
+	& #mapa {
+		width: 100%;
+		height: 35rem;
+		border: 1px solid var(--colorGrisClaro);
+	}
+	& #mostrar-coordenadas {
+		font-size: responsive 1.3rem 1.8rem;
+		font-weight: bold;
+		color: var(--colorGris);
+	}
+	& .off-canvas {
+		background: var(--colorGrisOscuro);
+	}
+
+	& .tabs-title > a {
+		font-size: responsive 1.4rem 1.6rem;
+		color: var(--colorPpal);
+	}
+	& .is-active > a {
+		font-weight: bold;
+		color: var(--colorPpal);
+	}
+	& .titulo-peq-color-ppal {
+		color: var(--colorPpal);
+		margin-bottom: .5rem;
+	}
+}
+
+.modal-cia {
+	background-color: var(--colorPpal);
+	border-radius: 3px;
+	border: 1px solid #cacaca;
+	color: var(--colorBlanco);
+	max-width: 32rem;
+	padding: 3rem 2rem;
+	top: 20rem;
+	
+	& .cont-label {
+		columns: 4em;
+	}
+
+	& .label-lead {
+	  color:var(--colorBlanco);
+	}
+	& h1,h2,h3,h4,h5,h6 {
+	  color:white;
+	}
+
+	@media (--mobile-x) {
+		max-width: 80vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	@media (--mobile-s) {
+		max-width: 80vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	@media (--tablet-v) {
+		max-width: 70vw;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5vh;
+		height: auto;
+		min-height: 20rem;
+	}
+
+	& .close-button {
+		color: white;
+
+		&:hover, .close-button:focus {
+			color: #0a0a0a;
+		}
+		&:focus {
+			color: #0a0a0a;
+		}
+	}
+}
+
+select {
+	outline: none;
+}
+
+.select2-search--dropdown {
+	display: block;
+	padding: 4px;
+	background: var(--colorPpalClaro);
+}
+
+.select2-search--dropdown .select2-search__field {
+	background: white;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	border: 1px solid #aaa;
+	background: white;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+	background: var(--colorPpalClaro);
+}
+
+/**/

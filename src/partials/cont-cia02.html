@@ -1,0 +1,124 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cia02" class="">    
+    <div class="contenedor">
+      @include('./partials/boton-emergencias1.html')
+      
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cia.html')
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+
+          <div class="row">
+            <div class="shrink align-self-middle columns">
+              <img src="assets/img/icono-ubicacion.svg" alt="Ubicación">
+            </div>
+            <div class="columns">
+              <h4>Ubicación</h4>
+              <p class="emergencia2">Aqui iba el parcial de emergencia1</p>              
+            </div>
+          </div>
+
+          <form class="row" data-abide novalidate id="ubicacion1">
+            <small class="titulo-peq-color-ppal">Comuna </small><span style="color: red !important">*</span>
+            <select id="comuna" required class="js-example-responsive" style="width: 100%">
+              <option value="comunas">La Serena</option>
+              <option value="la_serena">Andacollo</option>
+              <option value="carirubana">La Higuera</option>
+              <option value="los_taques">Paihuano</option>
+              <option value="falcon">Vicuña</option>
+            </select>
+
+            <div class="group small-12 columns mt-3">      
+              <input class="m" type="text" required value="C/Colo Colo Plaza Buenos Aires" id="direccion">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="direccion">Dirección <span style="color: red !important">*</span></label>
+              <span class="form-error">La dirección es impresindible</span>
+            </div>
+
+            <div class="group small-12 medium-6 columns">      
+              <input class="m" type="text" required value="" id="numero">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="numero">Número <span style="color: red !important">*</span></label>
+              <span class="form-error">Indique un número de identificación o en su defecto N/A</span>
+            </div>
+
+            <div class="group small-12 medium-6 columns">      
+              <input class="m" type="text" required value="" id="referencia">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="referencia">Referencia</label>
+            </div>
+
+            <div class="group small-12 medium-6 columns">
+              <small class="titulo-peq-color-ppal">Tipo de vía </small><span style="color: red !important">*</span>
+              <select id="tipo-via" required class="js-example-responsive" style="width: 100%">
+                <option value="vias">Seleccione tipo de vía</option>
+                <option value="avenida">Avenida</option>
+                <option value="autopista">Autopista</option>
+                <option value="calle">Calle</option>
+                <option value="camino">Camino</option>
+                <option value="vereda">Vereda</option>
+              </select>
+            </div>
+          </form>
+
+          <h5 class="mb-3">Dirección complementaría</h5>
+          <form class="row" data-abide novalidate id="ubicacion1">
+
+            <div class="group small-6 medium-3 columns">      
+              <input class="m" type="number" value="" id="departamento">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="direccion">Número Dpto</label>
+            </div>
+
+            <div class="group small-6 medium-3 columns">      
+              <input class="m" type="number" value="" id="block">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="direccion">Número de Block</label>
+            </div>
+
+            <div class="group small-12 medium-6 columns">      
+              <input class="m" type="text" required value="" id="poblacion">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="m" for="poblacion">Población</label>
+            </div>
+
+            <div class="shrink align-self-middle columns">¿Requiere Investigador?</div>      
+            <div class="columns">      
+              <div class="switch large">
+                <input class="switch-input normal" id="det" type="checkbox" name="exampleSwitch">
+                <label class="switch-paddle" for="det">
+                  <span class="show-for-sr">¿Requiere Investigador?</span>
+                  <span class="switch-active" aria-hidden="true">Si</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+                </label>
+              </div>
+            </div>
+          </form>
+          <br>
+          <p>
+            <span>Coordenadas: </span>&nbsp;<span id="mostrar-coordenadas"></span>
+          </p>
+          <div id="mapa"></div>
+          <hr>
+          <center class='mt-2'>
+            <a class="button hollow primary" href="cliente01.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
+            <a class="button hollow primary" href="cia03.html">Siguiente <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </center>
+
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+    <script src="assets/js/coordenadas.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+        async defer></script>
+  </section>
+  <!-- /. CONTENIDO -->

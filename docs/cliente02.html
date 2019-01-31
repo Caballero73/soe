@@ -1,0 +1,316 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOE | Salud Ocupacional Empresarial</title>
+  <!-- ************* CORE CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+</head>
+
+<body>
+	<!-- /////// Botón para ir al principio -->
+	<a class="hide-for-small-only" href="#inicio">
+	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+	</a>
+	<!-- */Botón para ir al principio -->
+  <!-- ********** NAVBAR ADMON -->
+  <section id="navbar-cliente" class="bg-sec">
+    <div class="contenedor" style="position: relative;">      
+      <div class="top-bar row">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">
+              <img class="logo" src="./assets/img/logo.svg" alt="Logo" vspace="3">
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right show-for-large">
+          <ul class="menu">
+            <li><a href="cliente01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="cliente03.html"><i class="fa fa-users fa-lg" aria-hidden="true"></i> Funcionarios</a></li>            
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a></li>
+          </ul>
+        </div>
+        <div class="btn-menu hide-for-large">
+          <i class="fa fa-bars fa-lg" data-toggle="offCanvas"></i>
+        </div>
+      </div> <!-- /.top-bar -->   
+    </div> <!-- /.contenedor -->
+  </section>
+  <!-- /. NAVBAR ADMON -->
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cliente02" class="">    
+    <div class="contenedor">
+      <div class="off-canvas-wrapper">
+        <!-- Tu menú o contenido fuera del lienzo va aquí -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+                 <!-- ********** MENU OFF-CANVAS CLIENTE -->
+        <div id="menu-off-canvas-cliente">
+          <ul class="menu vertical">
+          	<li><a href="cliente01.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Inicio</a></li>
+          	<li><a href="cliente03.html"><i class="fa fa-users fa-lg" aria-hidden="true"></i> Funcionarios</a></li>          	
+            <li><a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> &nbsp;Salir</a></li>
+          </ul>        
+        </div>
+        <!-- /. MENU OFF-CANVAS CLIENTE -->
+        </div>
+        
+        <!-- El contenido de la página va aquí -->            
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <!-- Información funcionario -->
+          <h2>Información funcionario</h2>
+          <form class="mt-2">
+            <div class="card cont-cuerpo-formulario">            
+              <div class="row">
+                <!-- Foto funcionario -->
+                <div class="small-12 medium-3 medium-order-2 columns">
+                  <img class="float-center" id="foto-funcionario-nuevo" src="assets/img/foto-funcionario-nuevo.jpg" alt="Imágen funcionario por cargar">
+                  <div class="mt-2">
+                    <label for="cargar-foto-funcionario" class="button hollow center-block"> Cargar Foto <i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></label>
+                    <input type="file" id="cargar-foto-funcionario" class="show-for-sr">
+                  </div>
+                  <br class="show-for-small-only">
+                  <br class="show-for-small-only">
+                </div><!-- /.Foto funcionario -->
+                
+                <!-- Info funcionario -->
+                <div class="small-12 medium-9 medium-order-1 columns">
+                  
+                  <!-- Cuerpo del formulario -->
+                  <div class="row">
+                    
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-nombre">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-nombre">Nombre</label>
+                    </div>
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-apellido1">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-apellido1">Apellido</label>
+                    </div>
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-cedula">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-cedula">Cédula</label>
+                    </div>
+
+                    <div class="group small-12 medium-3 columns">      
+                      <input class="d" type="date" required value="" id="funcionario-fecha-nacimiento">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="d" for="funcionario-fecha-nacimiento">Fecha de Nacimiento</label>
+                    </div>
+
+                    <div class="group small-12 medium-3 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-estado-civil">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-estado-civil">Estado Civil</label>
+                    </div>
+                    
+                    <div class="small-12 medium-6 columns" id="cont-sexo">      
+                      <legend class="label-select">Sexo</legend>
+                      <input class="" name="sexo" value="Masculino" id="masculino" type="radio">
+                      <label for="masculino">Masculino</label>
+                      <input class="" name="sexo" value="Femenino" id="femenino" type="radio">
+                      <label for="femenino">Femenino</label>
+                    </div>
+                  </div><!-- /.row -->
+
+                  <div class="row mt-2">
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="email" required value="" id="funcionario-telf">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-telf">Teléfono</label>
+                    </div>
+
+                    <div class="group small-12 medium-6 columns">      
+                      <input class="m" type="email" required value="" id="funcionario-email">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-email">Correo electrónico</label>
+                    </div>
+
+                    <div class="group small-12 columns">      
+                      <input class="m" type="text" required value="" id="funcionario-direccion">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="m" for="funcionario-direccion">Dirección funcionario</label>
+                    </div>
+                    <div class="group small-6 columns" style="margin-top: -2rem">
+                      <legend class="label-select">Departamento</legend>
+                      <select id="departamentos" required class="js-example-responsive" style="width: 100%">
+                        <option value="1">Artigas</option>
+<option value="2">Canelones</option>
+<option value="3">Cerro Largo</option>
+<option value="4">Colonia</option>
+<option value="5">Durazno</option>
+<option value="6">Flores</option>
+<option value="7">Florida</option>
+<option value="8">Lavalleja</option>
+<option value="9">Maldonado</option>
+<option value="10">Montevideo</option>
+<option value="11">Paysandú</option>
+<option value="12">Río Negro</option>
+<option value="13">Rivera</option>
+<option value="14">Rocha</option>
+<option value="15">Salto</option>
+<option value="16">San José</option>
+<option value="17">Soriano</option>
+<option value="18">Tacuarembó</option>
+<option value="19">Treinta y Tres</option>
+                      </select>
+                    </div>      
+                    
+                    <div class="group small-6 columns" style="margin-top: -2rem">
+                      <legend class="label-select">Barrio</legend>
+                      <select id="barrios" required class="js-example-responsive" style="width: 100%">
+                        <option value="1">Abayubá</option>
+<option value="2">Aguada</option>
+<option value="3">Aires Puros</option>
+<option value="4">Arroyo Seco</option>
+<option value="5">Atahualpa</option>
+<option value="6">Bañados de Carrasco</option>
+<option value="7">Barrio Sur</option>
+<option value="8">Bella Italia</option>
+<option value="9">Bella Vista</option>
+<option value="10">Belvedere</option>
+<option value="11">Brazo Oriental</option>
+<option value="12">Buceo</option>
+<option value="13">Capurro</option>
+<option value="14">Carrasco</option>
+<option value="15">Carrasco Norte</option>
+<option value="16">Casabó, Pajas Blancas</option>
+<option value="17">Casavalle</option>
+<option value="18">Castro</option>
+<option value="19">Centro</option>
+<option value="20">Cerrito de la Victoria</option>
+<option value="21">Ciudad Vieja</option>
+<option value="22">Colón Centro y Noroeste</option>
+<option value="23">Colón Sureste</option>
+<option value="24">Conciliación</option>
+<option value="25">Cordón</option>
+<option value="26">Flor de Maroñas</option>
+<option value="27">Goes</option>
+<option value="28">Ituzaingó</option>
+<option value="29">Jacinto Vera</option>
+<option value="30">Jardines del Hipódromo</option>
+<option value="31">La Blanqueada</option>
+<option value="32">La Comercial</option>
+<option value="33">La Figurita</option>
+<option value="34">La Mondiola</option>
+<option value="35">La Paloma</option>
+<option value="36">La Teja</option>
+<option value="37">Larrañaga</option>
+<option value="38">Las Acacias</option>
+<option value="39">Las Canteras</option>
+<option value="40">Lavalleja</option>
+<option value="41">Lezica</option>
+<option value="42">Malvín</option>
+<option value="43">Malvín Norte</option>
+<option value="44">Manga</option>
+<option value="45">Manga</option>
+<option value="46">Manga Rural</option>
+<option value="47">Maroñas</option>
+<option value="48">Melilla</option>
+<option value="49">Mercado Modelo, Bolívar</option>
+<option value="50">Nueva Savona</option>
+<option value="51">Nuevo París</option>
+<option value="52">Palermo</option>
+<option value="53">Parque Batlle</option>
+<option value="54">Parque Guaraní</option>
+<option value="55">Parque Rodó</option>
+<option value="56">Paso de la Arena</option>
+<option value="57">Paso de las Duranas</option>
+<option value="58">Paso Molino</option>
+<option value="59">Peñarol</option>
+<option value="60">Pérez Castellanos</option>
+<option value="61">Piedras Blancas</option>
+<option value="62">Pocitos</option>
+<option value="63">Prado</option>
+<option value="64">Pueblo Victoria</option>
+<option value="65">Punta Carretas</option>
+<option value="66">Punta de Rieles</option>
+<option value="67">Punta Gorda</option>
+<option value="68">Reducto</option>
+<option value="69">Retiro</option>
+<option value="70">Santiago Vázquez</option>
+<option value="71">Sayago</option>
+<option value="72">Toledo Chico</option>
+<option value="73">Tomkinson</option>
+<option value="74">Tres Cruces</option>
+<option value="75">Tres Ombúes</option>
+<option value="76">Unión</option>
+<option value="77">Villa del Cerro</option>
+<option value="78">Villa Dolores</option>
+<option value="79">Villa Española</option>
+<option value="80">Villa García</option>
+<option value="81">Villa Muñoz</option>
+
+                      </select>
+                    </div>                
+                  </div><!-- /.sub-row -->
+                </div><!-- /.Info funcionario -->
+              </div><!-- /.Cuerpo del formulario -->
+            </div><!-- /.card -->
+
+            <!-- Pié del formulario -->
+            <div class="row">
+              <center class="small-12 columns">
+                <div class="row">
+                  <div class="small-6 columns">
+                    <p><strong>Código Funcionario:</strong> SOE102454-8<br><small class="texto-primario">Este código es único e irrepetible, y se asigna de forma automática al <b>Guardar</b>.</small></p>
+                  </div>
+                  <div class="small-6 columns">
+                    <a href="javascript:window.history.back();" class="success button btn-expansivo" id="btn-agregar-funcionario">GUARDAR <i class="fa fa-check fa-lg" aria-hidden="true"></i></a>                 
+
+                    <a href="javascript:window.history.back();" class="alert button btn-expansivo">CANCELAR <i class="fa fa-times fa-lg" aria-hidden="true"></i></a>                 
+                  </div>              
+                </div>
+              </center>
+              <br><br>
+            </div><!-- Pié del formulario -->
+                    
+          </form><!-- /.Formulario -->
+          <!-- /.Información funcionario -->
+          <br>          
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
+	<!-- ************* FOOTER -->
+	<section id="footer">
+		<div class="contenedor">
+			<center>
+				<b>Control de Constancias Médicas</b><br>
+				SOE Salud Empresarial Ocupacional © 2019
+				<p>Desarrolado por <a href="" title="Desarroladores">scorpion</a></p>				
+			</center>
+		</div>		
+	</section>
+	
+	<!-- ************* CORE JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/what-input.min.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script src="assets/js/coordenadas.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiPl8qyIqEU8MWTi7W3kArAhlv4VogU1I&callback=initMap"
+		async defer></script>
+	<script src="assets/js/emergencias.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+</body>
+</html>

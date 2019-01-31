@@ -1,0 +1,133 @@
+  <!-- ********** CONTENIDO -->
+  <section id="cont-cliente03" class="">    
+    <div class="contenedor">
+
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+         <!-- Tu menú o contenido fuera del lienzo va aquí -->
+         @include('./partials/menu-off-canvas-cliente.html')
+        </div><!-- /.off-canvas -->
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- El contenido de la página va aquí -->
+          <div class="row">
+            <div class="small-12 medium-7 columns">
+              <p class="text-center title1-cliente">Seguros Nuevo Mundo</p>
+            </div>
+            <div class="small-12 medium-5 columns" id="cont-fecha-hora">
+              <p class="text-center">
+                @include('./partials/fecha-hora.html')
+              </p>
+            </div>        
+          </div>
+
+          <br class="show-for-small">
+
+          <div class="row">
+            <div class="small-12 medium-3 columns">
+              <h2>Funcionarios</h2>              
+            </div>
+            <div class="small-12 medium-9 columns">
+              <ul class="menu align-center">
+                <li><a href="cliente02.html"><button class="success hollow button" id="btn-agregar-funcionario"> Agregar funcionario <i class="fa fa-user-plus fa-lg" aria-hidden="true"></i></button></a></li>
+                <li><a href=""><button class="hollow button" id="btn-descargar-funcionario">Descargar Lista <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i></button></a></li>
+                <li><a href=""><button class="hollow button" id="btn-imprimir-funcionario">Imprimir Lista <i class="fa fa-print fa-lg" aria-hidden="true"></i></button></a></li>
+              </ul>             
+            </div>
+          </div>       
+          <div class="mt-1" id="cont-funcionarios">
+            <form id="bomberos" class="">
+              <!-- Tablas funcionarios -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Nombre y Apellido</th>
+                    <th>Cargo</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="item-funcionario">
+                    <td>@include('./partials/codigo-funcionario.html')</td>
+                    <td>Cesar Romero</td>
+                    <td>Director</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Ángel González</td>
+                    <td>Capitán</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Andrés Miquilena</td>
+                    <td>Inspector General</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Sebastian De Vita</td>
+                    <td>Ayudante General</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Enmanuel Hernández</td>
+                    <td>Ayudante</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Julian Ramos</td>
+                    <td>Ayudante</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Josefa Camejo</td>
+                    <td>Ayudante</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td></span>Joaquín Correa</td>
+                    <td>Tesorero</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Victoriana Riera</td>
+                    <td>Secretario</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Josefina Villalobos</td>
+                    <td>Teniente</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>                      
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Juan Osteicoechea</td>
+                    <td>Teniente</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                  <tr class="item-funcionario">
+                    <td>SOE345124-9</td>
+                    <td>Alejandro Villalobos</td>
+                    <td>Teniente</td>
+                    <td><a href="admon03_b.html"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a><a data-open="modal-borrar-funcionario"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>                    
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /. Tabla columna 1 -->                      
+            </form>
+            @include('./partials/modal-borrar-funcionario.html')
+          </div><!-- /.cont-funcionarios -->
+        </div><!-- /.off-canvas-content -->
+      </div><!-- /.off-canvas-wrapper -->
+    </div><!-- /.contenedor -->
+  </section>
+  <!-- /. CONTENIDO -->
