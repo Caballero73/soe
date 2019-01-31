@@ -26,4 +26,6 @@
 
 ### Equipo
 * [Enrique J. Valerio G. (Diseñador Frontend)](https:*github.com/Caballero73 "Enrique Valerio - Diseñador Frontend")
-* [Maximiliano (Desarrollador Backend)]("Maximiliano - Desarrollador Backend")
+* [Maximiliano (Desarrollador Backend)](https://caballero73.github.io/soe/ "Maximiliano - Desarrollador Backend")
+
+Sitio de prueba https://caballero73.github.io/soe/
