@@ -2,7 +2,6 @@
 ESTILOS CONTENIDO PERFIL OPERADOR 01: perfil-operador.css;
 *******************************/
 #perfil-operador {
-	padding-top: 7.5rem;
 
 	& .cargo-operador {
 		color: var(--colorGris);

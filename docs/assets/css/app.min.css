@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
 /*Hoja de Estilo
 * Desarrollada para el proyecto: SOEAPP
 * Por: Scorpion (Enrique Valerio)
@@ -4092,7 +4094,7 @@ ESTILOS MENU OFF-CANVAS CLIENTE: menu-off-canvas-cliente.css;
 }
 #menu-off-canvas-cliente a {
 		color: #F8F8FF;
-		font-size: calc(1.75116rem + 0.18605vw);
+		font-size: calc(1.75116rem + 0.11628vw);
 		margin: 10px;
 		margin: 1rem;
 		outline: none;
@@ -4117,7 +4119,7 @@ ESTILOS MENU OFF-CANVAS BOMBERO: menu-off-canvas-bombero.css;
 }
 #menu-off-canvas-bombero a {
 		color: #F8F8FF;
-		font-size: calc(1.75116rem + 0.18605vw);
+		font-size: calc(1.75116rem + 0.11628vw);
 		margin: 10px;
 		margin: 1rem;
 		outline: none;
@@ -4142,7 +4144,7 @@ ESTILOS MENU OFF-CANVAS COMPAÑIA: menu-off-canvas-cia.css;
 }
 #menu-off-canvas-cia a {
 		color: #F8F8FF;
-		font-size: calc(1.35349rem + 0.55814vw);
+		font-size: calc(1.35349rem + 0.34884vw);
 		margin: 5px 10px;
 		margin: 0.5rem 1rem;
 		outline: none;
@@ -4185,7 +4187,7 @@ ESTILOS MENU OFF-CANVAS OPERADOR: menu-off-canvas-operador.css;
 }
 #menu-off-canvas-operador a {
 		color: #F8F8FF;
-		font-size: calc(1.35349rem + 0.55814vw);
+		font-size: calc(1.35349rem + 0.34884vw);
 		margin: 10px;
 		margin: 1rem;
 		outline: none;
@@ -4272,7 +4274,7 @@ ESTILOS CONTENIDO ADMON 01: cont-admon01.css;
 		margin-top: -2.5rem;
 	}
 #cont-admon01 .logotipo {
-		font-size: calc(2.02326rem + 3.72093vw);
+		font-size: calc(2.02326rem + 2.32558vw);
 	}
 #cont-admon01 .menu-item {
 		border-radius: .5rem;
@@ -4289,7 +4291,7 @@ ESTILOS CONTENIDO ADMON 01: cont-admon01.css;
 			transition: .35s;
 		}
 #cont-admon01 .menu-item a {
-			font-size: calc(1.75581rem + 0.93023vw);
+			font-size: calc(1.75581rem + 0.5814vw);
 			margin: 10px;
 			margin: 1rem;
 			color: #CCC;
@@ -4312,7 +4314,7 @@ ESTILOS CONTENIDO ADMON 01: cont-admon01.css;
 			font-size: calc(1.20233rem + 0.23256vw);
 		}
 #cont-admon01 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-admon01 .is-active > a {
@@ -4322,13 +4324,13 @@ ESTILOS CONTENIDO ADMON 01: cont-admon01.css;
 #cont-admon01 .title1-admon {
 		color: #f8f8ff;
 		color: rgba(248, 248, 255, 0.6);
-		font-size: calc(1.50698rem + 1.11628vw);
+		font-size: calc(1.50698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 #cont-admon01 .title2-admon {
 		color: #f8f8ff;
 		color: rgba(248, 248, 255, 0.6);
-		font-size: calc(1.70698rem + 1.11628vw);
+		font-size: calc(1.70698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 /**/
@@ -4349,7 +4351,7 @@ ESTILOS CONTENIDO CLIENTE 03: cont-cliente03.css;
 	}
 #cont-cliente03 .funcionarios-registrados {
 		color: #444;
-		font-size: calc(1.50233rem + 0.37209vw);
+		font-size: calc(1.50233rem + 0.23256vw);
 	}
 #cont-cliente03 #cont-funcionarios {
 		height: 47.5vh;
@@ -4387,12 +4389,12 @@ ESTILOS CONTENIDO CLIENTE 03: cont-cliente03.css;
 	}
 #cont-cliente03 .title1-cliente {
 		color: #888;
-		font-size: calc(1.50698rem + 1.11628vw);
+		font-size: calc(1.50698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 #cont-cliente03 tr {
 		background-color: rgb(195, 238, 254);
-		font-size: calc(1.00465rem + 0.74419vw);		
+		font-size: calc(1.00465rem + 0.46512vw);		
 	}
 #cont-cliente03 tr:nth-child(2n) {
 		background-color: #F8F8FF !important;
@@ -4436,12 +4438,12 @@ ESTILOS CONTENIDO CLIENTE 02: cont-cliente02.css;
 		background: #014761;
 	}
 #cont-cliente02 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cliente02 .title1-cliente {
 		color: #888;
-		font-size: calc(1.50698rem + 1.11628vw);
+		font-size: calc(1.50698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 #cont-cliente02 table thead, #cont-cliente02 table tbody, #cont-cliente02 table tfoot {
@@ -4450,11 +4452,11 @@ ESTILOS CONTENIDO CLIENTE 02: cont-cliente02.css;
 	}
 #cont-cliente02 th {
 		background-color: #CCC;
-		font-size: calc(0.90698rem + 1.11628vw);
+		font-size: calc(0.90698rem + 0.69767vw);
 	}
 #cont-cliente02 tr {
 		background-color: rgb(195, 238, 254);
-		font-size: calc(0.90698rem + 1.11628vw);		
+		font-size: calc(0.90698rem + 0.69767vw);		
 	}
 #cont-cliente02 tr:nth-child(2n) {
 		background-color: #F8F8FF !important;
@@ -4463,7 +4465,7 @@ ESTILOS CONTENIDO CLIENTE 02: cont-cliente02.css;
 		background-color: #F8F8FF !important;
 	}
 #cont-cliente02 [type="checkbox"] + label, #cont-cliente02 [type="radio"] + label {
-		font-size: calc(1.00465rem + 0.74419vw);
+		font-size: calc(1.00465rem + 0.46512vw);
 		color: #444;
 	}
 #cont-cliente02 select {
@@ -4472,7 +4474,7 @@ ESTILOS CONTENIDO CLIENTE 02: cont-cliente02.css;
 		color: #444;
 		margin: 4px 0 0 0;
 		margin: .4rem 0 0 0;
-		font-size: calc(0.80465rem + 0.74419vw);
+		font-size: calc(0.80465rem + 0.46512vw);
 	}
 /**/
 /******************************
@@ -4486,7 +4488,7 @@ ESTILOS CONTENIDO ADMON 04: cont-admon04.css;
 		background: #555;
 	}
 #cont-admon04 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-admon04 .is-active > a {
@@ -4495,7 +4497,7 @@ ESTILOS CONTENIDO ADMON 04: cont-admon04.css;
 	}
 #cont-admon04 .title1-cliente {
 		color: #888;
-		font-size: calc(1.50698rem + 1.11628vw);
+		font-size: calc(1.50698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 /**/
@@ -4528,13 +4530,13 @@ ESTILOS CONTENIDO BOMBEROS 01: cont-bombero01.css;
 		margin-top: -2.5rem;
 	}
 #cont-bombero01 .logotipo {
-		font-size: calc(2.02326rem + 3.72093vw);
+		font-size: calc(2.02326rem + 2.32558vw);
 	}
 #cont-bombero01 .off-canvas {
 		background: #555;
 	}
 #cont-bombero01 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-bombero01 .is-active > a {
@@ -4543,7 +4545,7 @@ ESTILOS CONTENIDO BOMBEROS 01: cont-bombero01.css;
 	}
 #cont-bombero01 .title1-cliente {
 		color: #888;
-		font-size: calc(1.50698rem + 1.11628vw);
+		font-size: calc(1.50698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 /**/
@@ -4576,13 +4578,13 @@ ESTILOS CONTENIDO BOMBEROS 02: cont-bombero02.css;
 		margin-top: -2.5rem;
 	}
 #cont-bombero02 .logotipo {
-		font-size: calc(2.02326rem + 3.72093vw);
+		font-size: calc(2.02326rem + 2.32558vw);
 	}
 #cont-bombero02 .off-canvas {
 		background: #555;
 	}
 #cont-bombero02 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-bombero02 .is-active > a {
@@ -4591,7 +4593,7 @@ ESTILOS CONTENIDO BOMBEROS 02: cont-bombero02.css;
 	}
 #cont-bombero02 .title1-cliente {
 		color: #888;
-		font-size: calc(1.50698rem + 1.11628vw);
+		font-size: calc(1.50698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 #cont-bombero02 textarea::-webkit-input-placeholder {
@@ -4633,13 +4635,13 @@ ESTILOS CONTENIDO BOMBEROS 03: cont-bombero03.css;
 		margin-top: -2.5rem;
 	}
 #cont-bombero03 .logotipo {
-		font-size: calc(2.02326rem + 3.72093vw);
+		font-size: calc(2.02326rem + 2.32558vw);
 	}
 #cont-bombero03 .off-canvas {
 		background: #555;
 	}
 #cont-bombero03 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-bombero03 .is-active > a {
@@ -4648,7 +4650,7 @@ ESTILOS CONTENIDO BOMBEROS 03: cont-bombero03.css;
 	}
 #cont-bombero03 .title1-cliente {
 		color: #888;
-		font-size: calc(1.50698rem + 1.11628vw);
+		font-size: calc(1.50698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 #cont-bombero03 textarea::-webkit-input-placeholder {
@@ -4662,11 +4664,11 @@ ESTILOS CONTENIDO BOMBEROS 03: cont-bombero03.css;
 	}
 #cont-bombero03 th {
 		background-color: #CCC;
-		font-size: calc(0.95581rem + 0.93023vw);		
+		font-size: calc(0.95581rem + 0.5814vw);		
 	}
 #cont-bombero03 tr {
 		background-color: rgb(195, 238, 254);
-		font-size: calc(1.00465rem + 0.74419vw);		
+		font-size: calc(1.00465rem + 0.46512vw);		
 	}
 #cont-bombero03 tr:nth-child(2n) {
 		background-color: #F8F8FF !important;
@@ -4758,7 +4760,7 @@ ESTILOS CONTENIDO CLIENTE 01: cont-cliente01.css;
 		width: auto;
 	}
 #cont-cliente01 .logotipo {
-		font-size: calc(2.02326rem + 3.72093vw);
+		font-size: calc(2.02326rem + 2.32558vw);
 	}
 #cont-cliente01 .off-canvas {
 		background: #555;
@@ -4775,7 +4777,7 @@ ESTILOS CONTENIDO CLIENTE 01: cont-cliente01.css;
 			font-size: calc(1.20233rem + 0.23256vw);
 		}
 #cont-cliente01 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cliente01 .is-active > a {
@@ -4785,13 +4787,13 @@ ESTILOS CONTENIDO CLIENTE 01: cont-cliente01.css;
 #cont-cliente01 .title1-cliente {
 		color: #f8f8ff;
 		color: rgba(248, 248, 255, 0.6);
-		font-size: calc(1.4093rem + 1.48837vw);
+		font-size: calc(1.4093rem + 0.93023vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 #cont-cliente01 .title2-cliente {
 		color: #f8f8ff;
 		color: rgba(248, 248, 255, 0.6);
-		font-size: calc(1.70698rem + 1.11628vw);
+		font-size: calc(1.70698rem + 0.69767vw);
 		font-family: 'Raleway-Bold',serif;
 	}
 /**/
@@ -4817,7 +4819,7 @@ ESTILOS CONTENIDO COMPAÑIA 02: cont-cia02.css;
 		border: 1px solid #CCC;
 	}
 #cont-cia02 #mostrar-coordenadas {
-		font-size: calc(1.05581rem + 0.93023vw);
+		font-size: calc(1.05581rem + 0.5814vw);
 		font-weight: bold;
 		color: #888;
 	}
@@ -4825,7 +4827,7 @@ ESTILOS CONTENIDO COMPAÑIA 02: cont-cia02.css;
 		background: #555;
 	}
 #cont-cia02 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cia02 .is-active > a {
@@ -4906,7 +4908,7 @@ ESTILOS CONTENIDO COMPAÑIA 03: cont-cia03.css;
 		background: #555;
 	}
 #cont-cia03 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cia03 .titulo-peq-color-ppal {
@@ -4929,7 +4931,7 @@ ESTILOS CONTENIDO COMPAÑIA 03: cont-cia03.css;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
-		font-size: calc(1.50233rem + 0.37209vw);
+		font-size: calc(1.50233rem + 0.23256vw);
 		font-weight: bold;
 		height: 22px;
 		height: 2.2rem;
@@ -4978,8 +4980,8 @@ ESTILOS CONTENIDO COMPAÑIA 03: cont-cia03.css;
 				color: #888;
 				cursor: pointer;
 				font-family: 'FontAwesome';
-				font-size: calc(17.023px + 0.37209vw);
-				font-size: calc(1.70233rem + 0.37209vw);
+				font-size: calc(17.023px + 0.23256vw);
+				font-size: calc(1.70233rem + 0.23256vw);
 				position: absolute;
 				right: 0;
 				top: 0;
@@ -5004,7 +5006,7 @@ ESTILOS CONTENIDO COMPAÑIA 04: cont-cia04.css;
 		background: #555;
 	}
 #cont-cia04 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cia04 .titulo-peq-color-ppal {
@@ -5054,8 +5056,8 @@ ESTILOS CONTENIDO COMPAÑIA 04: cont-cia04.css;
 				color: #888;
 				cursor: pointer;
 				font-family: 'FontAwesome';
-				font-size: calc(17.023px + 0.37209vw);
-				font-size: calc(1.70233rem + 0.37209vw);
+				font-size: calc(17.023px + 0.23256vw);
+				font-size: calc(1.70233rem + 0.23256vw);
 				position: absolute;
 				right: 0;
 				top: 0;
@@ -5108,7 +5110,7 @@ ESTILOS CONTENIDO COMPAÑIA 05: cont-cia05.css;
 		background: #555;
 	}
 #cont-cia05 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cia05 .titulo-peq-color-ppal {
@@ -5145,7 +5147,7 @@ ESTILOS CONTENIDO COMPAÑIA 06: cont-cia06.css;
 		background: #555;
 	}
 #cont-cia06 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cia06 .titulo-peq-color-ppal {
@@ -5171,7 +5173,7 @@ ESTILOS CONTENIDO COMPAÑIA 06: cont-cia06.css;
 	}
 #cont-cia07 .bomberos-asignados {
 		color: #444;
-		font-size: calc(1.50233rem + 0.37209vw);
+		font-size: calc(1.50233rem + 0.23256vw);
 	}
 #cont-cia07 .cont-input label {
 		color: #444;
@@ -5191,7 +5193,7 @@ ESTILOS CONTENIDO COMPAÑIA 06: cont-cia06.css;
 		background: #555;
 	}
 #cont-cia07 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cia07 .titulo-peq-color-ppal {
@@ -5219,7 +5221,7 @@ ESTILOS CONTENIDO COMPAÑIA 08: cont-cia08.css;
 		background: #555;
 	}
 #cont-cia08 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-cia08 .titulo-peq-color-ppal {
@@ -5274,8 +5276,8 @@ ESTILOS CONTENIDO COMPAÑIA 08: cont-cia08.css;
 				color: #888;
 				cursor: pointer;
 				font-family: 'FontAwesome';
-				font-size: calc(17.023px + 0.37209vw);
-				font-size: calc(1.70233rem + 0.37209vw);
+				font-size: calc(17.023px + 0.23256vw);
+				font-size: calc(1.70233rem + 0.23256vw);
 				position: absolute;
 				right: 0;
 				top: 0;
@@ -5288,6 +5290,29 @@ ESTILOS CONTENIDO OPERADOR 01: cont-operador01.css;
 	padding-top: 75px;
 	padding-top: 7.5rem;
 }
+#cont-operador01 .badge {
+		font-size: 10px;
+		font-size: 1rem;
+		-webkit-transform: translateY(-4px);
+		    -ms-transform: translateY(-4px);
+		        transform: translateY(-4px);
+	}
+#cont-operador01 .contenedor-tabla {
+		max-height: 56vh;
+		overflow-x:hidden;
+		overflow-y:scroll;
+	}
+#cont-operador01 .contenedor-tabla p {
+			font-size: calc(1.70233rem + 0.23256vw);
+			height: 56vh;
+			padding: 50px 30px;
+			padding: 5rem 3rem;
+			text-align: center;
+		}
+#cont-operador01 h3 {
+		font-size: calc(1.40465rem + 0.46512vw);
+
+	}
 #cont-operador01 .titulo-peq-color-ppal {
 		color: #04A6E3;
 		margin-bottom: 5px;
@@ -5296,9 +5321,16 @@ ESTILOS CONTENIDO OPERADOR 01: cont-operador01.css;
 #cont-operador01 .off-canvas {
 		background: #555;
 	}
-#cont-operador01 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
-		color: #04A6E3;
+#cont-operador01 table thead, #cont-operador01 table tbody, #cont-operador01 table tfoot {
+	  border: none;
+	  background-color: #F8F8FF;
+	}
+#cont-operador01 th {
+		background-color: #edf8fd;
+		font-size: calc(0.25814rem + 0.81395vw);
+	}
+#cont-operador01 tr {
+		font-size: calc(0.50698rem + 0.69767vw);
 	}
 #cont-operador01 .is-active > a {
 		font-weight: bold;
@@ -5309,8 +5341,8 @@ ESTILOS CONTENIDO OPERADOR 01: cont-operador01.css;
 ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 *******************************/
 #cont-operador02 {
-	padding-top: 17px;
-	padding-top: 1.7rem;
+	padding-top: 75px;
+	padding-top: 7.5rem;
 }
 #cont-operador02 [type="file"], #cont-operador02 [type="checkbox"], #cont-operador02 [type="radio"] {
 		margin: 0 10px 17px;
@@ -5320,34 +5352,62 @@ ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 		margin-bottom: 8px;
 		margin-bottom: .8rem;
 	}
-#cont-operador02 .cont-cias .cont-cia-item {
+#cont-operador02 .cont-sectores .accordion-title {
+			font-size: calc(0.90698rem + 0.69767vw);
+		}
+#cont-operador02 .cont-sectores .accordion-title:before {
+			font-size: 30px;
+			font-size: 3rem;
+			font-weight: bold;
+			-webkit-transform: translateY(-10px);
+			    -ms-transform: translateY(-10px);
+			        transform: translateY(-10px);
+			-webkit-transform: translateY(-1rem);
+			    -ms-transform: translateY(-1rem);
+			        transform: translateY(-1rem);
+
+		}
+#cont-operador02 .cont-sectores .cont-sector-item {
 			border:  1px solid #CCC;
 			border-radius: 4px;
-			font-weight: bold;
-			font-size: calc(1.10233rem + 0.37209vw);
+			font-size: calc(1.20465rem + 0.46512vw);
 			margin-bottom: 10px;
 			margin-bottom: 1rem;
 			padding: 10px;
 			padding: 1rem;
-
+			position: relative;
+			-webkit-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			transition: all .5s ease;
 		}
-#cont-operador02 .cont-cias .cont-cia-item .nombre-cia {
-				height: 3em;
+#cont-operador02 .cont-sectores .cont-sector-item:hover {
+				background: #93d8f3;
+				background: rgba(147, 216, 243, 0.45);
+				cursor: pointer;
+				-webkit-transition: all .5s ease;
+				-o-transition: all .5s ease;
+				transition: all .5s ease;
 			}
-#cont-operador02 .cont-cias .cont-cia-item .cont-botones{
-				display: grid;
-				grid-template-columns: repeat(2,1fr);
-				grid-template-rows: auto;
-				grid-gap: .5rem;
-				margin-top: 7.5px;
-				margin-top: .75rem;
+#cont-operador02 .cont-sectores .cont-sector-item .fa {
+				color: #fff;
+				position: absolute;
+				bottom: 10px;
+				bottom: 1rem;
+				right: 10px;
+				right: 1rem;
 			}
-#cont-operador02 .cont-cias .cont-cia-item .cont-botones .button {
-					font-size: 18px;
-					font-size: 1.8rem;
-				}
-#cont-operador02 .cont-cias .cont-cia-item .item-botones {
-
+#cont-operador02 .cont-sectores .cont-sector-item:hover .fa {
+				text-shadow: 1.5px 1.5px 2.5px #777;
+			}
+#cont-operador02 .cont-sectores .cont-sector-item .nombre-sector {
+				color: #FF0000;
+				font-size: calc(1.30465rem + 0.46512vw);
+				font-weight: bold;
+			}
+#cont-operador02 .cont-sectores .cont-sector-item .nombre-medico {
+				color: #014761;
+				font-size: calc(1.30465rem + 0.46512vw);
+				font-weight: bold;
 			}
 #cont-operador02 .is-active > a {
 		font-weight: bold;
@@ -5357,7 +5417,7 @@ ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 		background: #555;
 	}
 #cont-operador02 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-operador02 .titulo-peq-color-ppal {
@@ -5365,7 +5425,7 @@ ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 		margin-bottom: 5px;
 		margin-bottom: .5rem;
 	}
-.modal-carros {
+.modal-editar-sector {
 	background-color: #04A6E3;
 	border-radius: 3px;
 	border: 1px solid #cacaca;
@@ -5377,24 +5437,49 @@ ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 	top: 200px;
 	top: 20rem;
 }
-.modal-carros .cont-label {
+.modal-editar-sector .accordion-title {
+			font-size: calc(0.90698rem + 0.69767vw);
+	}
+.modal-editar-sector .accordion-title:before {
+		font-size: 30px;
+		font-size: 3rem;
+		font-weight: bold;
+		-webkit-transform: translateY(-10px);
+		    -ms-transform: translateY(-10px);
+		        transform: translateY(-10px);
+		-webkit-transform: translateY(-1rem);
+		    -ms-transform: translateY(-1rem);
+		        transform: translateY(-1rem);
+	}
+.modal-editar-sector .borrar {
+		-webkit-transition: 0.3s all ease;
+		-o-transition: 0.3s all ease;
+		transition: 0.3s all ease;
+	}
+.modal-editar-sector .borrar:hover {
+			color: #FF0000;
+			-webkit-transition: 0.3s all ease;
+			-o-transition: 0.3s all ease;
+			transition: 0.3s all ease;
+		}
+.modal-editar-sector .cont-label {
 		display: grid;
 		grid-template-columns: repeat(4,1fr);
 		grid-template-rows: auto;
 	}
-.modal-carros .label-lead {
+.modal-editar-sector .label-lead {
 	  color:#F8F8FF;
 	}
-.modal-carros h1,.modal-carros h2,.modal-carros h3,.modal-carros h4,.modal-carros h5,.modal-carros h6 {
+.modal-editar-sector h1,.modal-editar-sector h2,.modal-editar-sector h3,.modal-editar-sector h4,.modal-editar-sector h5,.modal-editar-sector h6 {
 	  color:white;
 	}
-.modal-carros .close-button {
+.modal-editar-sector .close-button {
 		color: white;
 	}
-.modal-carros .close-button:hover, .modal-carros .close-button .close-button:focus {
+.modal-editar-sector .close-button:hover, .modal-editar-sector .close-button .close-button:focus {
 			color: #0a0a0a;
 		}
-.modal-carros .close-button:focus {
+.modal-editar-sector .close-button:focus {
 			color: #0a0a0a;
 		}
 /**/
@@ -5421,11 +5506,11 @@ ESTILOS CONTENIDO OPERADOR 03: cont-operador03.css;
 	}
 #cont-operador03 th {
 		background-color: #CCC;
-		font-size: calc(0.90698rem + 1.11628vw);		
+		font-size: calc(0.90698rem + 0.69767vw);		
 	}
 #cont-operador03 tr {
 		background-color: rgb(195, 238, 254);
-		font-size: calc(0.90698rem + 1.11628vw);		
+		font-size: calc(0.90698rem + 0.69767vw);		
 	}
 #cont-operador03 tr:nth-child(2n) {
 		background-color: #F8F8FF !important;
@@ -5442,7 +5527,7 @@ ESTILOS CONTENIDO OPERADOR 03: cont-operador03.css;
 		background: #555;
 	}
 #cont-operador03 .tabs-title > a {
-		font-size: calc(1.30233rem + 0.37209vw);
+		font-size: calc(1.30233rem + 0.23256vw);
 		color: #04A6E3;
 	}
 #cont-operador03 .is-active > a {
@@ -5456,7 +5541,7 @@ ESTILOS CONTENIDO PERFIL ADMON: perfil-admon.css;
 #perfil-admon .cargo-admon {
 		color: #888;
 		display: block;
-		font-size: calc(1.40233rem + 0.37209vw);
+		font-size: calc(1.40233rem + 0.23256vw);
 
 	}
 #perfil-admon .foto-cont {
@@ -5475,7 +5560,7 @@ ESTILOS CONTENIDO PERFIL ADMON: perfil-admon.css;
 #perfil-admon .nombre-admon {
 		color: #555;
 		display: block;
-		font-size: calc(1.60233rem + 0.37209vw);
+		font-size: calc(1.60233rem + 0.23256vw);
 		font-weight: bold;
 	}
 /**/
@@ -5485,7 +5570,7 @@ ESTILOS CONTENIDO BOMBERO 01: perfil-bombero.css;
 #perfil-bombero .cargo-bombero {
 		color: #888;
 		display: block;
-		font-size: calc(1.40233rem + 0.37209vw);
+		font-size: calc(1.40233rem + 0.23256vw);
 
 	}
 #perfil-bombero .foto-cont {
@@ -5504,7 +5589,7 @@ ESTILOS CONTENIDO BOMBERO 01: perfil-bombero.css;
 #perfil-bombero .nombre-bombero {
 		color: #555;
 		display: block;
-		font-size: calc(1.60233rem + 0.37209vw);
+		font-size: calc(1.60233rem + 0.23256vw);
 		font-weight: bold;
 	}
 /**/
@@ -5514,7 +5599,7 @@ ESTILOS CONTENIDO PERFIL CLIENTE 01: perfil-cliente.css;
 #perfil-cliente .cargo-operador {
 		color: #888;
 		display: block;
-		font-size: calc(1.40233rem + 0.37209vw);
+		font-size: calc(1.40233rem + 0.23256vw);
 
 	}
 #perfil-cliente .foto-cont {
@@ -5533,21 +5618,17 @@ ESTILOS CONTENIDO PERFIL CLIENTE 01: perfil-cliente.css;
 #perfil-cliente .nombre-operador {
 		color: #555;
 		display: block;
-		font-size: calc(1.60233rem + 0.37209vw);
+		font-size: calc(1.60233rem + 0.23256vw);
 		font-weight: bold;
 	}
 /**/
 /******************************
 ESTILOS CONTENIDO PERFIL OPERADOR 01: perfil-operador.css;
 *******************************/
-#perfil-operador {
-	padding-top: 75px;
-	padding-top: 7.5rem;
-}
 #perfil-operador .cargo-operador {
 		color: #888;
 		display: block;
-		font-size: calc(1.40233rem + 0.37209vw);
+		font-size: calc(1.40233rem + 0.23256vw);
 
 	}
 #perfil-operador .foto-cont {
@@ -5566,7 +5647,7 @@ ESTILOS CONTENIDO PERFIL OPERADOR 01: perfil-operador.css;
 #perfil-operador .nombre-operador {
 		color: #555;
 		display: block;
-		font-size: calc(1.60233rem + 0.37209vw);
+		font-size: calc(1.60233rem + 0.23256vw);
 		font-weight: bold;
 	}
 /**/
@@ -5602,7 +5683,7 @@ ESTILOS LOGIN: login.css;
 		max-width: 20rem;
 	}
 #login .logotipo {
-	  font-size: calc(4.01163rem + 1.86047vw);
+	  font-size: calc(4.01163rem + 1.16279vw);
 	}
 #login .password + .unmask {
 		border: none;
@@ -5716,7 +5797,7 @@ ESTILOS NAVBAR CLIENTE: navbar-cliente.css;
 		}
 #navbar-cliente .top-bar li a, #navbar-cliente .top-bar ul li a {
 				color: #F0F0F0;
-				font-size: calc(1.30233rem + 0.37209vw);
+				font-size: calc(1.30233rem + 0.23256vw);
 				-webkit-transition: all .35s ease;
 				-o-transition: all .35s ease;
 				transition: all .35s ease;
@@ -5776,7 +5857,7 @@ ESTILOS NAVBAR BOMBERO: navbar-bombero.css;
 		width: auto;
 	}
 #navbar-bombero .logotipo {
-	  font-size: calc(2.01163rem + 1.86047vw);
+	  font-size: calc(2.01163rem + 1.16279vw);
 	}
 #navbar-bombero li.menu-text:hover {background-color: transparent !important;}
 #navbar-bombero .top-bar, #navbar-bombero .top-bar ul {
@@ -5801,7 +5882,7 @@ ESTILOS NAVBAR BOMBERO: navbar-bombero.css;
 		}
 #navbar-bombero .top-bar li a, #navbar-bombero .top-bar ul li a {
 				color: #F0F0F0;
-				font-size: calc(1.30233rem + 0.37209vw);
+				font-size: calc(1.30233rem + 0.23256vw);
 				-webkit-transition: all .35s ease;
 				-o-transition: all .35s ease;
 				transition: all .35s ease;
@@ -5861,7 +5942,7 @@ ESTILOS NAVBAR COMPAÑIA: navbar-cia.css;
 		width: auto;
 	}
 #navbar-cia .logotipo {
-	  font-size: calc(2.01163rem + 1.86047vw);
+	  font-size: calc(2.01163rem + 1.16279vw);
 	}
 #navbar-cia li.menu-text:hover {background-color: transparent !important;}
 #navbar-cia .top-bar, #navbar-cia .top-bar ul {
@@ -5886,7 +5967,7 @@ ESTILOS NAVBAR COMPAÑIA: navbar-cia.css;
 		}
 #navbar-cia .top-bar li a, #navbar-cia .top-bar ul li a {
 				color: #F0F0F0;
-				font-size: calc(1.30233rem + 0.37209vw);
+				font-size: calc(1.30233rem + 0.23256vw);
 				-webkit-transition: all .35s ease;
 				-o-transition: all .35s ease;
 				transition: all .35s ease;
@@ -5946,7 +6027,7 @@ ESTILOS NAVBAR OPERADOR: navbar-operador.css;
 		width: auto;
 	}
 #navbar-operador .logotipo {
-	  font-size: calc(2.01163rem + 1.86047vw);
+	  font-size: calc(2.01163rem + 1.16279vw);
 	}
 #navbar-operador li.menu-text:hover {background-color: transparent !important;}
 #navbar-operador .top-bar, #navbar-operador .top-bar ul {
@@ -5971,7 +6052,7 @@ ESTILOS NAVBAR OPERADOR: navbar-operador.css;
 		}
 #navbar-operador .top-bar li a, #navbar-operador .top-bar ul li a {
 				color: #F0F0F0;
-				font-size: calc(1.30233rem + 0.37209vw);
+				font-size: calc(1.30233rem + 0.23256vw);
 				-webkit-transition: all .35s ease;
 				-o-transition: all .35s ease;
 				transition: all .35s ease;
@@ -6210,15 +6291,16 @@ textarea::placeholder {
 ESTILOS FOOTER: footer.css;
 *******************************/
 #footer {
+	background-color: #014761;
 	color: #F8F8FF;
 	display: grid;
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
 	        align-items: end;
-	background-color: #014761;
 	height: 12vh;
 	padding: 7px;
 	padding: 0.7rem;
+	width: 100%;
 }
 #footer a {
 		color: #F8F8FF;
@@ -6614,7 +6696,7 @@ MEDIA-QUERIES
 			height: 5rem;
 			width: auto
 	}
-.modal-carros .cont-label {
+.modal-editar-sector .cont-label {
 			grid-template-columns: repeat(3,1fr)
 	}
 #navbar-cliente .logo {
@@ -6640,698 +6722,754 @@ MEDIA-QUERIES
     margin-left: 0
 }			
 		}
-@media screen and (min-width: 1280px) {
-  #menu-off-canvas-cliente a {
+@media screen and (min-width: 1280px){
+  #menu-off-canvas-cliente a{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  #menu-off-canvas-bombero a {
+  #menu-off-canvas-bombero a{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  #menu-off-canvas-cia a {
+  #menu-off-canvas-cia a{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #menu-off-canvas-operador a {
+  #menu-off-canvas-operador a{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-admon01 .logotipo {
+  #cont-admon01 .logotipo{
     font-size: 50px;
     font-size: 5rem;
   }
-  #cont-admon01 .menu-item a {
+  #cont-admon01 .menu-item a{
     font-size: 25px;
     font-size: 2.5rem;
   }
-  #cont-admon01 .tabs-title > a {
+  #cont-admon01 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-admon01 .title1-admon {
+  #cont-admon01 .title1-admon{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  #cont-admon01 .title2-admon {
+  #cont-admon01 .title2-admon{
     font-size: 26px;
     font-size: 2.6rem;
   }
-  #cont-cliente03 .funcionarios-registrados {
+  #cont-cliente03 .funcionarios-registrados{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cliente03 .title1-cliente {
+  #cont-cliente03 .title1-cliente{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  #cont-cliente03 tr {
+  #cont-cliente03 tr{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cliente02 .tabs-title > a {
+  #cont-cliente02 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cliente02 .title1-cliente {
+  #cont-cliente02 .title1-cliente{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  #cont-cliente02 th {
+  #cont-cliente02 th{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cliente02 tr {
+  #cont-cliente02 tr{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cliente02 [type="checkbox"] + label, #cont-cliente02 [type="radio"] + label {
+  #cont-cliente02 [type="checkbox"] + label, #cont-cliente02 [type="radio"] + label{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cliente02 select {
+  #cont-cliente02 select{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-admon04 .tabs-title > a {
+  #cont-admon04 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-admon04 .title1-cliente {
+  #cont-admon04 .title1-cliente{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  #cont-bombero01 .logotipo {
+  #cont-bombero01 .logotipo{
     font-size: 50px;
     font-size: 5rem;
   }
-  #cont-bombero01 .tabs-title > a {
+  #cont-bombero01 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-bombero01 .title1-cliente {
+  #cont-bombero01 .title1-cliente{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  #cont-bombero02 .logotipo {
+  #cont-bombero02 .logotipo{
     font-size: 50px;
     font-size: 5rem;
   }
-  #cont-bombero02 .tabs-title > a {
+  #cont-bombero02 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-bombero02 .title1-cliente {
+  #cont-bombero02 .title1-cliente{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  #cont-bombero03 .logotipo {
+  #cont-bombero03 .logotipo{
     font-size: 50px;
     font-size: 5rem;
   }
-  #cont-bombero03 .tabs-title > a {
+  #cont-bombero03 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-bombero03 .title1-cliente {
+  #cont-bombero03 .title1-cliente{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  #cont-bombero03 th {
+  #cont-bombero03 th{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #cont-bombero03 tr {
+  #cont-bombero03 tr{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cliente01 .logotipo {
+  #cont-cliente01 .logotipo{
     font-size: 50px;
     font-size: 5rem;
   }
-  #cont-cliente01 .tabs-title > a {
+  #cont-cliente01 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cliente01 .title1-cliente {
+  #cont-cliente01 .title1-cliente{
     font-size: 26px;
     font-size: 2.6rem;
   }
-  #cont-cliente01 .title2-cliente {
+  #cont-cliente01 .title2-cliente{
     font-size: 26px;
     font-size: 2.6rem;
   }
-  #cont-cia02 #mostrar-coordenadas {
+  #cont-cia02 #mostrar-coordenadas{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cia02 .tabs-title > a {
+  #cont-cia02 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia03 .tabs-title > a {
+  #cont-cia03 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia03 #adultos, #cont-cia03 #menores {
+  #cont-cia03 #adultos, #cont-cia03 #menores{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cia03 #lista-afectados li:after {
+  #cont-cia03 #lista-afectados li:after{
     font-size: 20px;
     font-size: 2rem;
   }
-  #cont-cia04 .tabs-title > a {
+  #cont-cia04 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia04 #lista-apoyo li:after {
+  #cont-cia04 #lista-apoyo li:after{
     font-size: 20px;
     font-size: 2rem;
   }
-  #cont-cia05 .tabs-title > a {
+  #cont-cia05 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia06 .tabs-title > a {
+  #cont-cia06 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia07 .bomberos-asignados {
+  #cont-cia07 .bomberos-asignados{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cia07 .tabs-title > a {
+  #cont-cia07 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia08 .tabs-title > a {
+  #cont-cia08 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia08 #lista-lesionados li:after {
+  #cont-cia08 #lista-lesionados li:after{
     font-size: 20px;
     font-size: 2rem;
   }
-  #cont-operador01 .tabs-title > a {
-    font-size: 16px;
-    font-size: 1.6rem;
+  #cont-operador01 .contenedor-tabla p{
+    font-size: 20px;
+    font-size: 2rem;
   }
-  #cont-operador02 .cont-cias .cont-cia-item {
+  #cont-operador01 h3{
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  #cont-operador01 th{
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  #cont-operador01 tr{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-operador02 .tabs-title > a {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
-  #cont-operador03 th {
+  #cont-operador02 .cont-sectores .accordion-title{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-operador03 tr {
+  #cont-operador02 .cont-sectores .cont-sector-item{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-operador03 .tabs-title > a {
+  #cont-operador02 .cont-sectores .cont-sector-item .nombre-sector{
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+  #cont-operador02 .cont-sectores .cont-sector-item .nombre-medico{
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+  #cont-operador02 .tabs-title > a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #perfil-admon .cargo-admon {
+  .modal-editar-sector .accordion-title{
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  #cont-operador03 th{
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  #cont-operador03 tr{
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  #cont-operador03 .tabs-title > a{
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  #perfil-admon .cargo-admon{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #perfil-admon .nombre-admon {
+  #perfil-admon .nombre-admon{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  #perfil-bombero .cargo-bombero {
+  #perfil-bombero .cargo-bombero{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #perfil-bombero .nombre-bombero {
+  #perfil-bombero .nombre-bombero{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  #perfil-cliente .cargo-operador {
+  #perfil-cliente .cargo-operador{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #perfil-cliente .nombre-operador {
+  #perfil-cliente .nombre-operador{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  #perfil-operador .cargo-operador {
+  #perfil-operador .cargo-operador{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #perfil-operador .nombre-operador {
+  #perfil-operador .nombre-operador{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  #login .logotipo {
+  #login .logotipo{
     font-size: 55px;
     font-size: 5.5rem;
   }
-  @media (min-width: 769px) and (max-width: 1024px) {
-    #login .logotipo {
+  @media (min-width: 769px) and (max-width: 1024px){
+    #login .logotipo{
       font-size: 40px;
       font-size: 4rem;
     }
   }
-  #navbar-cliente .top-bar li a, #navbar-cliente .top-bar ul li a {
+  #navbar-cliente .top-bar li a, #navbar-cliente .top-bar ul li a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #navbar-bombero .logotipo {
+  #navbar-bombero .logotipo{
     font-size: 35px;
     font-size: 3.5rem;
   }
-  #navbar-bombero .top-bar li a, #navbar-bombero .top-bar ul li a {
+  #navbar-bombero .top-bar li a, #navbar-bombero .top-bar ul li a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #navbar-cia .logotipo {
+  #navbar-cia .logotipo{
     font-size: 35px;
     font-size: 3.5rem;
   }
-  #navbar-cia .top-bar li a, #navbar-cia .top-bar ul li a {
+  #navbar-cia .top-bar li a, #navbar-cia .top-bar ul li a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #navbar-operador .logotipo {
+  #navbar-operador .logotipo{
     font-size: 35px;
     font-size: 3.5rem;
   }
-  #navbar-operador .top-bar li a, #navbar-operador .top-bar ul li a {
+  #navbar-operador .top-bar li a, #navbar-operador .top-bar ul li a{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  body {
+  body{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  cite {
+  cite{
     font-size: 15px;
     font-size: 1.5rem;
   }
-  .emergencia2 {
+  .emergencia2{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  h1 {
+  h1{
     font-size: 48px;
     font-size: 4.8rem;
   }
-  h2 {
+  h2{
     font-size: 40px;
     font-size: 4rem;
   }
-  h3 {
+  h3{
     font-size: 31px;
     font-size: 3.1rem;
   }
-  h4 {
+  h4{
     font-size: 25px;
     font-size: 2.5rem;
   }
-  h5 {
+  h5{
     font-size: 20px;
     font-size: 2rem;
   }
-  h6 {
+  h6{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  .fecha-hora {
+  .fecha-hora{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  .label-lead {
+  .label-lead{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  .label-select {
+  .label-select{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  .legend-lead {
+  .legend-lead{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  .logotipo {
+  .logotipo{
     font-size: 50px;
     font-size: 5rem;
   }
-  .titulo2 {
+  .titulo2{
     font-size: 20px;
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 420px) {
-  #menu-off-canvas-cliente a {
+@media screen and (max-width: 420px){
+  #menu-off-canvas-cliente a{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #menu-off-canvas-bombero a {
+  #menu-off-canvas-bombero a{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #menu-off-canvas-cia a {
+  #menu-off-canvas-cia a{
     font-size: 15px;
     font-size: 1.5rem;
   }
-  #menu-off-canvas-operador a {
+  #menu-off-canvas-operador a{
     font-size: 15px;
     font-size: 1.5rem;
   }
-  #cont-admon01 .logotipo {
+  #cont-admon01 .logotipo{
     font-size: 30px;
     font-size: 3rem;
   }
-  #cont-admon01 .menu-item a {
+  #cont-admon01 .menu-item a{
     font-size: 20px;
     font-size: 2rem;
   }
-  #cont-admon01 .tabs-title > a {
+  #cont-admon01 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-admon01 .title1-admon {
+  #cont-admon01 .title1-admon{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-admon01 .title2-admon {
+  #cont-admon01 .title2-admon{
     font-size: 20px;
     font-size: 2rem;
   }
-  #cont-cliente03 .funcionarios-registrados {
+  #cont-cliente03 .funcionarios-registrados{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cliente03 .title1-cliente {
+  #cont-cliente03 .title1-cliente{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cliente03 tr {
+  #cont-cliente03 tr{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  #cont-cliente02 .tabs-title > a {
+  #cont-cliente02 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cliente02 .title1-cliente {
+  #cont-cliente02 .title1-cliente{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cliente02 th {
+  #cont-cliente02 th{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  #cont-cliente02 tr {
+  #cont-cliente02 tr{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  #cont-cliente02 [type="checkbox"] + label, #cont-cliente02 [type="radio"] + label {
+  #cont-cliente02 [type="checkbox"] + label, #cont-cliente02 [type="radio"] + label{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  #cont-cliente02 select {
+  #cont-cliente02 select{
     font-size: 10px;
     font-size: 1rem;
   }
-  #cont-admon04 .tabs-title > a {
+  #cont-admon04 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-admon04 .title1-cliente {
+  #cont-admon04 .title1-cliente{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-bombero01 .logotipo {
+  #cont-bombero01 .logotipo{
     font-size: 30px;
     font-size: 3rem;
   }
-  #cont-bombero01 .tabs-title > a {
+  #cont-bombero01 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-bombero01 .title1-cliente {
+  #cont-bombero01 .title1-cliente{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-bombero02 .logotipo {
+  #cont-bombero02 .logotipo{
     font-size: 30px;
     font-size: 3rem;
   }
-  #cont-bombero02 .tabs-title > a {
+  #cont-bombero02 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-bombero02 .title1-cliente {
+  #cont-bombero02 .title1-cliente{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-bombero03 .logotipo {
+  #cont-bombero03 .logotipo{
     font-size: 30px;
     font-size: 3rem;
   }
-  #cont-bombero03 .tabs-title > a {
+  #cont-bombero03 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-bombero03 .title1-cliente {
+  #cont-bombero03 .title1-cliente{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-bombero03 th {
+  #cont-bombero03 th{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  #cont-bombero03 tr {
+  #cont-bombero03 tr{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  #cont-cliente01 .logotipo {
+  #cont-cliente01 .logotipo{
     font-size: 30px;
     font-size: 3rem;
   }
-  #cont-cliente01 .tabs-title > a {
+  #cont-cliente01 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cliente01 .title1-cliente {
+  #cont-cliente01 .title1-cliente{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cliente01 .title2-cliente {
+  #cont-cliente01 .title2-cliente{
     font-size: 20px;
     font-size: 2rem;
   }
-  #cont-cia02 #mostrar-coordenadas {
+  #cont-cia02 #mostrar-coordenadas{
     font-size: 13px;
     font-size: 1.3rem;
   }
-  #cont-cia02 .tabs-title > a {
+  #cont-cia02 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cia03 .tabs-title > a {
+  #cont-cia03 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cia03 #adultos, #cont-cia03 #menores {
+  #cont-cia03 #adultos, #cont-cia03 #menores{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia03 #lista-afectados li:after {
+  #cont-cia03 #lista-afectados li:after{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cia04 .tabs-title > a {
+  #cont-cia04 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cia04 #lista-apoyo li:after {
+  #cont-cia04 #lista-apoyo li:after{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-cia05 .tabs-title > a {
+  #cont-cia05 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cia06 .tabs-title > a {
+  #cont-cia06 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cia07 .bomberos-asignados {
+  #cont-cia07 .bomberos-asignados{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  #cont-cia07 .tabs-title > a {
+  #cont-cia07 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cia08 .tabs-title > a {
+  #cont-cia08 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-cia08 #lista-lesionados li:after {
+  #cont-cia08 #lista-lesionados li:after{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  #cont-operador01 .tabs-title > a {
-    font-size: 14px;
-    font-size: 1.4rem;
+  #cont-operador01 .contenedor-tabla p{
+    font-size: 18px;
+    font-size: 1.8rem;
   }
-  #cont-operador02 .cont-cias .cont-cia-item {
+  #cont-operador01 h3{
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  #cont-operador01 th{
+    font-size: 6px;
+    font-size: .6rem;
+  }
+  #cont-operador01 tr{
+    font-size: 8px;
+    font-size: .8rem;
+  }
+  #cont-operador02 .cont-sectores .accordion-title{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  #cont-operador02 .tabs-title > a {
+  #cont-operador02 .cont-sectores .cont-sector-item{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #cont-operador03 th {
-    font-size: 12px;
-    font-size: 1.2rem;
+  #cont-operador02 .cont-sectores .cont-sector-item .nombre-sector{
+    font-size: 15px;
+    font-size: 1.5rem;
   }
-  #cont-operador03 tr {
-    font-size: 12px;
-    font-size: 1.2rem;
+  #cont-operador02 .cont-sectores .cont-sector-item .nombre-medico{
+    font-size: 15px;
+    font-size: 1.5rem;
   }
-  #cont-operador03 .tabs-title > a {
+  #cont-operador02 .tabs-title > a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #perfil-admon .cargo-admon {
+  .modal-editar-sector .accordion-title{
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  #cont-operador03 th{
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  #cont-operador03 tr{
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  #cont-operador03 .tabs-title > a{
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  #perfil-admon .cargo-admon{
     font-size: 15px;
     font-size: 1.5rem;
   }
-  #perfil-admon .nombre-admon {
+  #perfil-admon .nombre-admon{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #perfil-bombero .cargo-bombero {
+  #perfil-bombero .cargo-bombero{
     font-size: 15px;
     font-size: 1.5rem;
   }
-  #perfil-bombero .nombre-bombero {
+  #perfil-bombero .nombre-bombero{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #perfil-cliente .cargo-operador {
+  #perfil-cliente .cargo-operador{
     font-size: 15px;
     font-size: 1.5rem;
   }
-  #perfil-cliente .nombre-operador {
+  #perfil-cliente .nombre-operador{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #perfil-operador .cargo-operador {
+  #perfil-operador .cargo-operador{
     font-size: 15px;
     font-size: 1.5rem;
   }
-  #perfil-operador .nombre-operador {
+  #perfil-operador .nombre-operador{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  #login .logotipo {
+  #login .logotipo{
     font-size: 45px;
     font-size: 4.5rem;
   }
-  @media (min-width: 769px) and (max-width: 1024px) {
-    #login .logotipo {
+  @media (min-width: 769px) and (max-width: 1024px){
+    #login .logotipo{
       font-size: 35px;
       font-size: 3.5rem;
     }
   }
-  #navbar-cliente .top-bar li a, #navbar-cliente .top-bar ul li a {
+  #navbar-cliente .top-bar li a, #navbar-cliente .top-bar ul li a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #navbar-bombero .logotipo {
+  #navbar-bombero .logotipo{
     font-size: 25px;
     font-size: 2.5rem;
   }
-  #navbar-bombero .top-bar li a, #navbar-bombero .top-bar ul li a {
+  #navbar-bombero .top-bar li a, #navbar-bombero .top-bar ul li a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #navbar-cia .logotipo {
+  #navbar-cia .logotipo{
     font-size: 25px;
     font-size: 2.5rem;
   }
-  #navbar-cia .top-bar li a, #navbar-cia .top-bar ul li a {
+  #navbar-cia .top-bar li a, #navbar-cia .top-bar ul li a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  #navbar-operador .logotipo {
+  #navbar-operador .logotipo{
     font-size: 25px;
     font-size: 2.5rem;
   }
-  #navbar-operador .top-bar li a, #navbar-operador .top-bar ul li a {
+  #navbar-operador .top-bar li a, #navbar-operador .top-bar ul li a{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  body {
+  body{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  cite {
+  cite{
     font-size: 10px;
     font-size: 1rem;
   }
-  .emergencia2 {
+  .emergencia2{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  h1 {
+  h1{
     font-size: 24px;
     font-size: 2.4rem;
   }
-  h2 {
+  h2{
     font-size: 20px;
     font-size: 2rem;
   }
-  h3 {
+  h3{
     font-size: 19px;
     font-size: 1.9rem;
   }
-  h4 {
+  h4{
     font-size: 18px;
     font-size: 1.8rem;
   }
-  h5 {
+  h5{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  h6 {
+  h6{
     font-size: 16px;
     font-size: 1.6rem;
   }
-  .fecha-hora {
+  .fecha-hora{
     font-size: 14px;
     font-size: 1.4rem;
   }
-  .label-lead {
+  .label-lead{
     font-size: 13px;
     font-size: 1.3rem;
   }
-  .label-select {
+  .label-select{
     font-size: 12px;
     font-size: 1.2rem;
   }
-  .legend-lead {
+  .legend-lead{
     font-size: 17px;
     font-size: 1.7rem;
   }
-  .logotipo {
+  .logotipo{
     font-size: 20px;
     font-size: 2rem;
   }
-  .titulo2 {
+  .titulo2{
     font-size: 17px;
     font-size: 1.7rem;
   }
@@ -7375,7 +7513,7 @@ MEDIA-QUERIES
 #cont-cia07 #cont-bomberos {
 			height: 30vh
 	}
-.modal-carros {
+.modal-editar-sector {
 		max-width: 80vw;
 		margin-right: auto;
 		margin-left: auto;
@@ -7436,7 +7574,7 @@ MEDIA-QUERIES
 #cont-cia07 #cont-bomberos {
 			height: 45vh
 	}
-.modal-carros {
+.modal-editar-sector {
 		max-width: 80vw;
 		margin-right: auto;
 		margin-left: auto;
@@ -7472,16 +7610,16 @@ MEDIA-QUERIES
 			max-width: 20rem
 	}
 #login .logotipo {
-			font-size: calc(3.25581rem + 0.93023vw)
+			font-size: calc(3.25581rem + 0.5814vw)
 	}
-@media screen and (min-width: 1280px) {
-    #login .logotipo {
+@media screen and (min-width: 1280px){
+    #login .logotipo{
       font-size: 40px;
       font-size: 4rem;
     }
   }
-@media screen and (max-width: 420px) {
-    #login .logotipo {
+@media screen and (max-width: 420px){
+    #login .logotipo{
       font-size: 35px;
       font-size: 3.5rem;
     }
@@ -7510,7 +7648,7 @@ MEDIA-QUERIES
 		min-height: 200px;
 		min-height: 20rem
 }
-.modal-carros {
+.modal-editar-sector {
 		max-width: 70vw;
 		margin-right: auto;
 		margin-left: auto;
@@ -7537,6 +7675,11 @@ MEDIA-QUERIES
 			margin-left: auto;
 			margin-right: auto
 	}
+.cabecera-clara img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto    
+  }
 		}
 @media (min-width: 1291px) and (max-width: 1420px) {
 .row,.contenedor {max-width: 80vw !important

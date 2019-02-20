@@ -1,3 +1,4 @@
+  
   <!-- ********** CONTENIDO -->
   <section id="cont-operador02" class="">    
     <div class="contenedor">
@@ -8,339 +9,255 @@
         </div>
         <div class="off-canvas-content" data-off-canvas-content>
           <!-- El contenido de la página va aquí -->
-          <ul class="tabs" data-tabs id="example-tabs">
-            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Nueva</a></li>
-            <li class="tabs-title"><a href="#panel2" data-tabs-target="panel2">10-0-3 Llamado Estructural Lugar público</a></li>
-            <li class="tabs-title"><a href="#panel3" data-tabs-target="panel3">10-8-1 Abrir casa habitación 1 piso</a></li>
-          </ul>
+              
+          <!-- ********* Sectores de Montevideo -->
+          <div class="callout" id="sectores-mvdo">
+            <h4>Sectores de Montevideo</h4>
+            
+            <!-- Contenedor Sectores -->
+            <div class="row cont-sectores mt-2">
+              
+              <div class="small-12 medium-4 columns">                
+                <div class="cont-sector-item">
+                  <div class="nombre-sector">Sector 1</div>
+                  <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                    <li class="accordion-item" data-accordion-item="">
+                      <!-- Título del panel del Acordeón -->
+                      <a href="javascript:void(0);" class="accordion-title" aria-controls="dootdh-accordion" role="tab" id="dootdh-accordion-label" aria-expanded="false" aria-selected="false">Ver barrios</a>
 
-          <div class="tabs-content" data-tabs-content="example-tabs">
-               
-            <!-- ********* Panel1 -->
-            <div class="tabs-panel is-active" id="panel1">
-              <div>                
-                <button type="button" class="button success btn-expansivo float-right" data-open="disponibilidad-carros"><img src="assets/img/icono-carro.svg" style="height:25px;width:auto" alt="Carro"> Disponibilidad carros</button>
-                <h4>Compañías Asignadas</h4>
+                      <!-- Contenido del panel del acordeón. -->
+                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="dootdh-accordion-label" aria-hidden="true" id="dootdh-accordion">
+                        <p>Ciudad Vieja, Centro, Barrio Sur, Aguada, Cordón Este, Cordón Sur, Cordón Norte, Palermo, La Comercial, Parque Rodó, Goes, Villa Muñoz, Jacinto Vera, Figurita, Reducto, Krüger, Simón Bolívar, Brazo Oriental y La Comercial.</p>
+                      </div>
+                    </li>
+                  </ul><!-- /.accordion -->                 
+                  
+                  <hr>
+                  <div class="nombre-medico">Médicos asignados</div>
+                  <ul class="no-bullet">
+                    <li>Agustín Codazzi</li>
+                    <li>Ana Romanov</li>
+                    <li>Juan García</li>
+                  </ul>
+                  <i class="fa fa-pencil fa-2x" aria-hidden="true" data-open="editar-sector"></i>
+                </div>
               </div>
-              <hr>
-              <div class="text-center">
-                <img src="assets/img/carro-disponible.png" alt="..."><small>&nbsp; Disponible &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-asignado.png" alt="..."><small>&nbsp; Asignado a esta emergencia &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-asignado-otra.png" alt="..."><small>&nbsp; Asignado a otra emergencia &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-averiado.png" alt="..."><small>&nbsp; Averiado &nbsp;&nbsp;</small>
-              </div>
-              <!-- Contenedor Compañías -->
-              <div class="row cont-cias mt-2">
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">1ª Cia. "Bomba Coquimbo"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button hollow btn-asignar-carro">B1</button>                 
-                      <button type="button" class="button btn-asignar-carro" disabled>J1</button>
-                      <button type="button" class="button hollow btn-asignar-carro">R1</button>
-                      <button type="button" class="button btn-asignar-carro">RX1</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">2ª Cia. "Francisco de Aguirre"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B2</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">3ª Cia. "Zapadores O'Higgins"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B3</button>                 
-                      <button type="button" class="button btn-asignar-carro" disabled>M3</button>
-                      <button type="button" class="button btn-asignar-carro">Q3</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">4ª Cia. "Bomba Ignacio Alfonso"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B4</button>                 
-                      <button type="button" class="button hollow btn-asignar-carro">F4</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">5ª Cia. "Mair Cazés Sady"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B5</button>                 
-                      <button type="button" class="button btn-asignar-carro">BR5</button>
-                    </div>                     
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">6ª Cia. "Juan Soldado"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B6</button>                 
-                      <button type="button" class="button btn-asignar-carro">M6</button>
-                      <button type="button" class="button hollow btn-asignar-carro">R6</button>
-                      <button type="button" class="button hollow btn-asignar-carro">Z6</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">7ª Cia. "Mártir Eduardo Varela Ramos"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B7</button>                 
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">Comandancia</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">K1</button>                 
-                      <button type="button" class="button btn-asignar-carro">K2</button>
-                      <button type="button" class="button btn-asignar-carro" disabled>K3</button>
-                      <button type="button" class="button btn-asignar-carro">X1</button>
-                    </div>                    
-                  </div>
-                </div>                
-              </div><!-- /.Contenedor Compañías -->
-            </div><!-- /.panel1 -->
 
-            <!-- ********* Panel2 -->
-            <div class="tabs-panel" id="panel2">
-              <div>                
-                <button type="button" class="button success btn-expansivo float-right" data-open="disponibilidad-carros"><img src="assets/img/icono-carro.svg" style="height:25px;width:auto" alt="Carro"> Disponibilidad carros</button>
-                <h4>Compañías Asignadas</h4>
-              </div>
-              <hr>
-              <div class="text-center">
-                <img src="assets/img/carro-disponible.png" alt="..."><small>&nbsp; Disponible &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-asignado.png" alt="..."><small>&nbsp; Asignado a esta emergencia &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-asignado-otra.png" alt="..."><small>&nbsp; Asignado a otra emergencia &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-averiado.png" alt="..."><small>&nbsp; Averiado &nbsp;&nbsp;</small>
-              </div>
-              <!-- Contenedor Compañías -->
-              <div class="row cont-cias mt-2">
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">1ª Cia. "Bomba Coquimbo"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button warning btn-asignar-carro">B1</button>                 
-                      <button type="button" class="button btn-asignar-carro" disabled>J1</button>
-                      <button type="button" class="button warning btn-asignar-carro">R1</button>
-                      <button type="button" class="button btn-asignar-carro">RX1</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">2ª Cia. "Francisco de Aguirre"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B2</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">3ª Cia. "Zapadores O'Higgins"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B3</button>                 
-                      <button type="button" class="button btn-asignar-carro" disabled>M3</button>
-                      <button type="button" class="button btn-asignar-carro">Q3</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">4ª Cia. "Bomba Ignacio Alfonso"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B4</button>                 
-                      <button type="button" class="button warning btn-asignar-carro">F4</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">5ª Cia. "Mair Cazés Sady"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B5</button>                 
-                      <button type="button" class="button btn-asignar-carro">BR5</button>
-                    </div>                     
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">6ª Cia. "Juan Soldado"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B6</button>                 
-                      <button type="button" class="button btn-asignar-carro">M6</button>
-                      <button type="button" class="button hollow btn-asignar-carro">R6</button>
-                      <button type="button" class="button warning btn-asignar-carro">Z6</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">7ª Cia. "Mártir Eduardo Varela Ramos"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B7</button>                 
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">Comandancia</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">K1</button>                 
-                      <button type="button" class="button btn-asignar-carro">K2</button>
-                      <button type="button" class="button btn-asignar-carro" disabled>K3</button>
-                      <button type="button" class="button btn-asignar-carro">X1</button>
-                    </div>                    
-                  </div>
-                </div>                
-              </div><!-- /.Contenedor Compañías -->
-            </div><!-- /.panel2 -->
+              <div class="small-12 medium-4 columns">
+                <div class="cont-sector-item">
+                  <div class="nombre-sector">Sector 2</div>
+                  <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                    <li class="accordion-item" data-accordion-item="">
+                      <!-- Título del panel del Acordeón -->
+                      <a href="javascript:void(0);" class="accordion-title" aria-controls="dootdh-accordion" role="tab" id="dootdh-accordion-label" aria-expanded="false" aria-selected="false">Ver barrios</a>
 
-            <!-- ********* Panel3 -->
-            <div class="tabs-panel" id="panel3">
-              <div>                
-                <button type="button" class="button success btn-expansivo float-right" data-open="disponibilidad-carros"><img src="assets/img/icono-carro.svg" style="height:25px;width:auto" alt="Carro"> Disponibilidad carros</button>
-                <h4>Compañías Asignadas</h4>
+                      <!-- Contenido del panel del acordeón. -->
+                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="dootdh-accordion-label" aria-hidden="true" id="dootdh-accordion">
+                        <p>La Blanqueada Sur, Congreso de Tres Cruces, Pque. Batlle Este, Libertad, Larrañaga, Punta Carretas, Villa Biarritz, Trouville, Pocitos, Pocitos Nuevo, Puerto Buceo, Pque. Batlle Sur, Villa Dolores, Malvín Norte, Unión, Villa Española, Mercado modelo y La Blanqueada Este.</p>
+                      </div>
+                    </li>
+                  </ul><!-- /.accordion -->                 
+                  
+                  <hr>
+                  <div class="nombre-medico">Médicos asignados</div>
+                  <ul class="no-bullet">
+                    <li>Roberto Capriles</li>
+                    <li>Osiris Guarecuco</li>
+                    <li>José Martínez</li>
+                  </ul>
+                  <i class="fa fa-pencil fa-2x" aria-hidden="true" data-open="editar-sector"></i>
+                </div>
               </div>
-              <hr>
-              <div class="text-center">
-                <img src="assets/img/carro-disponible.png" alt="..."><small>&nbsp; Disponible &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-asignado.png" alt="..."><small>&nbsp; Asignado a esta emergencia &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-asignado-otra.png" alt="..."><small>&nbsp; Asignado a otra emergencia &nbsp;&nbsp;</small>
-                <img src="assets/img/carro-averiado.png" alt="..."><small>&nbsp; Averiado &nbsp;&nbsp;</small>
-              </div>
-              <!-- Contenedor Compañías -->
-              <div class="row cont-cias mt-2">
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">1ª Cia. "Bomba Coquimbo"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button hollow btn-asignar-carro">B1</button>                 
-                      <button type="button" class="button btn-asignar-carro" disabled>J1</button>
-                      <button type="button" class="button hollow btn-asignar-carro">R1</button>
-                      <button type="button" class="button btn-asignar-carro">RX1</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">2ª Cia. "Francisco de Aguirre"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B2</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">3ª Cia. "Zapadores O'Higgins"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B3</button>                 
-                      <button type="button" class="button btn-asignar-carro" disabled>M3</button>
-                      <button type="button" class="button btn-asignar-carro">Q3</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">4ª Cia. "Bomba Ignacio Alfonso"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B4</button>                 
-                      <button type="button" class="button hollow btn-asignar-carro">F4</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">5ª Cia. "Mair Cazés Sady"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B5</button>                 
-                      <button type="button" class="button btn-asignar-carro">BR5</button>
-                    </div>                     
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">6ª Cia. "Juan Soldado"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B6</button>                 
-                      <button type="button" class="button btn-asignar-carro">M6</button>
-                      <button type="button" class="button warning btn-asignar-carro">R6</button>
-                      <button type="button" class="button hollow btn-asignar-carro">Z6</button>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">7ª Cia. "Mártir Eduardo Varela Ramos"</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">B7</button>                 
-                    </div>                    
-                  </div>
-                </div>
-                <div class="small-12 medium-4 large-3 columns">
-                  <div class="cont-cia-item">
-                    <div class="nombre-cia">Comandancia</div>
-                    <div class="cont-botones">
-                      <button type="button" class="button btn-asignar-carro">K1</button>                 
-                      <button type="button" class="button btn-asignar-carro">K2</button>
-                      <button type="button" class="button btn-asignar-carro" disabled>K3</button>
-                      <button type="button" class="button btn-asignar-carro">X1</button>
-                    </div>                    
-                  </div>
-                </div>                
-              </div><!-- /.Contenedor Compañías -->
-            </div><!-- /.panel3 -->
 
-          </div><!-- /.tabs-content -->
-          <center>
+              <div class="small-12 medium-4 columns">
+                <div class="cont-sector-item">
+                  <div class="nombre-sector">Sector 3</div>
+                  <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                    <li class="accordion-item" data-accordion-item="">
+                      <!-- Título del panel del Acordeón -->
+                      <a href="javascript:void(0);" class="accordion-title" aria-controls="dootdh-accordion" role="tab" id="dootdh-accordion-label" aria-expanded="false" aria-selected="false">Ver barrios</a>
+
+                      <!-- Contenido del panel del acordeón. -->
+                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="dootdh-accordion-label" aria-hidden="true" id="dootdh-accordion">
+                        <p>Buceo, Malvín Nuevo, Malvín, Punta Gorda,  La Cruz, Cooperativas de Viviendas, Jardines, Canteras, Fortuna, Carrasco Norte, Carrasco Sur, Parque Rivera, Curva de Maroñas, Flor de Maroñas, Jardines del Hipódromo, Ideal, Bella Italia, Málaga, Ituzaingó, Punta de Rieles, Km 16 Cno. Maldonado y Villa García.</p>
+                      </div>
+                    </li>
+                  </ul><!-- /.accordion -->                 
+                  
+                  <hr>
+                  <div class="nombre-medico">Médicos asignados</div>
+                  <ul class="no-bullet">
+                    <li>Juan Landaeta</li>
+                    <li>Wilka MacGregor</li>
+                    <li>Aria Cabrera</li>
+                  </ul>
+                  <i class="fa fa-pencil fa-2x" aria-hidden="true" data-open="editar-sector"></i>
+                </div>
+              </div>
+
+              <div class="small-12 medium-4 columns">
+                <div class="cont-sector-item">
+                  <div class="nombre-sector">Sector 4</div>
+                  <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                    <li class="accordion-item" data-accordion-item="">
+                      <!-- Título del panel del Acordeón -->
+                      <a href="javascript:void(0);" class="accordion-title" aria-controls="dootdh-accordion" role="tab" id="dootdh-accordion-label" aria-expanded="false" aria-selected="false">Ver barrios</a>
+
+                      <!-- Contenido del panel del acordeón. -->
+                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="dootdh-accordion-label" aria-hidden="true" id="dootdh-accordion">
+                        <p>Manga, Piedras Blancas, Bola de Nieva, Boizo Lanza, Toledo Chico, Barrio Franco, Transatlántico, Barrio Cirilo, Plus Ultra, Buenos Aires, La Selva, Pérez Castellanos, Cerrito, Porvenir, Plácido Ellauri, Marconi, Casavalle, Borro, Bonomi, Municipal Instrucciones, Jardines de Instrucciones, Fraternidad, Cópola, Las Acacias, Colón, Lezica, Melilla, Abayubá, Cuchilla Pereyra y San Bartolo.</p>
+                      </div>
+                    </li>
+                  </ul><!-- /.accordion -->                 
+                  
+                  <hr>
+                  <div class="nombre-medico">Médicos asignados</div>
+                  <ul class="no-bullet">
+                    <li>Rafael Marín</li>
+                    <li>Gregorio Hernández</li>
+                    <li>Paola Vargas</li>
+                  </ul>
+                  <i class="fa fa-pencil fa-2x" aria-hidden="true" data-open="editar-sector"></i>
+                </div>
+              </div>
+
+              <div class="small-12 medium-4 columns">
+                <div class="cont-sector-item">
+                  <div class="nombre-sector">Sector 5</div>
+                  <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                    <li class="accordion-item" data-accordion-item="">
+                      <!-- Título del panel del Acordeón -->
+                      <a href="javascript:void(0);" class="accordion-title" aria-controls="dootdh-accordion" role="tab" id="dootdh-accordion-label" aria-expanded="false" aria-selected="false">Ver barrios</a>
+
+                      <!-- Contenido del panel del acordeón. -->
+                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="dootdh-accordion-label" aria-hidden="true" id="dootdh-accordion">
+                        <p>Sayago, Conciliación, Peñarol, Millán y Lecocq, Barrio Lavalleja, Prado Chico, Prado Norte, Prado Norte, Sayago Oeste, Paso Molino, Belvedere, La Teja, Pueblo Victoria, Tres Ombues, Nuevo París, Villa Teresa, Joanicó, San Lorenzo, Cerrito, Aires Puros, Paso de las Duranas, Prado, Atahualpa, Solís, Nueva Savona, Cristóbal Colón y Pque. Posadas.</p>
+                      </div>
+                    </li>
+                  </ul><!-- /.accordion -->                 
+                  
+                  <hr>
+                  <div class="nombre-medico">Médicos asignados</div>
+                  <ul class="no-bullet">
+                    <li>Verónica Aular</li>
+                    <li>Carlos Villasmil</li>
+                    <li>Pedro Guerra</li>
+                  </ul>
+                  <i class="fa fa-pencil fa-2x" aria-hidden="true" data-open="editar-sector"></i>
+                </div>
+              </div>
+
+              <div class="small-12 medium-4 columns">
+                <div class="cont-sector-item">
+                  <div class="nombre-sector">Sector 6</div>
+                  <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                    <li class="accordion-item" data-accordion-item="">
+                      <!-- Título del panel del Acordeón -->
+                      <a href="javascript:void(0);" class="accordion-title" aria-controls="dootdh-accordion" role="tab" id="dootdh-accordion-label" aria-expanded="false" aria-selected="false">Ver barrios</a>
+
+                      <!-- Contenido del panel del acordeón. -->
+                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="dootdh-accordion-label" aria-hidden="true" id="dootdh-accordion">
+                        <p>Arroyo Seco, Bella Vista, 19 de Abril, Prado Sur, Capurro, Paso de la Arena, Santiago Vázquez, Los Bulevares, Barrio Sarandí, Barrio 3 de Abril, Punta Espinillo, La Colorada, Casco del Cerro, Casabó, Pajas Blancas, Santa Catalina, Cerro Norte, La Boyada, Cerro Oeste y Zona Rural.</p>
+                      </div>
+                    </li>
+                  </ul><!-- /.accordion -->                 
+                  
+                  <hr>
+                  <div class="nombre-medico">Médicos asignados</div>
+                  <ul class="no-bullet">
+                    <li>Arturo Péndragon</li>
+                    <li>Estefanía Muller</li>
+                    <li>Patricia Valladares</li>
+                  </ul>
+                  <i class="fa fa-pencil fa-2x" aria-hidden="true" data-open="editar-sector"></i>
+                </div>
+              </div>
+                           
+
+            </div><!-- /.Contenedor Sectores -->
+          </div><!-- /.Sectores de Montevideo -->          
+        
+          <center class="mt-2">
             <a class="button hollow primary" href="operador01.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Volver</a>
-            <a class="button hollow success" href="operador03.html">Asignar <i class="fa fa-check" aria-hidden="true"></i></a>
           </center>
 
           <!-- MODALS **************** -->
-          <div class="reveal modal-carros" id="disponibilidad-carros" data-reveal>
-            <h5><img src="assets/img/icono-carro.svg" alt="Carro"> Disponibilidad carros</h5>
-            <p class="text-center">Marque los carros averiados.</p>
-            <div class="cont-label">
-              <div><input id="b1" type="checkbox"><label class="label-lead" for="b1">B1</label></div>
-              <div><input id="b2" type="checkbox"><label class="label-lead" for="b2">B2</label></div>
-              <div><input id="b3" type="checkbox"><label class="label-lead" for="b3">B3</label></div>
-              <div><input id="b4" type="checkbox"><label class="label-lead" for="b4">B4</label></div>
-              <div><input id="b5" type="checkbox"><label class="label-lead" for="b5">B5</label></div>
-              <div><input id="b6" type="checkbox"><label class="label-lead" for="b6">B6</label></div>
-              <div><input id="b7" type="checkbox"><label class="label-lead" for="b7">B7</label></div>
-              <div><input id="br5" type="checkbox"><label class="label-lead" for="br5">BR5</label></div>
-              <div><input id="f4" type="checkbox"><label class="label-lead" for="f4">F4</label></div>
-              <div><input id="j1" type="checkbox" checked><label class="label-lead" for="j1">J1</label></div>
-              <div><input id="m3" type="checkbox" checked><label class="label-lead" for="m3">M3</label></div>
-              <div><input id="m6" type="checkbox"><label class="label-lead" for="m6">M6</label></div>
-              <div><input id="q3" type="checkbox"><label class="label-lead" for="q3">Q3</label></div>
-              <div><input id="r1" type="checkbox"><label class="label-lead" for="r1">R1</label></div>
-              <div><input id="r6" type="checkbox"><label class="label-lead" for="r6">R6</label></div>
-              <div><input id="rx1" type="checkbox"><label class="label-lead" for="rx1">RX1</label></div>
-              <div><input id="z6" type="checkbox"><label class="label-lead" for="z6">Z6</label></div>  
-              <div><input id="k1" type="checkbox"><label class="label-lead" for="k1">K1</label></div>
-              <div><input id="k2" type="checkbox"><label class="label-lead" for="k2">K2</label></div>
-              <div><input id="k3" type="checkbox" checked><label class="label-lead" for="k3">K3</label></div>
-              <div><input id="x1" type="checkbox"><label class="label-lead" for="x1">X1</label></div>
-                          
+          <div class="reveal modal-editar-sector" id="editar-sector" data-reveal>
+            <h4>Editar Sector</h4>
+            <hr>
+            <div class="row">
+
+              <!-- Barrios -->
+              <div class="columns small-12 medium-6">
+                <h5>Barrios del Sector</h5>
+                <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist">
+                  <li class="accordion-item" data-accordion-item="">                
+                    <!-- Título del panel del Acordeón -->
+                    <a href="javascript:void(0);" class="accordion-title" aria-controls="dootdh-accordion" role="tab" id="dootdh-accordion-label" aria-expanded="false" aria-selected="false">Ver barrios</a>
+
+                    <!-- Contenido del panel del acordeón. -->
+                    <div class="accordion-content" style="padding: 0 2rem;" data-tab-content>
+                      <ol>
+                        <li>Aguada &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Barrio Sur &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Centro &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Ciudad Vieja &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Cordón Este &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Cordón Norte &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Cordón Sur &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Figurita &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Goes &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Jacinto Vera &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Krüger &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>La Comercial &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>La Comercial &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Palermo &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Parque Rodó &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Reducto &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Simón Bolívar &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                        <li>Villa Muñoz &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                      </ol>
+                    </div>
+                  </li>
+                </ul>
+                <br>
+                <!-- Agregar barrio -->
+                <form>
+                  <legend class="label-select texto-blanco"><h5>Agregar barrio</h5></legend>
+                  <select id="agregar-barrios" required class="js-example-responsive" style="width: 100%">
+                    @include('./partials/opciones-medicos.html')
+                  </select>
+                  <br>
+                  <a href="javascript:void(0);" class="button success expanded">Agregar <i class="fa fa-check" aria-hidden="true"></i></a>                  
+                </form>                
+              </div>
+
+              <!-- Médicos -->
+              <div class="columns small-12 medium-6">
+                <h5>Médicos del Sector</h5>
+                <ol class="p-2">
+                  <li><b>Agustín Codazzi</b> &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                  <li><b>Ana Romanov</b> &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                  <li><b>Juan García</b> &nbsp;&nbsp;&nbsp;<span class=""><i class="fa fa-times borrar"></i></span></li>
+                </ol>
+                <!-- Agregar médico -->
+                <form>
+                  <legend class="label-select texto-blanco"><h5>Agregar Médico</h5></legend>
+                  <select id="agregar-medico" required class="js-example-responsive" style="width: 100%">
+                    @include('./partials/opciones-medicos.html')
+                  </select>
+                  <br>
+                  <button class="button success expanded">Agregar <i class="fa fa-check" aria-hidden="true"></i></button>                  
+                </form>
+              </div>
+
             </div>
+
             <button class="close-button" data-close aria-label="Cerrar modal" type="button">
               <span aria-hidden="true">×</span>
             </button>
-            <br><br>
-            <button class="button expanded" data-close>Guardar <i class="fa fa-check" aria-hidden="true"></i></button>
-          </div><!-- /.modal-cia --> 
+            <button class="button expanded" data-close>GUARDAR CAMBIOS <i class="fa fa-check" aria-hidden="true"></i></button>
+          </div><!-- /.modal-sector --> 
 
         </div><!-- /.off-canvas-content -->
       </div><!-- /.off-canvas-wrapper -->

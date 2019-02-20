@@ -1,30 +1,35 @@
 <!doctype html>
 <html class="no-js" lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOE | Salud Ocupacional Empresarial</title>
-  <!-- ************* CORE CSS -->
-  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
-  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SOE | Salud Ocupacional Empresarial</title>
+	<meta name="description" content="Diseñador Gráfico con 14 años de experiencia en diversas ramas del oficio. He trabajado principalmente como diseñador de Branding y Frontend Desing, ocupando puestos de supervisión en equipos creativos. En el área de impresión comercial, laboré como Jefe de Producción de una imprenta.">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<!-- ************* CORE CSS -->
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="assets/css/app.min.css" /> 
 </head>
 
 <body>
-	<!-- /////// Botón para ir al principio -->
+	<!-- Botón para ir al principio -->
 	<a class="hide-for-small-only" href="#inicio">
-	  <i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
+		<i class="fa fa-chevron-circle-up fa-2x ir-arriba"></i>
 	</a>
 	<!-- */Botón para ir al principio -->
+	
   <!-- ********** CONTENIDO -->
   <section id="cont-cliente01" class="bg-ppal">    
-    <!-- Cabecera clara -->
+    		
+		<!-- Cabecera clara -->
 		<div class="cabecera-clara">
-		  <img class="logo" src="./assets/img/logo.svg" alt="Logo">
-		  <div class="" id="btn-salir">
-		    <a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a>
-		  </div>
+			<img class="logo" src="./assets/img/logo.svg" alt="Logo">
+			<div class="" id="btn-salir">
+				<a href="index.html"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Salir</a>
+			</div>
 		</div>
-		<!-- /.Cabecera clara -->    
+		<!-- /.Cabecera clara -->
+		    
     <div class="contenedor">
       <!-- El contenido de la página va aquí -->
       <div class="row mt-3">
@@ -105,47 +110,51 @@
 
       </div><!-- /.row -->
       <br>
-      <!-- Modal para borrar funcionario -->
-			<div class="reveal tiny" id="modal-borrar-funcionario" data-reveal>
-				<br>
-				<h4>Borrar Funcionario</h4>
-				<p>Por favor ingrese los datos del funcionario</p>
-				<br>
-				<form>
-					<div class="group">      
-						<input class="m" type="text" required value="" id="nombre-apellido-borrar">
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label class="m" for="nombre-apellido-borrar">Nombre y Apellido</label>
-					</div>
-					<div class="group">      
-						<input class="m" type="text" required value="" id="codigo-para-borrar">
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label class="m" for="codigo-para-borrar">Código Funcionario</label>
-					</div>
-					<a class="button expanded" id="confirmar-borrar-funcionario">Aceptar</a>
-				</form>
-				<center><a href="cliente03.html" title="Ir al listado">Ir al listado de funcionarios</a></center>
-				<button class="close-button" data-close aria-label="Cerrar modal" type="button">
-					<span aria-hidden="true">×</span>
-				</button>
-			</div>
-			<!-- /.Modal para borrar funcionario -->
+      			
+		<!-- Modal para borrar funcionario -->
+		<div class="reveal tiny" id="modal-borrar-funcionario" data-reveal>
+			<br>
+			<h4>Borrar Funcionario</h4>
+			<p>Por favor ingrese los datos del funcionario</p>
+			<br>
+			<form>
+				<div class="group">      
+					<input class="m" type="text" required value="" id="nombre-apellido-borrar">
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="m" for="nombre-apellido-borrar">Nombre y Apellido</label>
+				</div>
+				<div class="group">      
+					<input class="m" type="text" required value="" id="codigo-para-borrar">
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="m" for="codigo-para-borrar">Código Funcionario</label>
+				</div>
+				<a class="button expanded" id="confirmar-borrar-funcionario">Aceptar</a>
+			</form>
+			<center><a href="cliente03.html" title="Ir al listado">Ir al listado de funcionarios</a></center>
+			<button class="close-button" data-close aria-label="Cerrar modal" type="button">
+				<span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<!-- /.Modal para borrar funcionario -->
+			
     </div><!-- /.contenedor -->
   </section>
   <!-- /. CONTENIDO -->
+	
 	<!-- ************* FOOTER -->
 	<section id="footer">
 		<div class="contenedor">
 			<center>
 				<b>Control de Constancias Médicas</b><br>
 				SOE Salud Empresarial Ocupacional © 2019
-				<p>Desarrolado por <a href="" title="Desarroladores">scorpion</a></p>				
+				<p>Desarrollado por <a href="" title="Desarroladores">scorpion</a></p>				
 			</center>
 		</div>		
 	</section>
 	
+
 	<!-- ************* CORE JS -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/sweetalert2.all.min.js"></script>

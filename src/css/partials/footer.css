@@ -2,12 +2,13 @@
 ESTILOS FOOTER: footer.css;
 *******************************/
 #footer {
+	background-color: var(--colorPrimarioOscuro);
 	color: var(--colorBlanco);
 	display: grid;
 	align-items: end;
-	background-color: var(--colorPrimarioOscuro);
 	height: 12vh;
 	padding: 0.7rem;
+	width: 100%;
 
 	@media (--tablet-h) {
 		font-size: 1.3rem;

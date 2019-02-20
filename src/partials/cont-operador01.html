@@ -1,258 +1,64 @@
   <!-- ********** CONTENIDO -->
   <section id="cont-operador01" class="">    
     <div class="contenedor">
+
       <div class="off-canvas-wrapper">
+        
+        <!-- Contenedor del menú off-canvas -->
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
          <!-- Tu menú o contenido fuera del lienzo va aquí -->
          @include('./partials/menu-off-canvas-operador.html')
-        </div>
+        </div><!-- /.Contenedor del menú off-canvas -->
+        
+        <!-- El contenido de la página comienza aquí -->
         <div class="off-canvas-content" data-off-canvas-content>
-          <!-- El contenido de la página va aquí -->
-          <p class="text-right fecha-hora">@include('./partials/fecha-hora.html')</p>         
+          
+          <!-- Cabecera -->
+          <div class="row mb-2">
+            <div class="small-12 medium-6 columns">
+              @include('./partials/perfil-operador.html')
+            </div>
+            <div class="small-12 medium-6 columns">
+              <p class="fecha-hora">@include('./partials/fecha-hora.html')</p>      
+            </div>
+          </div><!-- /.cabecera -->
 
-          <ul class="tabs" data-tabs id="example-tabs">
-            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Nueva</a></li>
-            <li class="tabs-title"><a href="#panel2" data-tabs-target="panel2">10-0-3 Llamado Estructural Lugar público</a></li>
-            <li class="tabs-title"><a href="#panel3" data-tabs-target="panel3">10-8-1 Abrir casa habitación 1 piso</a></li>
-          </ul>
+          <!-- Datos suministrados por la empresas afiliadas -->
+          <div class="row">
 
-          <div class="tabs-content" data-tabs-content="example-tabs">
-               
-            <div class="tabs-panel is-active" id="panel1">
-              <form class="row mt-2">
-                  
-                <h2 class="titulo2 mb-3 small-12 columns"><i class="fa fa-user" aria-hidden="true"></i> Datos del denunciante</h2>
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="" id="denunciante1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="denunciante1">Nombre y Apellido</label>
-                </div>
+            <!-- Listado de empresas que reportan ese día -->
+            <div class="small-12 medium-5">
+              <h3>Listado de empresas que reportan</h3>
+              <ul class="menu vertical">
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Almacenes Juan Pinto S.R.L. <span class="badge warning">10</span> </a></li>
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Estación de Servicio Las Piedras S.R.L. <span class="badge warning">1</span></a></li>
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Imprenta Express S.A. <span class="badge warning">3</span></a></li>
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Instituto de Formación Empresarial S.R.L. <span class="badge warning">3</span></a></li>
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Seguros Nuevo Mundo S.A. <span class="badge warning">4</span></a></li>
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Supermercado Oriental S.R.L. <span class="badge warning">2</span></a></li>
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Tanqueros Unidos S.A. <span class="badge warning">2</span></a></li>
+                  <li><a onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado por Empresa/Cliente</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar tan sólo a los funcionarios de la compañia seleccionada.</p>'">Zabala & Asociados S.A. <span class="badge warning">5</span></a></li>
+              </ul>
+              <!-- Grupo de Botones -->
+              <div class="button-group expanded mt-4" style="padding-right: 1rem;">
+                <a class="button large" onclick="document.getElementById('contenedor-tabla').innerHTML = '<br><br><center><big><b>Listado Sectorizado</b></big></center><p>Aquí deberá aparecer la tabla modificada para mostrar a los funcionarios reportados, ya <b>organizados por sectores</b>.</p>'"><i class="fa fa-map fa-lg"></i>  Sectorizar</a>
+                <a class="button success large" id="enviar-listado"> <i class="fa fa-send fa-lg"></i> Enviar </a>              
+              </div>
+            </div><!-- /.Listado de empresas que reportan ese día -->
 
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="" id="rut1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="rut1">RUT</label>
-                </div>
 
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="" id="fono1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="fono1">Fono</label>
-                </div>
+            <!-- Funcionarios reportados -->
+            <div class="small-12 medium-7">
+              <h3>Total funcionarios reportados <span class="badge warning">30</span></h3>              
+              <div class="contenedor-tabla mt-1 mb-1" id="contenedor-tabla">
+               @include('./partials/tabla-operador01.html')
+              </div>
+            </div><!-- /.Funcionarios reportados -->
+          </div>
+          <!-- /.Datos suministrados por la empresas afiliadas -->
 
-                <h2 class="titulo2 mb-3 small-12 columns"><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicación</h2>
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="" id="direccion1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="direccion1">Dirección</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="" id="sector1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="sector1">Sector</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="" id="departamento1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="departamento1">Departamento</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="" id="block1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="block1">Block</label>
-                </div>
-
-                <div class="group small-12 columns">
-                  <small class="titulo-peq-color-ppal">Seleccione tipo de emergencia</small>
-                  <select id="tipo-emergencia" class="js-example-responsive" style="width: 100%"></select>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="" id="clave04-1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="block1">Clave 04</label>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="" id="novedades1">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="block1">Novedades</label>
-                </div>
-
-              </form>
-            </div><!-- /.panel1 -->
-               
-            <div class="tabs-panel" id="panel2">
-              <form class="row mt-2">
-                  
-                <h2 class="titulo2 mb-3 small-12 columns"><i class="fa fa-user" aria-hidden="true"></i> Datos del denunciante</h2>
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="Argenis Villanueva" id="denunciante2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="denunciante2">Nombre y Apellido</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="78945612" id="rut2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="rut2">RUT</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="(51)2542564" id="fono2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="fono2">Fono</label>
-                </div>
-
-                <h2 class="titulo2 mb-3 small-12 columns"><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicación</h2>
-                <div class="group small-12 medium-6 columns">
-                  <input class="m" class="direccion" type="text" required value="C/Colo Colo Plaza Buenos Aires" id="direccion2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="direccion2">Dirección</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="La Serena" id="sector2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="sector2">Sector</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="N/A" id="departamento2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="departamento2">Departamento</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="N/A" id="block2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="block2">Block</label>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="10-0-3 Llamado Estructural Lugar público" id="tipo-emergencia2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="tipo-emergencia2">Tipo de Emergencia</label>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="04 posibles heridos graves" id="clave04-2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="clave04-2">Clave 04</label>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="Al momento de llegar al sitio se presentó inconveniente con personal de parque que obstruía el acceso." id="novedades2">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="novedades2">Novedades</label>
-                </div> 
-              </form>
-            </div><!-- /.panel2 -->
-
-            <div class="tabs-panel" id="panel3">
-              <form class="row mt-2">
-                                
-                <h2 class="titulo2 mb-3 small-12 columns"><i class="fa fa-user" aria-hidden="true"></i> Datos del denunciante</h2>
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="Virginia Loengris" id="denunciante3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="denunciante3">Nombre y Apellido</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="65498767" id="rut3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="rut3">RUT</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="(51)2547785" id="fono3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="fono3">Fono</label>
-                </div>
-
-                <h2 class="titulo2 mb-3 small-12 columns"><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicación</h2>
-                <div class="group small-12 medium-6 columns">
-                  <input class="m" class="direccion" type="text" required value="C/Tucapel, casa Nº 23-12" id="direccion3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="direccion3">Dirección</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="La Antena" id="sector3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="sector3">Sector</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="N/A" id="departamento3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="departamento3">Departamento</label>
-                </div>
-
-                <div class="group small-12 medium-6 columns">      
-                  <input class="m" type="text" required value="N/A" id="block3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="block3">Block</label>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="10-8-1 Abrir casa habitación 1 piso" id="tipo-emergencia3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="tipo-emergencia3">Tipo de Emergencia</label>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="La edificación tiene una puerta de seguridad" id="clave04-3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="clave04-3">Clave 04</label>
-                </div>
-
-                <div class="group small-12 columns">      
-                  <input class="m" type="text" required value="Dentro de la propiedad se encontraban dos perros guardianes agresivos." id="novedades3">
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label class="m" for="novedades3">Novedades</label>
-                </div>
-              </form>
-            </div><!-- /.panel3 -->
-
-          </div><!-- /.tabs-content -->
-          <center>
-            <a class="button hollow primary btn-expansivo" href="operador02.html">Siguiente <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-          </center>
         </div><!-- /.off-canvas-content -->
+        <!-- /.El contenido de la página llega hasta aquí -->
       </div><!-- /.off-canvas-wrapper -->
     </div><!-- /.contenedor -->
   </section>

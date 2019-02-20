@@ -5,6 +5,26 @@ ESTILOS CONTENIDO OPERADOR 01: cont-operador01.css;
 #cont-operador01 {
 	padding-top: 7.5rem;
 
+	& .badge {
+		font-size: 1rem;
+		transform: translateY(-4px);
+	}
+	& .contenedor-tabla {
+		max-height: 56vh;
+		overflow-x:hidden;
+		overflow-y:scroll;
+
+		& p {
+			font-size: responsive 1.8rem 2rem;
+			height: 56vh;
+			padding: 5rem 3rem;
+			text-align: center;
+		}
+	}
+	& h3 {
+		font-size: responsive 1.6rem 2rem;
+
+	}
 	& .titulo-peq-color-ppal {
 		color: var(--colorPpal);
 		margin-bottom: .5rem;
@@ -13,9 +33,16 @@ ESTILOS CONTENIDO OPERADOR 01: cont-operador01.css;
 		background: var(--colorGrisOscuro);
 	}
 
-	& .tabs-title > a {
-		font-size: responsive 1.4rem 1.6rem;
-		color: var(--colorPpal);
+	& table thead, table tbody, table tfoot {
+	  border: none;
+	  background-color: var(--colorBlanco);
+	}
+	& th {
+		background-color: var(--colorBg);
+		font-size: responsive .6rem 1.3rem;
+	}
+	& tr {
+		font-size: responsive .8rem 1.4rem;
 	}
 	& .is-active > a {
 		font-weight: bold;

@@ -97,7 +97,7 @@ a:hover {
       margin-right: auto;
       margin-left: auto;
     }
-    @media (--PC) {
+    @media (--pc) {
       display: block;
       margin-right: auto;
       margin-left: auto;

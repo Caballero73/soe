@@ -1,6 +1,7 @@
 /**********************************************
 Tipografia usada en el proyecto: tipografia.css
 ***********************************************/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
 @font-face {
 	font-family: 'Raleway-Bold';
 	src: url('../fonts/Raleway-Bold.eot');
@@ -11,4 +12,3 @@ Tipografia usada en el proyecto: tipografia.css
 	font-weight: normal;
 	font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');

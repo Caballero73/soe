@@ -2,7 +2,7 @@
 ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 *******************************/
 #cont-operador02 {
-	padding-top: 1.7rem;
+	padding-top: 7.5rem;
 
 	& [type="file"], [type="checkbox"], [type="radio"] {
 		margin: 0 1rem 1.7rem;
@@ -12,33 +12,53 @@ ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 		margin-bottom: .8rem;
 	}
 
-	& .cont-cias {
-		& .cont-cia-item {
+	& .cont-sectores {
+
+		& .accordion-title {
+			font-size: responsive 1.2rem 1.8rem;
+		}
+
+		& .accordion-title::before {
+			font-size: 3rem;
+			font-weight: bold;
+			transform: translateY(-1rem);
+
+		}
+		& .cont-sector-item {
 			border:  1px solid var(--colorGrisClaro);
 			border-radius: 4px;
-			font-weight: bold;
-			font-size: responsive 1.2rem 1.4rem;
+			font-size: responsive 1.4rem 1.8rem;
 			margin-bottom: 1rem;
 			padding: 1rem;
+			position: relative;
+			transition: all .5s ease;
 
-			& .nombre-cia {
-				height: 3em;
-			}
-			& .cont-botones{
-				display: grid;
-				grid-template-columns: repeat(2,1fr);
-				grid-template-rows: auto;
-				grid-gap: .5rem;
-				margin-top: .75rem;
-
-				& .button {
-					font-size: 1.8rem;
-				}
-			}
-			& .item-botones {
-
+			&:hover {
+				background: color(var(--colorPpalClaro) a(45%));
+				cursor: pointer;
+				transition: all .5s ease;
 			}
 
+			& .fa {
+				color: #fff;
+				position: absolute;
+				bottom: 1rem;
+				right: 1rem;
+			}
+			&:hover .fa {
+				text-shadow: 1.5px 1.5px 2.5px #777;
+			}
+
+			& .nombre-sector {
+				color: var(--colorSec);
+				font-size: responsive 1.5rem 1.9rem;
+				font-weight: bold;
+			}
+			& .nombre-medico {
+				color: var(--colorPrimarioOscuro);
+				font-size: responsive 1.5rem 1.9rem;
+				font-weight: bold;
+			}
 		}
 
 	}
@@ -62,7 +82,7 @@ ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 	}
 }
 
-.modal-carros {
+.modal-editar-sector {
 	background-color: var(--colorPpal);
 	border-radius: 3px;
 	border: 1px solid #cacaca;
@@ -71,6 +91,25 @@ ESTILOS CONTENIDO OPERADOR 02: cont-operador02.css;
 	padding: 3rem 2rem;
 	top: 20rem;
 	
+	& .accordion-title {
+			font-size: responsive 1.2rem 1.8rem;
+	}
+
+	& .accordion-title::before {
+		font-size: 3rem;
+		font-weight: bold;
+		transform: translateY(-1rem);
+	}
+
+	& .borrar {
+		transition: 0.3s all ease;
+
+		&:hover {
+			color: var(--colorSec);
+			transition: 0.3s all ease;
+		}
+	}
+
 	& .cont-label {
 		display: grid;
 		grid-template-columns: repeat(4,1fr);
